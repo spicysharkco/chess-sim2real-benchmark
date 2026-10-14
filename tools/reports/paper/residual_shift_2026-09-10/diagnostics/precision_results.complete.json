@@ -1,0 +1,85 @@
+{
+  "status": "c3_precision_probe_complete",
+  "release_ready": false,
+  "final_test_images_read": false,
+  "conditions": [
+    {
+      "condition": "high_auto",
+      "matmul_precision": "high",
+      "sdp_backend": "auto",
+      "dtype": "torch.float32",
+      "capture_max_abs": 0.0018221735954284668,
+      "restore_max_abs": 0.0,
+      "capture_equivalent": false,
+      "restore_equivalent": true,
+      "hooks_restored": true,
+      "ordinary_saved_argmax_mismatches": 0,
+      "capture_saved_argmax_mismatches": 0
+    },
+    {
+      "condition": "highest_auto",
+      "matmul_precision": "highest",
+      "sdp_backend": "auto",
+      "dtype": "torch.float32",
+      "capture_max_abs": 3.24249267578125e-05,
+      "restore_max_abs": 0.0,
+      "capture_equivalent": true,
+      "restore_equivalent": true,
+      "hooks_restored": true,
+      "ordinary_saved_argmax_mismatches": 0,
+      "capture_saved_argmax_mismatches": 0
+    },
+    {
+      "condition": "highest_math",
+      "matmul_precision": "highest",
+      "sdp_backend": "math",
+      "dtype": "torch.float32",
+      "capture_max_abs": 1.239776611328125e-05,
+      "restore_max_abs": 0.0,
+      "capture_equivalent": true,
+      "restore_equivalent": true,
+      "hooks_restored": true,
+      "ordinary_saved_argmax_mismatches": 0,
+      "capture_saved_argmax_mismatches": 0
+    }
+  ],
+  "inputs_sha256": {
+    "$HOME/bench_experiments/codex_transfer_20260910/prepare.complete.json": "[redacted: withheld digest]",
+    "$HOME/bench_experiments/codex_transfer_20260910/render_validation.complete.json": "[redacted: withheld digest]",
+    "$HOME/bench_experiments/codex_transfer_20260910/confirmation.complete.json": "[redacted: withheld digest]",
+    "$HOME/bench_experiments/codex_transfer_20260910/prepare.json": "[redacted: withheld digest]",
+    "$HOME/bench_experiments/codex_transfer_20260910/prepare.records.jsonl": "[redacted: withheld digest]",
+    "$HOME/bench_experiments/codex_transfer_20260910/render_validation.records.jsonl": "[redacted: withheld digest]",
+    "$HOME/bench_experiments/codex_transfer_20260910/confirmation.predictions.jsonl": "[redacted: withheld digest]",
+    "$HOME/bench_experiments/codex_post_matrix_20260910/probe_source/tools/paper/residual_shift.py": "[redacted: withheld digest]",
+    "$HOME/bench_experiments/codex_post_matrix_20260910/probe_source/docs/C3_NUMERICAL_DIAGNOSTIC_2026-09-10.md": "a654390b49bb5122385f33b6522b576b66c203a8cbc4c43fd04fcfc10250e5f6",
+    "$HOME/bench_experiments/codex_post_matrix_20260910/probe_source/tools/paper/benchmark_io.py": "cc55557c5761ad73705e7c4d35b7a7a1a5495aed138052354910827150295371",
+    "$HOME/bench_experiments/codex_post_matrix_20260910/probe_source/tools/paper/transfer_cohort.py": "[redacted: withheld digest]",
+    "$HOME/bench_experiments/codex_post_matrix_20260910/probe_source/tools/paper/parity_probe.py": "[redacted: withheld digest]",
+    "$HOME/bench_experiments/codex_post_matrix_20260910/probe_source/tools/paper/c3_precision_probe.py": "5ea2c706980d104e971a82a7c6acd2bbfa21d73f9e016c751a2022a4fb38b4e7",
+    "$HOME/bench_experiments/codex_post_matrix_20260910/residual.attention_selection.json": "[redacted: withheld digest]"
+  },
+  "keys": [
+    "confirmation/lyricsz/parity/000179",
+    "confirmation/lyricsz/parity/000238"
+  ],
+  "checkpoint_sha256": "6151bdd98fbe25f32080c097eba7ae75808b5615160e4867240931085fc762e5",
+  "gpu_used": true,
+  "torch": "2.11.0+cu128",
+  "cuda": "12.8",
+  "artifacts_sha256": {
+    "precision_results.logits.npz": "b881e5e8639dc4455cc348834a8c0d7740b6c7d867afd6baaf75f7ea02cf3570",
+    "precision_results.results.json": "574ca0904b1f9b36d1d1966cae1801c28a8baafa9b04f2c4345cbbf324c23296"
+  },
+  "environment": {
+    "python": "3.12.13",
+    "host": "render-host",
+    "numpy": "2.5.2",
+    "torch": "2.11.0+cu128",
+    "torchvision": "0.26.0+cu128",
+    "gpu": "NVIDIA GeForce RTX 3090",
+    "cuda": "12.8",
+    "float32_matmul_precision": "highest"
+  },
+  "completed_at": "2026-09-10T17:53:59.031279+00:00"
+}

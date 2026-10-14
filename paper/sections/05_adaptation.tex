@@ -1,0 +1,113 @@
+\section{Matched-position adaptation and retention cost}
+\label{sec:adaptation}
+
+\subsection{Protocol}
+
+% receipt: evidence/docs/LORA_CURVE_2026-09-10.md
+We adapt only the encoder with the upstream low-rank modules~\citep{lora,chessqueries}. The registered
+configuration uses rank 8, alpha 16, dropout 0.05, AdamW at a learning rate of
+$10^{-4}$ with zero weight decay, no scheduler, and no warm-up. The base
+encoder and the complete readout remain frozen. Every run uses batch size 6,
+bf16 autocast, and exactly 1,500 optimizer updates, with no image augmentation,
+early stopping, or development-selected checkpoint.
+
+% receipt: evidence/benchmark_v2/adaptation.complete.json
+% receipt: evidence/docs/ADAPTATION_POOL_2026-09-10.md; Scene sampling and nested budgets
+Training uses a separate pool of 8,000 fresh position groups, each rendered at
+both board conventions. The 500-, 2,000-, and 8,000-group budgets are nested
+prefixes of one fixed permutation. The dark-only and both-convention arms use
+the same positions and the same number of optimizer updates, but not the same
+number of distinct images: a both-convention pool contains twice as many
+available views. Unlike the evaluation panels, adaptation examples combine factor
+levels with balanced marginals. The pool includes the reference material scheme
+as well as the palette treatments; matching the supported levels does not make
+the joint training and evaluation scene distributions identical.
+
+% receipt: evidence/docs/records/C2_BUDGET_SEMANTICS_2026-09-10.md
+Each run makes 9,000 image presentations. Thus the largest both-convention pool
+cannot be covered in full under the fixed step cap. The budget denotes available
+position groups, not measured unique examples seen or complete epochs. The
+experiments compare matched positions and fixed optimizer exposure rather than
+equal distinct-image counts.
+
+% receipt: evidence/tools/reports/paper/lora_curve_2026-09-10/lora_report.json
+All checkpoints are evaluated on the same 16,000 development cell-images from
+400 position groups. The separate photo retention set contains 2,129 boards;
+the preregistered pass threshold is 99.12\% exact-board accuracy. The sealed
+final test is not evaluated. The middle budget uses three fixed training seeds,
+while the other budgets use one, and every registered result is retained.
+
+\subsection{Adaptation curve}
+
+% receipt: evidence/tools/reports/paper/lora_curve_2026-09-10/lora_report.json
+The release checkpoint begins at 15.48\% exact accuracy on a1-dark development
+cells and 0.00\% on a1-light cells. Dark-only adaptation raises a1-dark accuracy
+to 64.70\% with 500 groups and 79.70\% with 8,000 groups, but a1-light exact
+accuracy remains 0.00\% at every dark-only budget. At 8,000 groups, the
+both-convention arm reaches 80.65\% on a1-dark cells and 79.03\% on a1-light
+cells. Figure~\ref{fig:adaptation} shows all seeds and budgets; the full numeric
+matrix appears in Table~\ref{tab:adaptation}.
+
+\input{generated/tables/adaptation}
+
+% receipt: evidence/tools/reports/paper/lora_curve_2026-09-10/lora_report.json; metrics/dev/by_parity
+The standard-convention difference between arms depends on budget. Both-convention
+minus dark-only accuracy is $+2.10$ points at 500 groups, $-2.66$ points for the
+three-seed mean at 2,000 groups, and $+0.95$ points at 8,000 groups. There is no
+budget-independent standard-convention penalty. These are point estimates, not
+paired between-arm confidence intervals.
+
+% receipt: evidence/tools/reports/paper/lora_curve_2026-09-10/lora_report.json; b8000_both_s303/metrics/paired_vs_release
+As one measure of position-sampling uncertainty, the largest both-convention run
+improves the cell-weighted score pooled over both conventions by 72.10 points
+relative to release, with a stored 95\% group-bootstrap interval of
+$[69.90,74.21]$. This is not an interval for the arm contrast or for unseen real
+photographs. The machine-readable report retains each run's pooled and per-cell
+intervals and gained/lost counts; the tables print point estimates.
+
+% receipt: evidence/tools/reports/paper/lora_curve_2026-09-10/lora_report.json
+No adapted checkpoint passes the registered photo-retention gate. Across the
+ten runs, exact accuracy on that set falls from the 99.62\% release reference to
+between 98.54\% and 99.11\%. This corresponds to 11--23 additional incorrect
+boards. These are net changes in exact-board counts on the same photo set, not
+counts of all previously correct boards that became incorrect. The loss is not
+monotone in synthetic data budget; these measurements do not identify its cause.
+
+% receipt: evidence/tools/reports/paper/lora_curve_2026-09-10/lora_report.json
+Recovery is not uniform across the measured cells. Under the
+largest both-convention run, the lowest-elevation a1-dark cell reaches only
+14.50\% exact accuracy while the reference-elevation cell reaches 86.50\%.
+Geometry effects also remain visible. Figure~\ref{fig:heatmap} reports all
+factor cells for the release checkpoint and the largest both-convention run.
+
+\subsection{Reading the intervention}
+
+The experiments support three bounded conclusions. First, much of the release
+checkpoint's synthetic gap is reducible with matched rendered data. Second,
+the one-sided runs produce no exact boards under the other convention in this
+protocol; that does not imply zero per-square learning.
+Third, adding the convention mate is sufficient to remove most of that asymmetry,
+but it does not satisfy the real-photo retention criterion and does not resolve
+low-elevation error. These are development results for one architecture and one
+fixed adapter recipe, not evidence of general robustness.
+
+\subsection{Residual error characterization}
+
+% receipt: evidence/tools/reports/paper/residual_shift_2026-09-10/r1/residual_r1.metrics.json
+A separate preregistered diagnostic examines 288 canonical a1-dark boards from
+six geometry families using the unchanged release checkpoint, not a LoRA-adapted model. The families
+use different positions, so their comparison does not isolate geometry. Lyricsz and
+PJ~Hanzlik each have 0 exact boards among 48. For these families, binary
+presence errors account for 66.86\% and 73.71\% of wrong squares, respectively;
+the remainder are wrong occupied classes. This decomposition describes the
+failure but does not establish its cause.
+
+% receipt: evidence/tools/reports/paper/residual_shift_2026-09-10/r1/residual_r1.complete.json
+% receipt: evidence/docs/C3_PRECISION_AMENDMENT_2026-09-10.md
+The accompanying attention sample was chosen without reference to prediction
+outcomes and retains all 64 final-decoder query maps for 30 boards. The maps use
+head averages and per-query display normalization. Appendix~\ref{app:attention}
+shows fixed examples. The capture used the preregistered precision amendment after
+an initial forward-equivalence failure; its numerical checks were passed before
+interpretation. Attention is treated only as descriptive localization
+evidence; no attention intervention or mechanism test was performed.

@@ -1,0 +1,33 @@
+{
+  "env": {
+    "gpu": "NVIDIA GeForce RTX 3090",
+    "torch": "2.6.0+cu124",
+    "python": "3.11.15",
+    "host": "data-host",
+    "ckpt": "chessqueries-vitL14-644-joint.safetensors",
+    "ckpt_bytes": 1486661004,
+    "tta": false,
+    "bs": 4,
+    "resolution": 644,
+    "cq_repo_rev": "2a9f3c0",
+    "data_root": "$DATA_ROOT/ext/cqdata",
+    "date": "2026-09-08"
+  },
+  "results": {
+    "chesscog_test": {
+      "n_boards": 342,
+      "n_squares": 21888,
+      "n_squares_correct": 21883,
+      "per_square_accuracy": 0.9997715643274854,
+      "n_boards_exact": 337,
+      "board_accuracy": 0.9853801169590644,
+      "ms_per_img_gpu": 117.33569387803998,
+      "ms_per_img_wall": 119.92334134397451,
+      "expected_n": 342,
+      "n_wrong_hist": {
+        "0": 337,
+        "1": 5
+      }
+    }
+  }
+}

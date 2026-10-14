@@ -1,0 +1,41 @@
+{
+  "a4_pdf_sha256": "c53ffff38289b92257f0d4f22a2b708020e6d4290d328be9ffe4f7b9dd87fd71",
+  "a4_size_points": [
+    595.28,
+    841.89
+  ],
+  "full_sheets_retained": 60,
+  "gpu_used": false,
+  "layout": {
+    "a4": {
+      "appendix_e": [
+        40
+      ],
+      "appendix_f": [
+        41
+      ],
+      "caption": [
+        40
+      ]
+    },
+    "letter": {
+      "appendix_e": [
+        43
+      ],
+      "appendix_f": [
+        44
+      ],
+      "caption": [
+        43
+      ]
+    }
+  },
+  "published": false,
+  "queries_each": 8,
+  "schema": "attention-layout-verification/v1",
+  "selected_boards": 2,
+  "selection_receipt_sha256": "[redacted: withheld digest]",
+  "six_other_figures_unchanged": true,
+  "targeted_tests": 15,
+  "three_original_full_sheets_unchanged": true
+}

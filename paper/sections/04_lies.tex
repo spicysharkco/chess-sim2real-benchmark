@@ -1,0 +1,110 @@
+% Historical (v1) numbers below come from hash-pinned summary reports, not from original run
+% receipts; see Appendix F for the provenance gap. v2 numbers come from receipts under paper/evidence/.
+\section{Three ways the evaluation misled us}
+\label{sec:lies}
+
+Each subsection states what we believed, what the record shows, and the correct statement. The
+three cases differ in kind. The first is a descriptive comparison between systems that differ in
+more than one way. The second is a provenance failure. Only the third has a paired intervention
+that isolates a cause. Numbers for the first two come from the earlier benchmark generation (v1:
+18 splits, 5{,}800 frames, same generator lineage, a1-light convention throughout) and from public
+real-photo sets. They are hash-pinned historical summaries, not original run receipts; Appendix~\ref{app:receipts}
+records the gap. Numbers for the third come from the paired parity probes and from benchmark v2.
+The probe, baseline and holdout-check result summaries are in the evidence index (Appendix~\ref{app:receipts}); per-image prediction files are not.
+
+\subsection{A leaderboard-selected pipeline scores below its own member}
+\label{sec:router}
+
+The system we had shipped routed each image, by the detected board's apparent angle, to one of
+three members: a full-frame recogniser initialised from ChessQueries (the \emph{raw member}) and
+two recognisers that operate on a rectified board crop (the \emph{warp-high} and \emph{warp-low}
+members). The router and its thresholds had been chosen on a private leaderboard. On our 18
+controlled splits the shipped ensemble scores below its own raw member on 16, by up to 32.3
+exact-board points on one piece family. The raw member alone reaches 100.0 on twelve splits
+(Figure~\ref{fig:router}). Section~\ref{sec:cost} reports the latency of both systems.
+
+Three further comparisons point the same way. Each carries a caveat that makes it a development
+number, not a replication. SLCC test: 52.45 against 74.73, on 368 boards from 13 videos, and the
+raw member had SLCC training data in its mix. CVChess: 1.42 against 98.86, on 352 photographs of
+only 88 distinct positions. A held-out block of the training scenes: 99.30 against 100.00, on
+held-out move blocks of the same games and scenes as training. On SLCC, above the routing
+threshold the shipped ensemble drops the raw member and uses only the two warp members. Run alone
+on all 368 boards, those members produce eight or more wrong squares on 234 and 236 boards. That
+is consistent with failures in the detector and rectification stages on broadcast crops. We ran no
+oracle-corner ablation on that cohort, so localisation and recognition failures are not separated.
+
+Routing, member composition and training lineage all differ between the shipped ensemble and the
+raw member, so this is not an isolated routing effect. We also have no intervention on leaderboard
+exposure, so the reversal cannot be attributed to adaptive reuse rather than to distribution shift
+between the leaderboard and these cohorts. What the record supports is this: a pipeline selected
+% pooled v1: n-weighted over paper/evidence/reports/historical_pipeline.csv, 5,800 frames
+on one private cohort scored below its own simpler member on the pooled v1 benchmark (91.8 against
+98.5 exact over 5{,}800 frames) and on each of the three further cohorts. The two exceptions among
+the 18 splits are the two lowest elevation bands, where the pipeline scores 88.8 against 88.6 and
+98.0 against 97.0.
+
+\subsection{Two holdouts contaminated by construction}
+\label{sec:contamination}
+
+An identifier-level leak check over the training mixes and every named holdout found that two
+holdouts derived from ChessRender360 (1{,}635 and 1{,}263 images) shared image identifiers with
+the mixes trained on them: 1{,}446 and 1{,}128 identifiers, 2{,}398 distinct, 2{,}574 counting both
+sets (5{,}148 mix-by-identifier events over two mixes). Both holdouts were subsets of the same ten
+thousand rectified images. The check reports
+\texttt{clean: false}. The documented model-selection replay does not use those two holdouts, so
+the recorded selection decisions were not influenced by them. That is not a proof that no earlier
+or unrecorded decision was. A set can be named a holdout and still be training data. A check that
+runs on identifiers and positions, not on directory names, is what caught it.
+
+\subsection{A convention confound mistaken for a domain shift}
+\label{sec:parity}
+
+The ChessQueries release checkpoint produces zero exact boards on every one of the 18 v1 splits.
+Its per-square accuracy of 52.7--56.7 is 4.6--9.0 points \emph{below} a constant all-empty
+prediction, which also produces zero exact boards on these positions. The model places pieces on
+the wrong squares; it does not default to empty. The same checkpoint through the same code path
+scores 99.62 on ChessReD and 98.54 on ChessCog, which is also rendered. The failure appeared specific to
+our rendering lineage. A crop diagnostic fed the checkpoint the first 150 boards of each of three
+splits (450 in all) four ways: full frame, bounding-box crop, square-padded crop, and a perspective
+warp to a square. None recovered an exact board under our convention, and per-square accuracy
+moved by at most 1.2 points from full frame. At that point our own notes read ``the shift is the
+piece and board appearance itself.''
+
+It was not. Our renderer, following the convention of the data it had been matched to, makes a1 a
+\emph{light} square. The laws of chess place a dark square at a1 \cite{fide}. Every public
+chess-recognition source we could resolve follows that convention (Table~\ref{tab:conventions}).
+The audit checks one representative image per source; the SLCC sample has no printed coordinates,
+so its corner is recorded as unresolved. A preregistered paired probe changed exactly that one
+renderer expression and nothing else, with byte-identical controls. On 192 positions in two
+disjoint waves the checkpoint went from 0/192 to 18/192 exact ($+9.38$ points, 95\% paired bootstrap
+$[5.73,13.54]$) and from 54.36 to 85.24 per-square ($+30.88$, $[28.91,32.76]$), removing 67.65\% of
+wrong squares. Replicated on 288 positions across six other piece families,
+the effect is 0/288 to 50/288 exact and 55.31 to 87.49 per-square. Swapping the model's learned
+two-class query-colour indices \cite{chessqueries} in memory recovers 20.7 per-square points on a1-light images
+but no exact board, and costs 2.9 points on a1-dark images. This is consistent with the colour
+prior contributing to the failure; it does not isolate the mechanism. On the
+development partition of benchmark v2 the release checkpoint scores 15.48 exact pooled under the
+a1-dark convention, ranging from 0 to 34.25 across the twenty factor cells, and 0.0 in every cell
+under a1-light (Figure~\ref{fig:heatmap}, left).
+% receipt: evidence/tools/reports/paper/real_photo_2026-09-11/a1_light_2026-10-04/score_cq_cpu_20261004.json (a1_dark_armA, a1_light_primary)
+One real-board check points the same way. The same ten positions were photographed on one physical
+board with a dark a1, and on a later day, with a different phone and photographer, with a light a1.
+The release checkpoint scores 76.25 and 57.97 per-square on the two sets of ten, with no exact
+board in either, and the light arm scores lower on 8 of 10 positions. The arms differ in more than
+parity, so this is a descriptive check, not a paired probe.
+
+The corrected statement is about per-square accuracy. The convention accounts for about two thirds
+of the wrong squares, and most boards still fail exactly after the correction (18/192 and 50/288).
+On this cohort the residual is family-associated: two families stay at 0/48 exact while another
+reaches 19/48. Positions differ between families here, so this describes the unchanged release
+checkpoint; it is not a paired geometry effect, and it says nothing about what adaptation later
+fixes. The paired geometry cells of v2 and the adaptation runs are the place to read those
+(Section~\ref{sec:adaptation}). The trap had been written in our own research notes before the
+benchmark was built, and we missed it anyway. Making the convention an explicit factor let it be
+measured instead of inferred, which is why v2 carries it as its fifth axis.
+
+A bounded follow-up on the same 192 positions found that, under the standard convention, a
+ground-truth square crop raised exact boards from 18 to 27 while lowering per-square accuracy from
+85.24 to 84.24. Framing is therefore not irrelevant once the convention is corrected. The
+interaction is a trade-off measured on development positions with privileged localisation, not a
+deployable improvement.

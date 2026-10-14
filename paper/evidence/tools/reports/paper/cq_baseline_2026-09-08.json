@@ -1,0 +1,55 @@
+{
+  "env": {
+    "gpu": "NVIDIA GeForce RTX 3090",
+    "torch": "2.6.0+cu124",
+    "python": "3.11.15",
+    "host": "data-host",
+    "ckpt": "chessqueries-vitL14-644-joint.safetensors",
+    "ckpt_bytes": 1486661004,
+    "tta": false,
+    "bs": 4,
+    "resolution": 644,
+    "cq_repo_rev": "2a9f3c0",
+    "data_root": "$DATA_ROOT/ext/cqdata",
+    "date": "2026-09-08"
+  },
+  "results": {
+    "slcc_test": {
+      "n_boards": 373,
+      "n_squares": 23872,
+      "n_squares_correct": 23767,
+      "per_square_accuracy": 0.9956015415549598,
+      "n_boards_exact": 325,
+      "board_accuracy": 0.871313672922252,
+      "ms_per_img_gpu": 114.16163776898831,
+      "ms_per_img_wall": 116.94603567148981,
+      "expected_n": 373,
+      "n_wrong_hist": {
+        "0": 325,
+        "1": 23,
+        "2": 12,
+        "3": 4,
+        "4": 4,
+        "5": 2,
+        "6": 1,
+        "7": 2
+      }
+    },
+    "chessred_test": {
+      "n_boards": 2129,
+      "n_squares": 136256,
+      "n_squares_correct": 136245,
+      "per_square_accuracy": 0.9999192696101457,
+      "n_boards_exact": 2121,
+      "board_accuracy": 0.9962423673085956,
+      "ms_per_img_gpu": 119.40144182315395,
+      "ms_per_img_wall": 120.24799374248457,
+      "expected_n": 2129,
+      "n_wrong_hist": {
+        "0": 2121,
+        "1": 5,
+        "2": 3
+      }
+    }
+  }
+}

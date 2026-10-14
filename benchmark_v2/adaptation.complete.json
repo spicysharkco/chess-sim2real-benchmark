@@ -1,0 +1,23 @@
+{
+  "status": "schema_v2_frozen",
+  "benchmark_schema": 2,
+  "release_ready": false,
+  "repo_commit": "01c52fb9a69a5b36759b310ae18d26dd8ce662c1",
+  "images": 16000,
+  "final_test_sealed": false,
+  "final_test_image_hashes": [],
+  "design_receipt_sha256": "[redacted: withheld digest]",
+  "exclusion_audit_sha256": "[redacted: withheld digest]",
+  "benchmark_receipt_sha256": "[redacted: withheld digest]",
+  "artifacts_sha256": {
+    "adaptation.jsonl": "[redacted: withheld digest]",
+    "adaptation.summary.json": "[redacted: withheld digest]"
+  },
+  "environment": {
+    "python": "3.12.13",
+    "host": "render-host",
+    "numpy": "2.5.3",
+    "cv2": "5.0.0"
+  },
+  "completed_at": "2026-09-10T05:12:48.332976+00:00"
+}

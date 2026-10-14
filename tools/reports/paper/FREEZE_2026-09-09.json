@@ -1,0 +1,319 @@
+{
+ "frozen": "2026-09-09",
+ "images": 5800,
+ "splits": {
+  "bench_elev_08_15": {
+   "n": 500,
+   "detector_not_found": 0,
+   "detector_divergent_vertex": 2,
+   "detector_usable": 498,
+   "median_px": 11.49,
+   "p90_px": 26.22,
+   "max_px": 59.78,
+   "median_rel_pct": 2.008,
+   "p90_rel_pct": 4.492,
+   "elevation_band": [
+    8.0,
+    15.0
+   ],
+   "geometry": "Poly Haven chess_set 1k glTF",
+   "license": "CC0"
+  },
+  "bench_elev_15_25": {
+   "n": 500,
+   "detector_not_found": 0,
+   "detector_divergent_vertex": 4,
+   "detector_usable": 496,
+   "median_px": 7.04,
+   "p90_px": 12.47,
+   "max_px": 54.71,
+   "median_rel_pct": 1.157,
+   "p90_rel_pct": 2.154,
+   "elevation_band": [
+    15.0,
+    25.0
+   ],
+   "geometry": "Poly Haven chess_set 1k glTF",
+   "license": "CC0"
+  },
+  "bench_elev_25_45": {
+   "n": 500,
+   "detector_not_found": 0,
+   "detector_divergent_vertex": 1,
+   "detector_usable": 499,
+   "median_px": 4.36,
+   "p90_px": 5.73,
+   "max_px": 641.3,
+   "median_rel_pct": 0.632,
+   "p90_rel_pct": 0.874,
+   "elevation_band": [
+    25.0,
+    45.0
+   ],
+   "geometry": "Poly Haven chess_set 1k glTF",
+   "license": "CC0"
+  },
+  "bench_elev_45_60": {
+   "n": 500,
+   "detector_not_found": 0,
+   "detector_divergent_vertex": 2,
+   "detector_usable": 498,
+   "median_px": 2.01,
+   "p90_px": 2.93,
+   "max_px": 589.82,
+   "median_rel_pct": 0.277,
+   "p90_rel_pct": 0.386,
+   "elevation_band": [
+    45.0,
+    60.0
+   ],
+   "geometry": "Poly Haven chess_set 1k glTF",
+   "license": "CC0"
+  },
+  "bench_framing_sheet": {
+   "n": 500,
+   "detector_not_found": 0,
+   "detector_divergent_vertex": 1,
+   "detector_usable": 499,
+   "median_px": 2.87,
+   "p90_px": 4.06,
+   "max_px": 31.11,
+   "median_rel_pct": 0.594,
+   "p90_rel_pct": 0.82,
+   "elevation_band": [
+    25.0,
+    45.0
+   ],
+   "geometry": "Poly Haven chess_set 1k glTF",
+   "license": "CC0"
+  },
+  "bench_geom_deplorable": {
+   "n": 300,
+   "detector_not_found": 0,
+   "detector_divergent_vertex": 5,
+   "detector_usable": 295,
+   "median_px": 3.25,
+   "p90_px": 5.98,
+   "max_px": 1369.23,
+   "median_rel_pct": 0.447,
+   "p90_rel_pct": 0.877,
+   "elevation_band": [
+    25.1,
+    59.9
+   ],
+   "geometry": "deplorable_mountaineer_chess/chess_pieces.json",
+   "license": "CC0 1.0 Universal"
+  },
+  "bench_geom_killgorack": {
+   "n": 300,
+   "detector_not_found": 0,
+   "detector_divergent_vertex": 6,
+   "detector_usable": 294,
+   "median_px": 3.4,
+   "p90_px": 6.12,
+   "max_px": 1496.39,
+   "median_rel_pct": 0.475,
+   "p90_rel_pct": 0.912,
+   "elevation_band": [
+    25.1,
+    59.9
+   ],
+   "geometry": "killgorack_chess_20260906/chess_pieces.json",
+   "license": "CC0"
+  },
+  "bench_geom_lyricsz": {
+   "n": 300,
+   "detector_not_found": 0,
+   "detector_divergent_vertex": 6,
+   "detector_usable": 294,
+   "median_px": 3.69,
+   "p90_px": 27.48,
+   "max_px": 1272.77,
+   "median_rel_pct": 0.509,
+   "p90_rel_pct": 4.243,
+   "elevation_band": [
+    25.1,
+    59.9
+   ],
+   "geometry": "lyricsz_stylized_chess_cc0_20260906",
+   "license": "CC0"
+  },
+  "bench_geom_omie": {
+   "n": 300,
+   "detector_not_found": 0,
+   "detector_divergent_vertex": 7,
+   "detector_usable": 293,
+   "median_px": 3.74,
+   "p90_px": 28.92,
+   "max_px": 1269.73,
+   "median_rel_pct": 0.529,
+   "p90_rel_pct": 4.27,
+   "elevation_band": [
+    25.1,
+    59.9
+   ],
+   "geometry": "omie_chess_cc0_20260906/chess_pieces.json",
+   "license": "CC0"
+  },
+  "bench_geom_phuong": {
+   "n": 300,
+   "detector_not_found": 0,
+   "detector_divergent_vertex": 10,
+   "detector_usable": 290,
+   "median_px": 3.73,
+   "p90_px": 33.25,
+   "max_px": 777.96,
+   "median_rel_pct": 0.508,
+   "p90_rel_pct": 4.865,
+   "elevation_band": [
+    25.1,
+    59.9
+   ],
+   "geometry": "phuong_chess_20260907/chess_pieces.json",
+   "license": "CC-BY; credit Phuong2647"
+  },
+  "bench_geom_pjhanzlik": {
+   "n": 300,
+   "detector_not_found": 0,
+   "detector_divergent_vertex": 3,
+   "detector_usable": 297,
+   "median_px": 3.4,
+   "p90_px": 5.92,
+   "max_px": 702.85,
+   "median_rel_pct": 0.464,
+   "p90_rel_pct": 0.88,
+   "elevation_band": [
+    25.1,
+    59.9
+   ],
+   "geometry": "pjhanzlik_chess_cc0_20260906/Chess.glb",
+   "license": "CC0"
+  },
+  "bench_geom_polyhaven": {
+   "n": 300,
+   "detector_not_found": 0,
+   "detector_divergent_vertex": 1,
+   "detector_usable": 299,
+   "median_px": 3.31,
+   "p90_px": 5.56,
+   "max_px": 35.84,
+   "median_rel_pct": 0.452,
+   "p90_rel_pct": 0.819,
+   "elevation_band": [
+    25.1,
+    59.9
+   ],
+   "geometry": "Poly Haven chess_set 1k glTF",
+   "license": "CC0"
+  },
+  "bench_palette_0": {
+   "n": 200,
+   "detector_not_found": 0,
+   "detector_divergent_vertex": 1,
+   "detector_usable": 199,
+   "median_px": 3.21,
+   "p90_px": 5.38,
+   "max_px": 36.7,
+   "median_rel_pct": 0.453,
+   "p90_rel_pct": 0.832,
+   "elevation_band": [
+    25.1,
+    59.9
+   ],
+   "geometry": "Poly Haven chess_set 1k glTF",
+   "license": "CC0"
+  },
+  "bench_palette_1": {
+   "n": 200,
+   "detector_not_found": 0,
+   "detector_divergent_vertex": 1,
+   "detector_usable": 199,
+   "median_px": 3.19,
+   "p90_px": 5.26,
+   "max_px": 35.09,
+   "median_rel_pct": 0.453,
+   "p90_rel_pct": 0.817,
+   "elevation_band": [
+    25.1,
+    59.9
+   ],
+   "geometry": "Poly Haven chess_set 1k glTF",
+   "license": "CC0"
+  },
+  "bench_palette_2": {
+   "n": 200,
+   "detector_not_found": 0,
+   "detector_divergent_vertex": 0,
+   "detector_usable": 200,
+   "median_px": 3.28,
+   "p90_px": 5.26,
+   "max_px": 26.9,
+   "median_rel_pct": 0.462,
+   "p90_rel_pct": 0.818,
+   "elevation_band": [
+    25.1,
+    59.9
+   ],
+   "geometry": "Poly Haven chess_set 1k glTF",
+   "license": "CC0"
+  },
+  "bench_palette_3": {
+   "n": 200,
+   "detector_not_found": 0,
+   "detector_divergent_vertex": 1,
+   "detector_usable": 199,
+   "median_px": 3.34,
+   "p90_px": 5.35,
+   "max_px": 28.96,
+   "median_rel_pct": 0.463,
+   "p90_rel_pct": 0.811,
+   "elevation_band": [
+    25.1,
+    59.9
+   ],
+   "geometry": "Poly Haven chess_set 1k glTF",
+   "license": "CC0"
+  },
+  "bench_palette_4": {
+   "n": 200,
+   "detector_not_found": 0,
+   "detector_divergent_vertex": 0,
+   "detector_usable": 200,
+   "median_px": 3.25,
+   "p90_px": 5.34,
+   "max_px": 30.91,
+   "median_rel_pct": 0.463,
+   "p90_rel_pct": 0.828,
+   "elevation_band": [
+    25.1,
+    59.9
+   ],
+   "geometry": "Poly Haven chess_set 1k glTF",
+   "license": "CC0"
+  },
+  "bench_palette_5": {
+   "n": 200,
+   "detector_not_found": 0,
+   "detector_divergent_vertex": 0,
+   "detector_usable": 200,
+   "median_px": 3.32,
+   "p90_px": 5.29,
+   "max_px": 35.93,
+   "median_rel_pct": 0.452,
+   "p90_rel_pct": 0.825,
+   "elevation_band": [
+    25.1,
+    59.9
+   ],
+   "geometry": "Poly Haven chess_set 1k glTF",
+   "license": "CC0"
+  }
+ },
+ "repo_commit": "68436c0710a97a9b982d8d82884c070526988f1b",
+ "image_size": [
+  1920,
+  1080
+ ],
+ "corner_ground_truth": "Three.js camera projection (exact); detector agreement is a statistic, not a gate",
+ "divergent_definition": "any detected vertex beyond 2.0x the frame outside the canvas"
+}

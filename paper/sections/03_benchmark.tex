@@ -1,0 +1,127 @@
+\section{Controlled generator and paired benchmark}
+\label{sec:benchmark}
+
+\subsection{Renderer contract}
+
+% receipt: evidence/benchmark_v2/design.plan.json; source_sha256 renderer and generator entries
+% source: rendering/generate_benchmark_v2.py; rendering/benchmark_v2.js
+Each scene is rendered at $1920\times1080$ pixels from a procedural board, a
+piece family with a recorded asset grant, a perspective camera, and explicit lighting and material
+parameters. The manifest stores the position in Forsyth--Edwards Notation, the
+camera state, the factor assignment, and the projected board corners. Labels
+therefore come from the scene description rather than from a detector or a
+recognizer. The labels describe the latent scene state; they do not certify that
+every occupied square is visually identifiable in a single image under occlusion.
+
+The renderer treats board colour convention as an explicit scene variable.
+% receipt: evidence/benchmark_v2/benchmark.summary.json
+The reference condition makes a1 dark; its paired stress condition makes a1
+light while retaining the position, camera, geometry, palette, and framing.
+This intervention changes the physical checkerboard colours, not the label
+order or the image orientation.
+
+\subsection{Paired factor design}
+
+% receipt: evidence/benchmark_v2/benchmark.summary.json
+The benchmark varies four elevation bands, eight piece geometries, six non-reference
+material schemes, two framing ranges, and two board conventions. These settings form
+factor panels rather than a full Cartesian product: each non-reference level is
+paired with the appropriate reference scene, and every scene has both convention
+mates. A palette treatment is a supplied material scheme: it changes board and
+piece colours and may also change roughness and metalness. It is not an RGB-only
+intervention. The reference uses the highest elevation band, Poly Haven geometry,
+standard framing, and the separate reference material scheme. Table~\ref{tab:design} gives the registered levels; Figure~\ref{fig:design}
+summarizes the data path and the pairing structure. These are contrasts conditional
+on the reference settings; the design does not estimate all factor interactions.
+
+\input{generated/tables/design}
+
+% receipt: evidence/benchmark_v2/benchmark.summary.json
+The design contains 500 independently sampled position groups. A fixed split
+assigns 400 groups to development and 100 to the sealed final test, with every
+view of a group kept in the same partition. Applying the 20 factor cells at
+both conventions yields 20,000 cell-images: 16,000 development images and
+4,000 sealed images. Three reference cells deliberately reuse identical scene
+configurations, so the benchmark contains 18,000 unique PNG hashes. Neither
+cell-images nor repeated render hashes are independent board samples; the
+independent sampling unit remains the position group.
+
+% receipt: evidence/benchmark_v2/design.plan.json; source_sha256
+% source: rendering/generate_benchmark_v2.py:generate_groups; rendering/generate_geometry.py:play_position
+Each group contributes one position from a separately simulated legal random-play
+game. The generator deliberately mixes dense and sparse positions and biases move
+selection toward captures. It is not a sample of human game frequencies. Exact
+and symmetry checks do not exclude near-duplicate positions or shared opening
+structure.
+
+\subsection{Position isolation and final-test firewall}
+
+% receipt: evidence/benchmark_v2/exclusion_audit.complete.json
+Candidate positions were rejected on exact placement and under the eight
+dihedral board symmetries against 67 inventoried sources. The exclusion basis
+contains 6,199,823 distinct placements and includes the 6,100,960-row Lichess
+puzzle snapshot, prior render cohorts, training pools, and the named public
+datasets. The benchmark and the separate adaptation pool are mutually
+exact- and symmetry-disjoint. The audit treats material-only similarity as a
+descriptive statistic, not as positional leakage. These checks concern canonical
+piece placement against the supplied inventory. They do not establish coverage
+of every public dataset, unknown foundation-model pretraining, or the complete
+historical training lineage.
+
+% receipt: evidence/benchmark_v2/benchmark.complete.json
+The final-test partition has 100 position groups and 4,000 cell-images. Its
+hashes and integrity metadata are frozen, but no recognition, localization,
+attention, timing, or training result from that partition is reported here.
+All model results in this paper use the development partition unless stated
+otherwise. Here ``sealed'' names our no-scoring rule, not an access-control
+or cryptographic barrier: releasing complete manifests, seeds, assets and a
+deterministic generator would permit reconstruction of those images.
+
+\subsection{Corner ground truth}
+
+% receipt: evidence/benchmark_v2/benchmark.complete.json; validation scope
+% source: tools/tests/test_paper_benchmark.py:360-447
+The projected corners are produced by the same camera projection that renders
+the scene. This avoids circular detector-derived ground truth. Validation
+compares the analytic projection with renderer-recorded slab bounds and uses
+asymmetric fixtures to test named-corner identity rather than only cyclic
+self-consistency. The resulting corners support both perspective rectification
+and detector-error measurements.
+
+\subsection{Board conventions}
+
+% receipt: evidence/docs/records/PARITY_CONVENTIONS.complete.json
+The convention audit examines one representative image for each of the 56 image
+sources and records named light corners together with loader behavior. The
+project's earlier procedural lineage is consistently a1 light in the sampled
+records, while the independently anchored public representatives for ChessReD,
+ChessCog, CVChess, and ChessRender360 are a1 dark. The sampled SLCC frame has no
+independent named-corner anchor, so its physical convention remains unresolved.
+This is a source-sample audit, not a whole-dataset guarantee. None of the
+reviewed loaders mirrors the position labels to compensate for board colour.
+Appendix~\ref{app:conventions} gives the complete table.
+
+\subsection{Metrics and aggregation}
+
+% receipt: evidence/tools/reports/paper/lora_curve_2026-09-10/lora_report.json; metrics/dev
+% receipt: evidence/tools/reports/paper/residual_shift_2026-09-10/r1/residual_r1.metrics.json
+The primary benchmark results report exact-board and per-square class accuracy.
+Exact-board accuracy requires every square label to match the target placement.
+The separate release-checkpoint diagnostic also archives occupied-square class
+accuracy, binary occupancy accuracy, confusion counts, and wrong-square
+histograms; these are not measurements of the adapted checkpoints. Pooled
+benchmark scores give equal weight to the registered cells, including the repeated
+reference cells, rather than to distinct image hashes. Bootstrap comparisons
+resample position groups with all their views together; the fixed synthetic
+population and protocol still limit generalization.
+
+% receipt: evidence/tools/reports/paper/FREEZE_2026-09-09.json; divergent_definition, splits
+% source: tools/paper/annotate_benchmark.py:108-115; tools/paper/freeze_benchmark.py:203-243
+For the earlier, unpaired benchmark, corner error is the mean Euclidean vertex
+displacement after choosing the best cyclic alignment, divided by the mean
+projected ground-truth edge length. Missing detections and vertices extending
+more than two frame widths or heights outside the canvas are excluded from its
+conditional summaries and counted separately. This normalization removes global
+image scale, not projective foreshortening, and does not test named-corner
+orientation. The earlier elevation plot is descriptive across different positions,
+not a paired factor-effect estimate from the new benchmark.

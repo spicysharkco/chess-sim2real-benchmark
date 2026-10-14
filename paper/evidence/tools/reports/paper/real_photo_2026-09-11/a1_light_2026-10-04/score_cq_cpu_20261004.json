@@ -1,0 +1,97 @@
+{
+  "env": {
+    "gpu": "cpu x16",
+    "torch": "2.11.0+cu128",
+    "python": "3.12.13",
+    "host": "render-host",
+    "ckpt": "checkpoint.safetensors",
+    "ckpt_bytes": 1486661004,
+    "tta": false,
+    "bs": 4,
+    "resolution": 644,
+    "cq_repo_rev": null,
+    "data_root": "$HOME/nodata",
+    "date": "2026-10-04"
+  },
+  "results": {
+    "a1_light_all": {
+      "n_boards": 53,
+      "n_squares": 3392,
+      "n_squares_correct": 1888,
+      "per_square_accuracy": 0.5566037735849056,
+      "n_boards_exact": 0,
+      "board_accuracy": 0.0,
+      "ms_per_img_gpu": 3419.567139643543,
+      "ms_per_img_wall": 3453.9672068829805,
+      "expected_n": 53,
+      "n_wrong_hist": {
+        "13": 1,
+        "17": 2,
+        "18": 1,
+        "19": 2,
+        "20": 1,
+        "22": 2,
+        "23": 3,
+        "24": 4,
+        "25": 2,
+        "26": 1,
+        "27": 3,
+        "28": 3,
+        "29": 5,
+        "30": 3,
+        "31": 1,
+        "32": 5,
+        "34": 4,
+        "35": 4,
+        "36": 2,
+        "37": 2,
+        "41": 1,
+        "42": 1
+      }
+    },
+    "a1_light_primary": {
+      "n_boards": 10,
+      "n_squares": 640,
+      "n_squares_correct": 371,
+      "per_square_accuracy": 0.5796875,
+      "n_boards_exact": 0,
+      "board_accuracy": 0.0,
+      "ms_per_img_gpu": 3413.7819051742554,
+      "ms_per_img_wall": 3590.3339624404907,
+      "expected_n": 10,
+      "n_wrong_hist": {
+        "18": 1,
+        "19": 1,
+        "20": 1,
+        "23": 1,
+        "27": 1,
+        "28": 1,
+        "29": 1,
+        "32": 2,
+        "41": 1
+      }
+    },
+    "a1_dark_armA": {
+      "n_boards": 10,
+      "n_squares": 640,
+      "n_squares_correct": 488,
+      "per_square_accuracy": 0.7625,
+      "n_boards_exact": 0,
+      "board_accuracy": 0.0,
+      "ms_per_img_gpu": 3620.8985328674316,
+      "ms_per_img_wall": 3757.5337648391724,
+      "expected_n": 10,
+      "n_wrong_hist": {
+        "2": 2,
+        "10": 1,
+        "12": 1,
+        "14": 1,
+        "19": 1,
+        "21": 1,
+        "22": 1,
+        "24": 1,
+        "26": 1
+      }
+    }
+  }
+}

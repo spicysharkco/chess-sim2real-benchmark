@@ -1,0 +1,30 @@
+\section{Inference cost}
+\label{sec:cost}
+
+% receipt: evidence/tools/reports/paper/timing_2026-09-10/timing.runs/cq_release.complete.json
+We measure synchronized native-inference latency on an NVIDIA RTX 3090,
+with no competing GPU compute process detected, at a fixed 270~W power limit. A fixed development subset supplies 500 images
+from 250 factor-cell scenes. Each system runs in
+a fresh process with batch size 1 and native FP16 autocast. The harness excludes
+file decode and 30 warm-up images, while retaining resize, normalization,
+device transfer, model execution, routing, warping, test-time augmentation, host
+transfer, and notation construction whenever the native pipeline uses them.
+
+% receipt: evidence/tools/reports/paper/timing_2026-09-10/timing.runs.json
+The release checkpoint has median latency 64.41~ms per image. The raw member
+requires 79.69~ms, while the shipped ensemble requires 195.52~ms. The ten
+adapted checkpoints lie between 71.50 and 73.12~ms, so their measured median
+overhead relative to the release checkpoint is 7.09--8.71~ms in this harness.
+Table~\ref{tab:timing} reports medians and ninetieth percentiles for every
+system, and Figure~\ref{fig:timing} visualizes the same receipt-bound values.
+
+\input{generated/tables/timing}
+
+These measurements compare complete native inference paths rather than equal
+floating-point workloads. In particular, the ensemble and its members differ
+in routing, member composition, warping, and test-time augmentation. The timing
+experiment supports no accuracy claim and should not be extrapolated beyond the
+recorded hardware, software, and input pipeline. Each model has one timed process;
+percentiles describe variation across input images, not run-to-run repeatability.
+No repeated-process confidence interval or whole-project rendering/training cost
+is estimated by this table.

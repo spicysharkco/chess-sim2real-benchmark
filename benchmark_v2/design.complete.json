@@ -1,0 +1,22 @@
+{
+  "status": "design_locked_before_rendering",
+  "benchmark_schema": 2,
+  "repo_commit": "01c52fb9a69a5b36759b310ae18d26dd8ce662c1",
+  "benchmark_groups": 500,
+  "adaptation_groups": 8000,
+  "artifacts_sha256": {
+    "design.adaptation.groups.jsonl": "1309bb6db1f750c06c4b432bae16414914d246a65add063a1435016d9d0d880f",
+    "design.adaptation.rows.jsonl": "[redacted: withheld digest]",
+    "design.benchmark.groups.jsonl": "80d388831d73923b207bf2f94c33f415e3dc1865cbfae489f887fbad00bbbed1",
+    "design.benchmark.rows.jsonl": "[redacted: withheld digest]",
+    "design.candidates.jsonl": "cc386da6ad188a7afc7882b32d11dcef8c1b76cdfc1d007bdf05236e5f61430d",
+    "design.plan.json": "[redacted: withheld digest]"
+  },
+  "environment": {
+    "python": "3.12.13",
+    "host": "render-host",
+    "numpy": "2.5.3",
+    "cv2": "5.0.0"
+  },
+  "completed_at": "2026-09-10T04:33:09.905917+00:00"
+}

@@ -1,0 +1,313 @@
+{
+  "artifacts_sha256": {
+    "figures/attention_excerpt.pdf": "51e33726469d77dbc5d16de76d578667690709098de61e88b9dc1bd6af163061",
+    "generated/attention_excerpt.tex": "6e0fb974707129bf475dcefa7557bc3c72fe557177400867ea23ea000fedef1f"
+  },
+  "full_boards": 30,
+  "full_sheet_directory": "tools/reports/paper/attention_full_2026-09-10",
+  "full_sheets": 60,
+  "model_run": false,
+  "outcomes_consulted": false,
+  "published": false,
+  "queries": [
+    "a8",
+    "b7",
+    "c6",
+    "d5",
+    "e4",
+    "f3",
+    "g2",
+    "h1"
+  ],
+  "queries_per_full_board": 64,
+  "query_rule": "same a8-to-h1 diagonal; one query per rank and file",
+  "schema": "paper-attention-excerpt/v1",
+  "script_sha256": "61ca9a02c25f47e297643ff52c91b994dca8b1ffb35f9fd0f16dff7021ad0f73",
+  "selected_boards": [
+    {
+      "board_id": "000009",
+      "family": "deplorable",
+      "file": "confirmation__deplorable__parity__000009.source1920x1080.png"
+    },
+    {
+      "board_id": "000010",
+      "family": "lyricsz",
+      "file": "confirmation__lyricsz__parity__000010.source1920x1080.png"
+    }
+  ],
+  "selection_rule": "lexicographically first two geometry names, then lowest zero-padded board ID within each",
+  "source_manifest": "evidence/tools/reports/paper/residual_shift_2026-09-10/r1/residual_r1.contact_sheets.json",
+  "source_manifest_sha256": "9277f86e2fc1eea615e968a8a8cbfa8965db2992750fbb3cdfcf63ac877e2164",
+  "source_sha256": {
+    "residual_r1.contact_sheets/confirmation__deplorable__parity__000009.model644.png": "6b5df6b7da70b785fea87b4e42a48980105aa78b69860dcc71fe6735df2345c6",
+    "residual_r1.contact_sheets/confirmation__deplorable__parity__000009.source1920x1080.png": "8c0e7516d247f74fd5afe2af42a676ad6ff3e3f01314ec524258ef5f5aa39636",
+    "residual_r1.contact_sheets/confirmation__deplorable__parity__000022.model644.png": "dda3a1312b7b050d8aa6697ccdbc55bdef37ecd04ee6154d8b02620ddef4b8c4",
+    "residual_r1.contact_sheets/confirmation__deplorable__parity__000022.source1920x1080.png": "2e62f86e5a89d77ad13957f36168c04019067ddac353adec09304c027ac89f61",
+    "residual_r1.contact_sheets/confirmation__deplorable__parity__000046.model644.png": "46e3e5c6146d9ff033b0b36891bf2b2ef24cf3d8886e0f20dd8bc787351fe173",
+    "residual_r1.contact_sheets/confirmation__deplorable__parity__000046.source1920x1080.png": "b78a96ab5d75da96ff9f4d3374a853d8ce597c692de01ed00698c612933916d0",
+    "residual_r1.contact_sheets/confirmation__deplorable__parity__000137.model644.png": "cd897367505217df9804fe78b08c498048a87faba7f92deb736efc04621d6adf",
+    "residual_r1.contact_sheets/confirmation__deplorable__parity__000137.source1920x1080.png": "9623d673fca75b1e9b04f1cebb4a16f572c04aae3242baeca71c7f4ff2e0387a",
+    "residual_r1.contact_sheets/confirmation__deplorable__parity__000143.model644.png": "9394206d87f86a7535ccf39c05991709ffee759c6281ba12c260f79348fcd4eb",
+    "residual_r1.contact_sheets/confirmation__deplorable__parity__000143.source1920x1080.png": "e4a062ed39d0a154ac534932deb96e6ad5812c993369516e034b2e9c4fa822f0",
+    "residual_r1.contact_sheets/confirmation__deplorable__parity__000157.model644.png": "24747866efb6c87db7575dc2d2b206389a37aa0e62bd697f83fa8e2e55d4eb4d",
+    "residual_r1.contact_sheets/confirmation__deplorable__parity__000157.source1920x1080.png": "0e28641200b95df6323b29afc0e70663c203200bb1c0a38193567cfa964dc230",
+    "residual_r1.contact_sheets/confirmation__deplorable__parity__000185.model644.png": "aff33ecb9cd8e0c64f85f1dec2b6cdb38ad4d036f7fe91930ef638aa618a18af",
+    "residual_r1.contact_sheets/confirmation__deplorable__parity__000185.source1920x1080.png": "27fef7520c00e758c41704499360f038ab0f162cc08460cac81a1f4677cfce3f",
+    "residual_r1.contact_sheets/confirmation__deplorable__parity__000205.model644.png": "95e61abd7835ae617f47def857c5aa212c80461b2d903f171bf869c821b5a05a",
+    "residual_r1.contact_sheets/confirmation__deplorable__parity__000205.source1920x1080.png": "0831800bba24e9309b8477b4c433d43a1738b52054d990feac01d41cb45c94c3",
+    "residual_r1.contact_sheets/confirmation__deplorable__parity__000233.model644.png": "cd0567230a40a31e24c13665e9dd1a922ead99420b4bfd0c08a086976a3a8dad",
+    "residual_r1.contact_sheets/confirmation__deplorable__parity__000233.source1920x1080.png": "b3053a20d65863a7c8b3654081b62a5d21bede0fad87203b1ce094559749e649",
+    "residual_r1.contact_sheets/confirmation__deplorable__parity__000253.model644.png": "72f7157df9ef0d0ffb062554c0e96f4662c93b13d15485a7d637d46afe416955",
+    "residual_r1.contact_sheets/confirmation__deplorable__parity__000253.source1920x1080.png": "018851d165975aef5c11668e41aa11b23a8b86e73f0e63f29fc8a81e90b83ae0",
+    "residual_r1.contact_sheets/confirmation__lyricsz__parity__000010.model644.png": "6be2b402f7aef14f15b6df58de3f7a003ebf58571a3b990b9fe8f66dae6e27dc",
+    "residual_r1.contact_sheets/confirmation__lyricsz__parity__000010.source1920x1080.png": "bcf61e432cd394b764f13fb9aa78b7c6ca30d0ad8c783911c3d40d09e6169fc8",
+    "residual_r1.contact_sheets/confirmation__lyricsz__parity__000088.model644.png": "2263aaf3bd857fcc097942c322655e85b0a3eb196e269c2caa5e925efb8ae8c3",
+    "residual_r1.contact_sheets/confirmation__lyricsz__parity__000088.source1920x1080.png": "8ddd249273929442947a98459818f7bede6ff9b229af67c0b1987ce23a79f406",
+    "residual_r1.contact_sheets/confirmation__lyricsz__parity__000131.model644.png": "18755c6e59db7c96e70a2d929393d6d7d2e91b4813181a39c8a85cc59729664d",
+    "residual_r1.contact_sheets/confirmation__lyricsz__parity__000131.source1920x1080.png": "061fcbc8d7c84cc3bff9c9ee236f572548f6a73e7c51af3a9358b7ced57386e0",
+    "residual_r1.contact_sheets/confirmation__lyricsz__parity__000143.model644.png": "f2e1a53d3508de908cc7fb1c815324d930d480d6e78162a2e27ee67241df5c4d",
+    "residual_r1.contact_sheets/confirmation__lyricsz__parity__000143.source1920x1080.png": "98113d399198b267dd1cdd1c4596c5362a0dbf74807135a31be0a97e72208891",
+    "residual_r1.contact_sheets/confirmation__lyricsz__parity__000166.model644.png": "0548d7916006bea9914a309d8428b550cbc3a2c745577a893185c0e800524cb4",
+    "residual_r1.contact_sheets/confirmation__lyricsz__parity__000166.source1920x1080.png": "c05c93ddf11cbe95742bbd5f991b8b64c37a4f5718f16d292056b3dcb59c45b8",
+    "residual_r1.contact_sheets/confirmation__lyricsz__parity__000179.model644.png": "376a586e75ea592275d8475d6ed3683702aadec1f0f09804f7d110261eebddcc",
+    "residual_r1.contact_sheets/confirmation__lyricsz__parity__000179.source1920x1080.png": "9352bc16010aac96863994b35e52a0e21b57c35e49462398625d6bb112995da0",
+    "residual_r1.contact_sheets/confirmation__lyricsz__parity__000238.model644.png": "9a60ca20e47a050706330d602a96d3248d2758b987f5fd424f498ad168186308",
+    "residual_r1.contact_sheets/confirmation__lyricsz__parity__000238.source1920x1080.png": "db4ab777126a6991797b8db1f62ed1abff25bbbc48338420623f4229904276c1",
+    "residual_r1.contact_sheets/confirmation__lyricsz__parity__000253.model644.png": "d91766f82da41a62856c2f677884238fd622ca46a54799c6002557e3a3db3145",
+    "residual_r1.contact_sheets/confirmation__lyricsz__parity__000253.source1920x1080.png": "7bc05c96650cdef30434350b03e973f32aa967bedc26714f0a20c747bafeef56",
+    "residual_r1.contact_sheets/confirmation__lyricsz__parity__000279.model644.png": "402a53c08a6a2908e4038054c0a843e4ed8bdb407f05d5a46c6e4e0b9d28d8b7",
+    "residual_r1.contact_sheets/confirmation__lyricsz__parity__000279.source1920x1080.png": "bd92f59c5ef946c00cbbda2027361fbddb2de2a79ee9611ca8c664895a1277de",
+    "residual_r1.contact_sheets/confirmation__lyricsz__parity__000284.model644.png": "e04d650672483f7a8fb4e51b68e918d6a09ae77e25432a77212a3d279492fe99",
+    "residual_r1.contact_sheets/confirmation__lyricsz__parity__000284.source1920x1080.png": "3b59b52735fca6fe5adfe35e9bebb9d67de84d6233cb2ee1218ed39d562cadf1",
+    "residual_r1.contact_sheets/confirmation__pjhanzlik__parity__000013.model644.png": "ce56a99e7f95c16b53e8ef4b3467dd0c50f1f02d9d944de678c67115eb659e42",
+    "residual_r1.contact_sheets/confirmation__pjhanzlik__parity__000013.source1920x1080.png": "063e6503b059c4598cdf11d2cd720658ee80c1bee2014bbb544485dae96ea00a",
+    "residual_r1.contact_sheets/confirmation__pjhanzlik__parity__000026.model644.png": "d738c0ba8e2ed4592de81fc05f94c97aa036971075722e6b57e84b247c7583b3",
+    "residual_r1.contact_sheets/confirmation__pjhanzlik__parity__000026.source1920x1080.png": "c982f7b31f544d914f98e298ee718b5b477202658236c335ac3a4256ee7ba456",
+    "residual_r1.contact_sheets/confirmation__pjhanzlik__parity__000042.model644.png": "a315acea70276594a00f1f2d8ad6451ea8d3a1b24901bb92622034330b2c94b1",
+    "residual_r1.contact_sheets/confirmation__pjhanzlik__parity__000042.source1920x1080.png": "0d82d20c096894e631b04a94962c5521c8541ee4677b1bf825f7dab744b1fa19",
+    "residual_r1.contact_sheets/confirmation__pjhanzlik__parity__000051.model644.png": "09e9012b2a7d9af659d1aa26adf8e9ef75422883112ac9dca62f60b0cc63647b",
+    "residual_r1.contact_sheets/confirmation__pjhanzlik__parity__000051.source1920x1080.png": "27c5270db18e9a5a95530129e3d45401c0c8d0f4b7d4af039e94efcef326ae22",
+    "residual_r1.contact_sheets/confirmation__pjhanzlik__parity__000138.model644.png": "a34877a354b47e182a7fd396001589796f832770811a104302cc5f0302560794",
+    "residual_r1.contact_sheets/confirmation__pjhanzlik__parity__000138.source1920x1080.png": "7f58af24daa18a60eb175387a39c583b03e05881603f3cc978f1c4ac59be4a9f",
+    "residual_r1.contact_sheets/confirmation__pjhanzlik__parity__000167.model644.png": "d5270d58c16a6cab8dcbb0603c5498203ddb219cae591bec231d7c7d30f64d1c",
+    "residual_r1.contact_sheets/confirmation__pjhanzlik__parity__000167.source1920x1080.png": "4d3697a0cb22b619412071701c7348c661b92ce4b648fde551dce33d62b0da8e",
+    "residual_r1.contact_sheets/confirmation__pjhanzlik__parity__000209.model644.png": "55105ef97eb4479e94ac09134fdbd0143ab0f7bef3cb8f3e067a73263111038c",
+    "residual_r1.contact_sheets/confirmation__pjhanzlik__parity__000209.source1920x1080.png": "6baee4b03ccd97f3726ff8226e52078dba1c0db6fdf9f522f6bdb5e4ad07b9d1",
+    "residual_r1.contact_sheets/confirmation__pjhanzlik__parity__000246.model644.png": "3c4099af32f6627158404e210cdadae1c91fe40385c667d94cf0bd633a1913a0",
+    "residual_r1.contact_sheets/confirmation__pjhanzlik__parity__000246.source1920x1080.png": "fa202d6f1a9fdf6a6b7dea39eda24399668eecbfed6919e344e9ce4048d12b59",
+    "residual_r1.contact_sheets/confirmation__pjhanzlik__parity__000255.model644.png": "c6361d373a9c856cc4976ccf025060c23ed02af6e54d75dc8b0e95ef153edbd2",
+    "residual_r1.contact_sheets/confirmation__pjhanzlik__parity__000255.source1920x1080.png": "e7b0397f760d8b0bcfaa3a3e93737aad200084023c9f8ca00e93a0a05d3b404c",
+    "residual_r1.contact_sheets/confirmation__pjhanzlik__parity__000296.model644.png": "8f74611b137ef2092d676f877c652f792ba35e40629a98de3ec3d6921d3a795e",
+    "residual_r1.contact_sheets/confirmation__pjhanzlik__parity__000296.source1920x1080.png": "bc4105f89b7e1b3c1dde78cca35126f28db3eeee84793787d5996e1b1bfccee8"
+  },
+  "tiles": [
+    {
+      "board": "000009",
+      "box_px": [
+        0,
+        0,
+        192,
+        108
+      ],
+      "family": "deplorable",
+      "query": "a8",
+      "rgb_pixels_sha256": "1446998e336029e02538fff7c336bc7f694afc342324353fe69109f79f379050",
+      "source_file": "confirmation__deplorable__parity__000009.source1920x1080.png"
+    },
+    {
+      "board": "000009",
+      "box_px": [
+        192,
+        108,
+        384,
+        216
+      ],
+      "family": "deplorable",
+      "query": "b7",
+      "rgb_pixels_sha256": "ea39d3810296c2f77531ae24de819820256ef9ad66ccd00b9acd59f3f06d1a11",
+      "source_file": "confirmation__deplorable__parity__000009.source1920x1080.png"
+    },
+    {
+      "board": "000009",
+      "box_px": [
+        384,
+        216,
+        576,
+        324
+      ],
+      "family": "deplorable",
+      "query": "c6",
+      "rgb_pixels_sha256": "13980a981940f0898c9bc6b82005d1a8544c9235553aa17ec6a459c3447d4af5",
+      "source_file": "confirmation__deplorable__parity__000009.source1920x1080.png"
+    },
+    {
+      "board": "000009",
+      "box_px": [
+        576,
+        324,
+        768,
+        432
+      ],
+      "family": "deplorable",
+      "query": "d5",
+      "rgb_pixels_sha256": "26cb3207f8b87884b25a5c893ceb5f829e1f7ecd111401db330cef03265a7eb4",
+      "source_file": "confirmation__deplorable__parity__000009.source1920x1080.png"
+    },
+    {
+      "board": "000009",
+      "box_px": [
+        768,
+        432,
+        960,
+        540
+      ],
+      "family": "deplorable",
+      "query": "e4",
+      "rgb_pixels_sha256": "f077ffc564ad3659050a350737df182b09963051503142c1db4bbfdb870fc89f",
+      "source_file": "confirmation__deplorable__parity__000009.source1920x1080.png"
+    },
+    {
+      "board": "000009",
+      "box_px": [
+        960,
+        540,
+        1152,
+        648
+      ],
+      "family": "deplorable",
+      "query": "f3",
+      "rgb_pixels_sha256": "43130987989fa86960c9a1e4c33ca0b92011f7695434f48b58232f65b301358f",
+      "source_file": "confirmation__deplorable__parity__000009.source1920x1080.png"
+    },
+    {
+      "board": "000009",
+      "box_px": [
+        1152,
+        648,
+        1344,
+        756
+      ],
+      "family": "deplorable",
+      "query": "g2",
+      "rgb_pixels_sha256": "280a910883eec548d62a3ab80cd01cd49388dbdf67dbc82c28b47f24616504e4",
+      "source_file": "confirmation__deplorable__parity__000009.source1920x1080.png"
+    },
+    {
+      "board": "000009",
+      "box_px": [
+        1344,
+        756,
+        1536,
+        864
+      ],
+      "family": "deplorable",
+      "query": "h1",
+      "rgb_pixels_sha256": "70e68507dfd088c3218ff88ebcdb02bbf76ca1f4f1b32d27558dac4971494df4",
+      "source_file": "confirmation__deplorable__parity__000009.source1920x1080.png"
+    },
+    {
+      "board": "000010",
+      "box_px": [
+        0,
+        0,
+        192,
+        108
+      ],
+      "family": "lyricsz",
+      "query": "a8",
+      "rgb_pixels_sha256": "a7860ade643f7599431384ea9e3956f0e2cded6c03f9fa3f14f0b4057d17e2ed",
+      "source_file": "confirmation__lyricsz__parity__000010.source1920x1080.png"
+    },
+    {
+      "board": "000010",
+      "box_px": [
+        192,
+        108,
+        384,
+        216
+      ],
+      "family": "lyricsz",
+      "query": "b7",
+      "rgb_pixels_sha256": "5ab4387c8819b80e6cf344a292d34527f083844af04482a8039bd7eed49457a1",
+      "source_file": "confirmation__lyricsz__parity__000010.source1920x1080.png"
+    },
+    {
+      "board": "000010",
+      "box_px": [
+        384,
+        216,
+        576,
+        324
+      ],
+      "family": "lyricsz",
+      "query": "c6",
+      "rgb_pixels_sha256": "05271890c5dce3ab6f215e708f90c4cf9434b1afb9dd6e5f986ae68c46e61999",
+      "source_file": "confirmation__lyricsz__parity__000010.source1920x1080.png"
+    },
+    {
+      "board": "000010",
+      "box_px": [
+        576,
+        324,
+        768,
+        432
+      ],
+      "family": "lyricsz",
+      "query": "d5",
+      "rgb_pixels_sha256": "55b233ff35606bdf2cb0c7450b00ad100d1664d3a103a6db7cc2c7d854b6a7d2",
+      "source_file": "confirmation__lyricsz__parity__000010.source1920x1080.png"
+    },
+    {
+      "board": "000010",
+      "box_px": [
+        768,
+        432,
+        960,
+        540
+      ],
+      "family": "lyricsz",
+      "query": "e4",
+      "rgb_pixels_sha256": "b4292dcca52c39551aecae5c88b34920a8253f360e86956b1d6346c14e7dacab",
+      "source_file": "confirmation__lyricsz__parity__000010.source1920x1080.png"
+    },
+    {
+      "board": "000010",
+      "box_px": [
+        960,
+        540,
+        1152,
+        648
+      ],
+      "family": "lyricsz",
+      "query": "f3",
+      "rgb_pixels_sha256": "125c4ad5d91104404caf0ca0708d79b9e62b00a7a8c79136bb4ce4dafbebab13",
+      "source_file": "confirmation__lyricsz__parity__000010.source1920x1080.png"
+    },
+    {
+      "board": "000010",
+      "box_px": [
+        1152,
+        648,
+        1344,
+        756
+      ],
+      "family": "lyricsz",
+      "query": "g2",
+      "rgb_pixels_sha256": "8f8afd7039b6a3a5b1d8cabe388b60554281ec65bd4509ad3a295259e8460e9e",
+      "source_file": "confirmation__lyricsz__parity__000010.source1920x1080.png"
+    },
+    {
+      "board": "000010",
+      "box_px": [
+        1344,
+        756,
+        1536,
+        864
+      ],
+      "family": "lyricsz",
+      "query": "h1",
+      "rgb_pixels_sha256": "380f66934336a161e1e614bc7e3ab3237cd0a9afad16f8ff3f8d80174e4b7f92",
+      "source_file": "confirmation__lyricsz__parity__000010.source1920x1080.png"
+    }
+  ]
+}

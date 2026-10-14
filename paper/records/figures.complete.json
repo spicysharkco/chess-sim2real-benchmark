@@ -1,0 +1,22 @@
+{
+  "attention_excerpt": {
+    "receipt": "records/attention_excerpt.complete.json",
+    "script_sha256": "61ca9a02c25f47e297643ff52c91b994dca8b1ffb35f9fd0f16dff7021ad0f73",
+    "sha256": "c991c0ba8a2608f161bb12b59d913b49fcc662bbd9a8fa0012552a8f6d6c7448"
+  },
+  "evidence_index_sha256": "c32940ad7a6ba8bdc04d88c070ff8e000127845c53bb86b5e60fe3b3ba19c8a6",
+  "matplotlib": "3.11.1",
+  "output_sha256": {
+    "adaptation.pdf": "d4d6f6041622bb9db1e30ccbc01472223edc5424593408410fcee9c32a0bb970",
+    "attention_excerpt.pdf": "51e33726469d77dbc5d16de76d578667690709098de61e88b9dc1bd6af163061",
+    "corner_elevation.pdf": "9e82a920ee7cc0d0164496da846f4e0915813b7e7ef28a452a942ed2a6dc28d3",
+    "generator.pdf": "79975bf6a4adc14ace279812a0d8df7acbcb32ff23ad6ce5aa5b952592e745e5",
+    "heatmap.pdf": "6f0e31d58f552d5b43760cb06ee20c6456f7ae4b84e744944964234cce3a8f38",
+    "router_harm.pdf": "def46bc11192f10c98cdca731ff705b40d092ed88e45b7975a718cbdaaede98c",
+    "timing.pdf": "92beebdc0d18577096f7d3ce243d5e445b070ad680b2e58ca7540b02e8cc0cbc"
+  },
+  "published": false,
+  "schema": "paper-print-figures/v1",
+  "script_sha256": "1efeb9b90b30223123b99ca75d58bc14e9b6c532b089b7dbb1437df3c923bed4",
+  "width_inches": 6.5
+}

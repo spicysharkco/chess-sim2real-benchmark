@@ -1,0 +1,47 @@
+{
+  "inputs": {
+    "corner_v1": {
+      "format": "json",
+      "path": "tools/reports/paper/FREEZE_2026-09-09.json",
+      "provenance": "historical_summary_without_run_receipt",
+      "sha256": "ca9e1a249f625189bb6fe885c981351dfe3a22d83f032b7a19c9afb08031554a"
+    },
+    "lora": {
+      "format": "json",
+      "path": "tools/reports/paper/lora_curve_2026-09-10/lora_report.json",
+      "provenance": "run_receipt_bound",
+      "receipt": "tools/reports/paper/lora_curve_2026-09-10/lora_report.complete.json",
+      "receipt_sha256": "[redacted: withheld digest]",
+      "sha256": "[redacted: withheld digest]"
+    },
+    "router_full": {
+      "format": "jsonl",
+      "provenance": "historical_summary_without_run_receipt",
+      "sha256": "[redacted: withheld digest]"
+    },
+    "router_raw": {
+      "format": "jsonl",
+      "provenance": "historical_summary_without_run_receipt",
+      "sha256": "[redacted: withheld digest]"
+    },
+    "router_warp_high": {
+      "format": "jsonl",
+      "provenance": "historical_summary_without_run_receipt",
+      "sha256": "[redacted: withheld digest]"
+    },
+    "router_warp_low": {
+      "format": "jsonl",
+      "provenance": "historical_summary_without_run_receipt",
+      "sha256": "[redacted: withheld digest]"
+    },
+    "timing": {
+      "format": "json",
+      "path": "tools/reports/paper/timing_2026-09-10/timing.runs.json",
+      "provenance": "run_receipt_bound",
+      "receipt": "tools/reports/paper/timing_2026-09-10/timing.complete.json",
+      "receipt_sha256": "[redacted: withheld digest]",
+      "sha256": "[redacted: withheld digest]"
+    }
+  },
+  "schema": "paper-figure-inputs/v1"
+}

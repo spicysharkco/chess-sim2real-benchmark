@@ -1,0 +1,55 @@
+\section{Introduction}
+\label{sec:intro}
+
+A perception module is usually judged twice. Synthetic stress tests give free labels and
+controllable factors. Small sets of real photographs give expensive labels and thin coverage. Each
+judgement can mislead on its own. A synthetic test that shares a rendering lineage with the
+training data reports in-distribution accuracy while looking like a robustness test. A real-photo
+set that has been scored during development becomes a development set. A pipeline chosen by its
+score on a small private leaderboard carries whatever that leaderboard rewarded, whether or not it
+generalises. We met all three while building a chess-position recogniser. This paper is the
+controlled follow-up.
+
+Chess is a convenient testbed. Ground truth is exact: a placement FEN (Forsyth--Edwards Notation) names every one of 64
+squares. Positions can be generated legally and checked for duplicates against named public pools.
+Renders are cheap, so one factor can be varied while everything else is held fixed. Public sets
+exist, both real photographs \cite{chessred,slcc,cvchess} and renders \cite{chesscog,cr360}, and a
+strong public recogniser with released weights exists \cite{chessqueries}, so external baselines
+need no retraining. The domain is narrow. What we offer are evaluation practices that were cheap
+to apply here and that other sim-to-real pipelines can try, not a demonstrated transfer. The
+setting is the common one: a perception module trained on renders and deployed on a camera, as in
+robot manipulation, visual inspection and augmented reality.
+
+\paragraph{Contributions.}
+\begin{enumerate}
+  \item A controlled render generator and a benchmark (Section~\ref{sec:benchmark}) of 20{,}000
+    cell-images, 18{,}000 of them unique renders, with exact projected corners and five
+    single-factor axes including the board colour convention. The design is paired: the same
+    position appears at every level of a factor. Positions are disjoint from 67 inventoried
+    sources, including the named public datasets and a 6.1-million-puzzle snapshot. A
+    100-group partition is unscored by us, and its image hashes are committed before the
+    images are released.
+  \item Three documented evaluation failures (Section~\ref{sec:lies}), each stated at the strength
+    its evidence supports. A leaderboard-selected pipeline scores below its own member on 16 of 18
+    splits and on three further cohorts (a descriptive comparison). Two named holdouts overlapped the
+    training mixes (a provenance failure). One renderer expression, the board colour convention,
+    accounts for most of the per-square collapse of a state-of-the-art recogniser that had been
+    read as a domain shift (a paired intervention).
+  \item A matched-position, fixed-update adaptation study (Section~\ref{sec:adaptation}) with a
+    preregistered real-photo retention gate. It reports what a small budget of renders changes:
+    most of the zero-shot gap, and most of the convention gap when both conventions are rendered. It
+    also reports what it does not resolve: the lowest elevation band reaches only 14.5 exact after
+    the largest budget, and 11--23 real-photo boards are lost at every budget.
+  \item A prepared release with receipts: generator, manifests, scoring and diagnostic tools, figure
+    pipeline, licence register, and the test-split hash list (Section~\ref{sec:release}).
+\end{enumerate}
+
+\paragraph{What we do not claim.} No new architecture and no state of the art. Results on the
+development partition are results on our own render lineage; on their own they say nothing about
+real-world robustness. The public real-photo sets we report were scored during development, and we
+say so where each number appears. We have not isolated the cause of the leaderboard-selected
+pipeline's failure; that needs an intervention we did not run.
+
+\paragraph{Writing assistance.} Parts of the manuscript were drafted with Codex (OpenAI) and Claude
+(Anthropic) from the project's records and reports; the author verified every number against its
+receipt and is responsible for the text.

@@ -1,0 +1,230 @@
+[
+  {
+    "name": "cobalt_porcelain",
+    "board": {
+      "light_rgb": [
+        228,
+        214,
+        187
+      ],
+      "dark_rgb": [
+        176,
+        144,
+        111
+      ]
+    },
+    "pieces": {
+      "name": "cobalt_porcelain",
+      "white": {
+        "name": "cobalt_porcelain_light",
+        "rgb": [
+          229,
+          234,
+          244
+        ],
+        "roughness": 0.42,
+        "metalness": 0.03
+      },
+      "black": {
+        "name": "cobalt_porcelain_dark",
+        "rgb": [
+          28,
+          49,
+          171
+        ],
+        "roughness": 0.42,
+        "metalness": 0.03
+      }
+    }
+  },
+  {
+    "name": "plum_mintgreen",
+    "board": {
+      "light_rgb": [
+        213,
+        201,
+        171
+      ],
+      "dark_rgb": [
+        151,
+        126,
+        95
+      ]
+    },
+    "pieces": {
+      "name": "plum_mintgreen",
+      "white": {
+        "name": "plum_mintgreen_light",
+        "rgb": [
+          157,
+          233,
+          176
+        ],
+        "roughness": 0.42,
+        "metalness": 0.03
+      },
+      "black": {
+        "name": "plum_mintgreen_dark",
+        "rgb": [
+          97,
+          31,
+          106
+        ],
+        "roughness": 0.42,
+        "metalness": 0.03
+      }
+    }
+  },
+  {
+    "name": "indigo_lavender",
+    "board": {
+      "light_rgb": [
+        235,
+        220,
+        198
+      ],
+      "dark_rgb": [
+        183,
+        156,
+        126
+      ]
+    },
+    "pieces": {
+      "name": "indigo_lavender",
+      "white": {
+        "name": "indigo_lavender_light",
+        "rgb": [
+          218,
+          208,
+          248
+        ],
+        "roughness": 0.42,
+        "metalness": 0.03
+      },
+      "black": {
+        "name": "indigo_lavender_dark",
+        "rgb": [
+          48,
+          36,
+          120
+        ],
+        "roughness": 0.42,
+        "metalness": 0.03
+      }
+    }
+  },
+  {
+    "name": "navy_coolrose",
+    "board": {
+      "light_rgb": [
+        217,
+        207,
+        181
+      ],
+      "dark_rgb": [
+        164,
+        140,
+        108
+      ]
+    },
+    "pieces": {
+      "name": "navy_coolrose",
+      "white": {
+        "name": "navy_coolrose_light",
+        "rgb": [
+          229,
+          172,
+          237
+        ],
+        "roughness": 0.42,
+        "metalness": 0.03
+      },
+      "black": {
+        "name": "navy_coolrose_dark",
+        "rgb": [
+          22,
+          40,
+          73
+        ],
+        "roughness": 0.42,
+        "metalness": 0.03
+      }
+    }
+  },
+  {
+    "name": "wine_iceblue",
+    "board": {
+      "light_rgb": [
+        225,
+        214,
+        192
+      ],
+      "dark_rgb": [
+        171,
+        146,
+        115
+      ]
+    },
+    "pieces": {
+      "name": "wine_iceblue",
+      "white": {
+        "name": "wine_iceblue_light",
+        "rgb": [
+          166,
+          222,
+          248
+        ],
+        "roughness": 0.42,
+        "metalness": 0.03
+      },
+      "black": {
+        "name": "wine_iceblue_dark",
+        "rgb": [
+          107,
+          22,
+          61
+        ],
+        "roughness": 0.42,
+        "metalness": 0.03
+      }
+    }
+  },
+  {
+    "name": "aubergine_periwinkle",
+    "board": {
+      "light_rgb": [
+        209,
+        196,
+        167
+      ],
+      "dark_rgb": [
+        157,
+        129,
+        101
+      ]
+    },
+    "pieces": {
+      "name": "aubergine_periwinkle",
+      "white": {
+        "name": "aubergine_periwinkle_light",
+        "rgb": [
+          187,
+          204,
+          251
+        ],
+        "roughness": 0.42,
+        "metalness": 0.03
+      },
+      "black": {
+        "name": "aubergine_periwinkle_dark",
+        "rgb": [
+          65,
+          31,
+          69
+        ],
+        "roughness": 0.42,
+        "metalness": 0.03
+      }
+    }
+  }
+]

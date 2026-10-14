@@ -1,0 +1,12 @@
+{
+  "source": "Nailfighter Low Poly Chess Set",
+  "url": "https://nailfighter.itch.io/lowpoly-chess-set",
+  "license": "CC0",
+  "asset_identity": "nailfighter_chess_cc0_20260906/chess_pieces.json",
+  "asset_sha256": "0d96781041e87b0330f7646cb0720f63acbb42a8f6806d935d81dace20a6951a",
+  "source_archive_sha256": "822ea937524c420fc60a54ff97ecd7aff498a9993dbc071f92e363e1bc0c5247",
+  "geometry_jitter": false,
+  "holdout_only": false,
+  "uniform_source_scale": 0.1822221932587846,
+  "normalization": "artist FBX meshes; King identity and other meshes baked model transforms; shared maximum-width .82 normalization; no silhouette jitter"
+}

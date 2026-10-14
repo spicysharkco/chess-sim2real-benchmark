@@ -1,0 +1,11 @@
+{
+  "source": "Deplorable Mountaineer Chess Board and Pieces",
+  "url": "https://deplorablemountaineer.itch.io/chess-board-and-pieces",
+  "license": "CC0 1.0 Universal",
+  "asset_identity": "deplorable_mountaineer_chess/chess_pieces.json",
+  "asset_sha256": "489e258aeb49b0d7e5dafd3ba56b257e709d5a6eefa38b7686ed84c823972430",
+  "source_archive_sha256": "585a53483ced76b3627941e5594c10a66eadc33d44826024c0b38d9f28164422",
+  "geometry_jitter": false,
+  "holdout_only": false,
+  "normalization": "original CC0 Deplorable Mountaineer Staunton meshes; native Blender triangles and source smooth normals; shared max-width .82 scale; base aligned at y=0; no silhouette jitter"
+}

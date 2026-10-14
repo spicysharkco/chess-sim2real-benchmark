@@ -1,0 +1,13 @@
+{
+  "exact": 0.014204545454545454,
+  "images": "$DATA_ROOT/ext/cvchess_conv/images",
+  "members": [
+    "cq_vitl",
+    "cq_dinov3l",
+    "cq_vitl_raw812_crop"
+  ],
+  "ms_per_img": 287.86616975610906,
+  "n": 352,
+  "per_square": 0.45640980113636365,
+  "variant": "full"
+}

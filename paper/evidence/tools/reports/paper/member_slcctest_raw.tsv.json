@@ -1,0 +1,11 @@
+{
+  "exact": 0.7472826086956522,
+  "images": "$DATA_ROOT/ext/slcc_conv/images",
+  "members": [
+    "cq_vitl_raw812_crop"
+  ],
+  "ms_per_img": 96.20071882786958,
+  "n": 368,
+  "per_square": 0.9840777853260869,
+  "variant": "raw"
+}

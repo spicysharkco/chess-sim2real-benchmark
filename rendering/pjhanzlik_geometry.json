@@ -1,0 +1,10 @@
+{
+  "source": "OpenGameArt Chess by pjhanzlik",
+  "url": "https://opengameart.org/content/chess",
+  "license": "CC0",
+  "asset_identity": "pjhanzlik_chess_cc0_20260906/Chess.glb",
+  "asset_sha256": "1678dd307f2d944d39786739448bca631cfdf0a13bdbb439954fb749b4a35a9a",
+  "geometry_jitter": false,
+  "uniform_source_scale": 0.32,
+  "normalization": "original white meshes for both sides; translate base minY to zero; preserve artist proportions"
+}

@@ -1,0 +1,11 @@
+{
+  "source": "KillGorack Chess board and pieces",
+  "url": "https://opengameart.org/content/chess-board-pieces",
+  "license": "CC0",
+  "asset_identity": "killgorack_chess_20260906/chess_pieces.json",
+  "asset_sha256": "6ed3b3ee918939b9a5845045dad73274ead13c86369f5455fe7e033a41c3257c",
+  "source_archive_sha256": "21f538bfc320064aceb66a4ff63c81afbcdc2f95f2563f32a0e95763819a065e",
+  "geometry_jitter": false,
+  "holdout_only": false,
+  "normalization": "six original white meshes reused both neutral sides; native Blender triangles/corner normals; shared max-width .82 scale"
+}

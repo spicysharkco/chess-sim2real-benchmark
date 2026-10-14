@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "$HOME/bench_experiments/codex_post_matrix_20260910/probe_source/tools/paper/c3_precision_probe.py", line 138, in <module>
+    main()
+  File "$HOME/bench_experiments/codex_post_matrix_20260910/probe_source/tools/paper/c3_precision_probe.py", line 134, in main
+    run(parser.parse_args())
+  File "$HOME/bench_experiments/codex_post_matrix_20260910/probe_source/tools/paper/c3_precision_probe.py", line 37, in run
+    reserve_output(args.out)
+  File "$HOME/bench_experiments/codex_post_matrix_20260910/probe_source/tools/paper/benchmark_io.py", line 200, in reserve_output
+    raise FileExistsError(
+FileExistsError: output prefix already used: $HOME/bench_experiments/codex_post_matrix_20260910/precision_probe; choose a new prefix

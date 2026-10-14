@@ -1,0 +1,87 @@
+{
+  "artifacts_sha256": {
+    "adaptation.csv": "2fa49931a577705e76d5dd173830e61a35bc963ec504fe9944f5f31dfe08a7c4",
+    "adaptation.pdf": "93756ed508ff3c479dbd4984a3572bc3e08998d93abbf02d5e20e49708d88b29",
+    "corner_elevation.csv": "d3ad4af6a4418a9ae92a2943421ddf6586b1b4e6b07f081f563b2ecf55bd3978",
+    "corner_elevation.pdf": "2dcaabfa89181d59f047d5f0efec836b3d649189076506cfb6afd91867c5cc5a",
+    "heatmap.csv": "662c41b2d8b0acf68e32fcaf216e281234c9ad03a5a67b38ea7c308563f70f9a",
+    "heatmap.pdf": "41239a55ea3287708758ea2f6b7b399a3db89c706714f46e1e8140b10290c495",
+    "router_harm.csv": "[redacted: withheld digest]",
+    "router_harm.pdf": "d18941fc35385ec55f1686581c1de4471ec3e0c36d30c6c5b7be96e24447846c",
+    "timing.csv": "b05ed94f378faf318c4c04575d6471a9c2bf14ab0a3f2fdbbe4ff2d082545f88",
+    "timing.pdf": "4677754ad58dd652e0a085df12a98127e7de643f8e18b32299a5ec672df338c6"
+  },
+  "final_test_images_read": false,
+  "gpu_used": false,
+  "legacy_summary_warning": "v1 routing and corners have no original run receipt; current bytes are pinned, not retrospectively certified",
+  "provenance": {
+    "config_sha256": "[redacted: withheld digest]",
+    "inputs": {
+      "corner_v1": {
+        "provenance": "historical_summary_without_run_receipt",
+        "sha256": "ca9e1a249f625189bb6fe885c981351dfe3a22d83f032b7a19c9afb08031554a"
+      },
+      "lora": {
+        "provenance": "run_receipt_bound",
+        "sha256": "[redacted: withheld digest]"
+      },
+      "router_full": {
+        "provenance": "historical_summary_without_run_receipt",
+        "sha256": "[redacted: withheld digest]"
+      },
+      "router_raw": {
+        "provenance": "historical_summary_without_run_receipt",
+        "sha256": "[redacted: withheld digest]"
+      },
+      "router_warp_high": {
+        "provenance": "historical_summary_without_run_receipt",
+        "sha256": "[redacted: withheld digest]"
+      },
+      "router_warp_low": {
+        "provenance": "historical_summary_without_run_receipt",
+        "sha256": "[redacted: withheld digest]"
+      },
+      "timing": {
+        "provenance": "run_receipt_bound",
+        "sha256": "[redacted: withheld digest]"
+      }
+    },
+    "receipts": {
+      "lora": "[redacted: withheld digest]",
+      "timing": "[redacted: withheld digest]",
+      "timing/cq_release": "[redacted: withheld digest]",
+      "timing/lora_both_n2000_s303": "[redacted: withheld digest]",
+      "timing/lora_both_n2000_s304": "[redacted: withheld digest]",
+      "timing/lora_both_n2000_s305": "[redacted: withheld digest]",
+      "timing/lora_both_n500_s303": "[redacted: withheld digest]",
+      "timing/lora_both_n8000_s303": "[redacted: withheld digest]",
+      "timing/lora_dark_n2000_s303": "[redacted: withheld digest]",
+      "timing/lora_dark_n2000_s304": "[redacted: withheld digest]",
+      "timing/lora_dark_n2000_s305": "[redacted: withheld digest]",
+      "timing/lora_dark_n500_s303": "[redacted: withheld digest]",
+      "timing/lora_dark_n8000_s303": "[redacted: withheld digest]",
+      "timing/private_full": "[redacted: withheld digest]",
+      "timing/private_raw": "[redacted: withheld digest]",
+      "timing/private_warp_high": "[redacted: withheld digest]",
+      "timing/private_warp_low": "[redacted: withheld digest]"
+    }
+  },
+  "release_ready": false,
+  "renderer": {
+    "font_family": "DejaVu Sans",
+    "font_sha256": "3fdf69cabf06049ea70a00b5919340e2ce1e6d02b0cc3c4b44fb6801bd1e0d22",
+    "matplotlib": "3.11.1",
+    "numpy": "2.5.2",
+    "pdf_metadata": "timestamp-free"
+  },
+  "schema": "paper-figures/v1",
+  "script_sha256": "1ae52ee320f68d163a86c26693950f5e638ba2befe81d86c7a45bacb45f22054",
+  "status": "paper_figures_complete",
+  "table_rows": {
+    "adaptation": 20,
+    "corner_elevation": 4,
+    "heatmap": 80,
+    "router_harm": 18,
+    "timing": 15
+  }
+}

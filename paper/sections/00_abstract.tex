@@ -1,0 +1,31 @@
+\begin{abstract}
+Perception models are judged on synthetic stress tests and on small real-photo sets. Both can
+mislead. We use chess-position recognition as a testbed, because ground truth is exact and one
+factor can be changed at a time. We describe a controlled render generator and a benchmark of
+20{,}000 cell-images (18{,}000 unique renders). Its positions are disjoint, exactly and under the
+eight board symmetries, from 67 inventoried sources, including the named public chess-recognition
+datasets and a 6.1-million-puzzle snapshot. Five factors vary: camera elevation, piece
+geometry, board palette, framing, and the board colour convention (which corner is light).
+
+Building the benchmark exposed three ways our earlier evaluation had misled us. First, a pipeline
+selected on a private leaderboard scored below its own single member on 16 of 18 controlled
+splits and on three real-photo or held-out cohorts; this is a descriptive comparison, since routing
+and member composition both differ. Second, two sets named as holdouts shared 1{,}446 and 1{,}128 image
+identifiers with the training mixes (2{,}398 distinct), a provenance failure. Third, a state-of-the-art recogniser produced zero exact
+boards on our renders, with per-square accuracy below a constant all-empty prediction. Two crops
+and a perspective warp recovered no exact board. A paired probe that flipped one renderer
+expression, the light/dark assignment of the a1 square, raised per-square accuracy from 54.4 to
+85.2 and removed 67.7\% of wrong squares, replicated across six piece families. On the 400-group
+development partition of the benchmark the same checkpoint scores 15.5 exact under the standard
+convention and 0.0 under ours.
+
+A matched-position, fixed-update adaptation study then separates what a small budget of renders
+changes from what it does not. Low-rank adaptation on 500 positions (dark-only arm, standard convention) lifts the recogniser
+from 15.5 to 64.7 exact, and 8{,}000 positions to 79.7 (one seed each). Rendering each position under both conventions
+removes most of the convention gap (a1-light within 0.7--2.6 points of a1-dark), at a cost of 2.7 exact points on the standard convention at the
+2{,}000-position budget (three seeds per arm, every both-convention seed below every dark-only
+seed) and single-seed differences of $+2.10$ and $+0.95$ at the other two. Every adapted
+checkpoint loses 11--23 boards on ChessReD, a preregistered retention gate that all ten runs fail.
+The lowest elevation band reaches only 14.5 exact after the largest budget. Generator, manifests,
+receipts, and the test-split hash list are prepared for release.
+\end{abstract}

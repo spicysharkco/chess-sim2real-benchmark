@@ -1,0 +1,162 @@
+<!doctype html>
+<meta charset="utf-8">
+<style>html,body{margin:0;width:100%;height:100%;overflow:hidden;background:rgb(38,38,46)}canvas{display:block}</style>
+<body></body>
+<script src="./three.min.js"></script>
+<script src="./GLTFLoader.js"></script>
+<script src="./benchmark_v2.js"></script>
+<script>
+const W=1920,H=1080,BG=0x26262e,LIGHT=0xd7cebe,DARK=0xaa947e;
+// The source set's bases are unusually broad relative to a square. A uniform
+// 0.82 scale keeps its silhouettes while leaving the border rows observable.
+const ASSET_SCALE=.82/0.05788807570934296;
+let renderer,scene,camera,root;
+const prototypes={};
+let expectedBenchmarkV2Geometry;
+const paletteMaterials=new Map();
+
+function mesh(geometry, material, y=0){ const m=new THREE.Mesh(geometry,material);m.position.y=y;m.castShadow=false;m.receiveShadow=false;return m; }
+function parseFen(fen){
+ const out=[];fen.split('/').forEach((rank,r)=>{let c=0;for(const ch of rank){if(/[1-8]/.test(ch))c+=+ch;else{out.push({ch,r,c});c++;}}});return out;
+}
+function init(){
+ renderer=new THREE.WebGLRenderer({antialias:true,preserveDrawingBuffer:true,alpha:false});
+ renderer.setSize(W,H,false);renderer.setPixelRatio(1);renderer.outputEncoding=THREE.sRGBEncoding;
+ renderer.setClearColor(BG,1);document.body.appendChild(renderer.domElement);
+ scene=new THREE.Scene();scene.background=new THREE.Color(BG);
+ camera=new THREE.PerspectiveCamera(35,W/H,.1,100);
+ scene.add(new THREE.HemisphereLight(0xffffff,0x5b5964,.64));
+ const key=new THREE.DirectionalLight(0xffffff,.78);key.position.set(-4,9,5);scene.add(key);
+}
+function loadPieces(){
+ return new Promise((resolve,reject)=>{
+  new THREE.GLTFLoader().load('./assets/polyhaven_chess_set/chess_set_1k.gltf',gltf=>{
+   const wanted={
+    P:['piece_pawn_white_01','piece_pawn_black_01'],
+    R:['piece_rook_white_01','piece_rook_black_01'],
+    N:['piece_knight_white_01','piece_knight_black_01'],
+    B:['piece_bishop_white_01','piece_bishop_black_01'],
+    Q:['piece_queen_white','piece_queen_black'],
+    K:['piece_king_white','piece_king_black'],
+   };
+   for(const [upper,names] of Object.entries(wanted)){
+    for(const [side,name] of names.entries()){
+     const source=gltf.scene.getObjectByName(name);
+     if(!source){reject(new Error('Poly Haven node missing: '+name));return;}
+     const clone=source.clone();clone.position.set(0,0,0);clone.rotation.set(0,0,0);
+     clone.scale.setScalar(ASSET_SCALE);clone.castShadow=false;clone.receiveShadow=false;
+     // Geometry is the intended domain shift. Keep piece colour neutral and
+     // outside board.py's warm-wood mask so textured albedo cannot corrupt
+     // the board contour used by the normal prep path.
+     const albedo=side===0?0xe4e4e4:0x484848;
+     clone.traverse(object=>{
+      if(object.isMesh){
+       object.material=new THREE.MeshStandardMaterial({
+        color:new THREE.Color(albedo).convertSRGBToLinear(),roughness:.42,metalness:.03
+       });
+      }
+     });
+     prototypes[side===0?upper:upper.toLowerCase()]=clone;
+    }
+   }
+   resolve();
+  },undefined,reject);
+ });
+}
+function configureCamera(cfg){
+ camera.updateProjectionMatrix();
+ const az=cfg.azimuth_deg*Math.PI/180, el=cfg.elevation_deg*Math.PI/180;
+ let actualRoll=cfg.roll_deg;
+ function setAt(d){
+   const h=d*Math.cos(el);camera.position.set(h*Math.sin(az),d*Math.sin(el),h*Math.cos(az));
+   camera.up.set(0,1,0);camera.lookAt(0,.28,0);camera.rotateZ(actualRoll*Math.PI/180);camera.updateMatrixWorld(true);
+ }
+ let d=17;
+ const edge=4.003;
+ const corners=[];
+ for(const y of [0,-.10])for(const x of [-edge,edge])for(const z of [-edge,edge])corners.push([x,y,z]);
+ function projected(points=corners){setAt(d);return points.map(v=>new THREE.Vector3(...v).project(camera));}
+ function fitDistance(){
+   for(let n=0;n<(cfg.target_board_width_fraction>=.52?16:8);n++){
+     const ps=projected(),xs=ps.map(p=>p.x),ys=ps.map(p=>p.y);
+     const wf=(Math.max(...xs)-Math.min(...xs))/2, hf=(Math.max(...ys)-Math.min(...ys))/2;
+     // Fit the requested board width while guaranteeing the full slab volume
+     // remains at least 20 physical pixels inside every 1920x1080 frame edge.
+     const maxX=Math.max(...xs.map(Math.abs)),maxY=Math.max(...ys.map(Math.abs));
+     // Official-framed high-angle batches fit width exactly. QA, not a
+     // silent distance clamp, decides whether board/piece clipping is acceptable.
+     d*=cfg.target_board_width_fraction>=.52 ? wf/cfg.target_board_width_fraction :
+        Math.max(wf/cfg.target_board_width_fraction,hf/.78,
+                 maxX/(1-40/W),maxY/(1-40/H));
+   }
+ }
+ fitDistance();
+ // A recorded lens shift centres the visible scene; it does not shrink the
+ // board, move pieces, change elevation, or alter the original low-angle branch.
+ let imageOffsetY=0;
+ if(cfg.target_board_width_fraction>=.52){
+   setAt(d);root.updateMatrixWorld(true);
+   let minY=Infinity,maxY=-Infinity;
+   root.traverse(object=>{
+     if(!object.isMesh)return;
+     if(!object.geometry.boundingBox)object.geometry.computeBoundingBox();
+     const box=object.geometry.boundingBox;
+     for(const x of [box.min.x,box.max.x])for(const y of [box.min.y,box.max.y])for(const z of [box.min.z,box.max.z]){
+       const p=new THREE.Vector3(x,y,z).applyMatrix4(object.matrixWorld).project(camera);
+       const py=(1-p.y)*H/2;minY=Math.min(minY,py);maxY=Math.max(maxY,py);
+     }
+   });
+   imageOffsetY=H/2-(minY+maxY)/2;
+   camera.projectionMatrix.elements[9]+=2*imageOffsetY/H;
+   camera.projectionMatrixInverse.copy(camera.projectionMatrix).invert();
+ }
+ const ps=projected(),xs=ps.map(p=>(p.x+1)/2),ys=ps.map(p=>(1-p.y)/2);
+ const bounds={left:Math.min(...xs),top:Math.min(...ys),right:Math.max(...xs),bottom:Math.max(...ys)};
+ return {distance:d,actual_roll_deg:actualRoll,projected_board_bounds:bounds,
+         ...(cfg.target_board_width_fraction>=.52?{image_offset_y_px:imageOffsetY}:{}),
+         projected_board_width_fraction:bounds.right-bounds.left,
+         projected_board_height_fraction:bounds.bottom-bounds.top};
+}
+window.renderConfig=(row)=>{
+ const benchmarkV2=BenchmarkV2.isRow(row);
+ if(benchmarkV2)BenchmarkV2.validateRow(row,expectedBenchmarkV2Geometry,'polyhaven');
+ if(root)scene.remove(root);root=new THREE.Group();scene.add(root);
+ if(!benchmarkV2&&!row.board_palette)throw new Error('ph_colors_h requires explicit board colours');
+ const boardMaterials=benchmarkV2?BenchmarkV2.boardMaterials(THREE,row):{
+   light:new THREE.MeshBasicMaterial({color:new THREE.Color().setRGB(...row.board_palette.light_rgb.map(v=>v/255)).convertSRGBToLinear()}),
+   dark:new THREE.MeshBasicMaterial({color:new THREE.Color().setRGB(...row.board_palette.dark_rgb.map(v=>v/255)).convertSRGBToLinear()})};
+ const lm=boardMaterials.light,dm=boardMaterials.dark;
+ for(let r=0;r<8;r++)for(let c=0;c<8;c++){
+   const sq=mesh(new THREE.BoxGeometry(1.005,.10,1.005),benchmarkV2?boardMaterials[BenchmarkV2.squareRole(row,r,c)]:((r+c)%2===1?lm:dm),-.05);
+   sq.position.x=c-3.5;sq.position.z=r-3.5;root.add(sq);
+ }
+ // Explicit Poly Haven recolour only; no procedural or textured fallback.
+ if(!benchmarkV2&&!row.piece_palette)throw new Error('ph_colors requires an explicit palette');
+ let pair;
+ if(benchmarkV2){
+   pair=BenchmarkV2.pieceMaterials(THREE,row);
+ }else{
+   const paletteKey=JSON.stringify(row.piece_palette);
+   if(!paletteMaterials.has(paletteKey)){
+     const legacyPair={};
+     for(const side of ['white','black']){
+       const mat=row.piece_palette[side];
+       legacyPair[side]=new THREE.MeshStandardMaterial({
+         color:new THREE.Color().setRGB(...mat.rgb.map(v=>v/255)).convertSRGBToLinear(),
+         roughness:mat.roughness,metalness:mat.metalness
+       });
+     }
+     paletteMaterials.set(paletteKey,legacyPair);
+   }
+   pair=paletteMaterials.get(paletteKey);
+ }
+ for(const p of parseFen(row.fen)){
+   const q=prototypes[p.ch].clone();
+   q.traverse(object=>{if(object.isMesh)object.material=pair[p.ch===p.ch.toUpperCase()?"white":"black"];});
+   q.position.set(p.c-3.5,.001,p.r-3.5);q.rotation.y=((p.r*8+p.c)*1.618)%6.283;root.add(q);
+ }
+ const measured=benchmarkV2?BenchmarkV2.configureCamera(THREE,camera,root,row.camera,W,H):configureCamera(row.camera);renderer.render(scene,camera);
+ return measured;
+};
+init();Promise.all([loadPieces(),Promise.resolve().then(()=>{expectedBenchmarkV2Geometry={source:'Poly Haven chess_set 1k glTF',url:'https://polyhaven.com/a/chess_set',license:'CC0',fixed_grid_fit_scale:.82,geometry_jitter:false};})]).then(()=>window.__rendererReady=true).catch(error=>{console.error(error);throw error});
+</script>

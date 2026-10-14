@@ -1,0 +1,18 @@
+{
+  "status": "licence_review_complete_with_open_release_gates",
+  "release_ready": false,
+  "final_test_images_read": false,
+  "gpu_used": false,
+  "completed_at": "2026-09-10T07:03:48.761081+00:00",
+  "artifacts_sha256": {
+    "RELEASE_LICENCE_REVIEW_2026-09-10.md": "[redacted: withheld digest]",
+    "BENCHMARK_ASSET_INVENTORY_2026-09-10.json": "[redacted: withheld digest]",
+    "BENCHMARK_ATTRIBUTIONS_2026-09-10.md": "7dab296b10e13d229fd10bbbf652e6df1d4fc6398eda04710a0f4c54abe8f69f"
+  },
+  "open_benchmark_data_gates": [
+    "Phuong exact CC BY version/grant",
+    "actual export allowlist membership and notices",
+    "project-authored code licensing if code is shipped"
+  ],
+  "model_distribution_gates_separate": true
+}

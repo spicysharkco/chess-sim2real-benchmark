@@ -1,0 +1,42 @@
+\section{Limitations and threats to validity}
+\label{sec:limitations}
+
+\paragraph{Development data on our own lineage.} Every v2 model result in this paper is on the
+400-group development partition of a benchmark rendered by our own generator. Adaptation trains on
+a joint mix of factor levels while evaluation reads conditional panels, so a cell result is not the
+effect of that factor alone on a model trained without it. The 100-group partition is unscored by
+us and its hashes are committed before release; after release, the manifests, seeds,
+assets and generator make its pixels reconstructible, so it is an author-unscored split, not a
+hidden challenge set.
+
+\paragraph{Real photographs were scored during development.} SLCC, CVChess and ChessReD were each
+scored several times while the systems were being built, and ChessCog is itself rendered. Their
+numbers are development numbers. No untouched real-photo anchor is part of this version.
+
+\paragraph{Historical provenance.} The v1 spine (Section~\ref{sec:router}) rests on hash-pinned
+summary reports whose original execution receipts were not retained; the v1 freeze also records a
+stale source revision. Appendix~\ref{app:receipts} lists the receipts and result summaries in this package; the per-image
+prediction files behind Section~\ref{sec:lies} are not among them. We did not rebuild those runs.
+
+\paragraph{Independent units.} Benchmark v2 has 400 development position groups, not 16{,}000
+independent boards; cells share positions by design, and reference views are shared across panels.
+Every interval is a paired bootstrap over position groups. Seed spread at the 2{,}000-position
+budget is about one exact point in the dark-only arm and about three in the both-convention arm.
+
+\paragraph{One architecture, one adapter, matched positions not matched images.} The adaptation
+study uses one recogniser and the authors' LoRA implementation with upstream optimiser settings and
+a fixed update count. Arms match position pools and optimiser presentations, not the number of
+available rendered images. The retention-gate failure does not show that every adaptation method
+must fail, and the cause of the retention loss is unresolved.
+
+\paragraph{Conditional statistics.} Detector localisation summaries exclude divergent detections,
+and that fraction is itself factor-dependent; we publish it beside every summary and make no
+``no effect'' claim without a predefined margin.
+
+\paragraph{Licensing and packaging.} Seven of eight piece families carry verified CC0 source
+grants. One is CC-BY with its version not displayed by the source page; it is credited by name
+and source, and we apply the CC BY 4.0 attribution terms to it. Two families with no licence grant were
+excluded from every split. Project code, vendored third-party code, rendered data, the upstream
+base weights (non-commercial) and our adapters are separate licensing questions. The first three now have
+licence files in the prepared package; the base weights will be linked rather than redistributed,
+and the adapters are withheld.

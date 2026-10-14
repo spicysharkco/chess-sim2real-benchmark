@@ -1,0 +1,112 @@
+\section{Full cell results}
+\label{app:cells}
+
+Table~\ref{tab:percell} contains every development factor cell for the
+release checkpoint and every registered adaptation run. Entries are generated
+directly from the copied report receipt; no unsuccessful run or cell is removed.
+Percentages in these tables use decimal half-up rounding to two places;
+retention decisions use the unrounded recorded values. These are point-estimate tables. The accompanying machine-readable report also
+contains the registered paired intervals and gained/lost counts; no between-arm
+interval is claimed by the plotted seed spread.
+
+\input{generated/tables/per_cell}
+
+\clearpage
+\section{Preregistered protocols}
+\label{app:protocols}
+
+The following files are sanitized export copies of the preregistrations and
+amendments. Their bytes differ from private operational originals only through
+the documented text-only export policy; the evidence index records the hash of
+each copy. They are included verbatim from the copied evidence tree rather
+than reconstructed from the results. Some source documents append execution
+records after their original preregistration. These later entries are not
+pre-experiment predictions; the recorded preregistration and source commits
+identify the earlier protocol versions.
+Commit identifiers in these documents refer to the author's private development history and
+do not resolve in the public repository.
+
+\input{generated/protocols}
+
+\clearpage
+\section{Convention audit}
+\label{app:conventions}
+
+% receipt: evidence/docs/records/PARITY_CONVENTIONS.complete.json
+Table~\ref{tab:conventions} records one representative for each of the 56 image sources.
+It establishes the displayed convention only for the sampled record. In
+particular, the SLCC sample lacks an independent named-corner anchor and remains
+unresolved; the table does not support a universal claim that every public image
+uses a1 dark.
+
+\input{generated/tables/conventions}
+
+\clearpage
+\section{Asset and dataset licence record}
+\label{app:licences}
+
+The asset table reports the grants observed for the exact frozen geometry
+lineage. It is an evidence register, not legal advice or a blanket licence for
+the benchmark, upstream datasets, model weights, or adapters.
+
+% receipt: evidence/docs/records/PHUONG_RELEASE_STATUS_2026-09-15.complete.json
+Seven geometry families have a recorded CC0 grant. Phuong2647's source page
+states CC-BY without displaying a version. Under the author decision dated
+2026-09-14, the package credits this asset under CC BY 4.0 attribution terms
+in the family's renders, retaining creator credit, source and licence links, and
+the conversion and rescaling record. The renders themselves are CC BY-NC 4.0,
+like every other render in the benchmark. The Phuong render-attribution gate is
+closed. This is an
+author-selected package policy, not newly recovered upstream-version evidence.
+The earlier licence investigations remain historical records; the current decision
+is in \path{evidence/docs/records/PHUONG_DECISION_2026-09-14.md}.
+The asset-licensing status of the benchmark data is separate from the package
+reproduction check, the publication decision and the withheld model and adapter
+weights. The receipts do not record the reproduction check or the publication
+decision.
+
+\input{generated/tables/licences}
+
+\clearpage
+\section{Descriptive attention sheets}
+\label{app:attention}
+
+% receipt: records/attention_excerpt.complete.json
+The compact excerpt in Figure~\ref{fig:attention-excerpt} is for visual inspection, not a performance estimate
+or a causal test. Three query sheets ship in the release package. The full set is not released.
+
+\input{generated/attention_excerpt}
+
+\FloatBarrier
+\clearpage
+\section{Receipt and test index}
+\label{app:receipts}
+
+The evidence index carries the digest of each copied file. Digests of the unredacted
+originals are not shipped.
+Table~\ref{tab:receipts} lists the completion receipts consumed by the generated tables
+and figures, and the result summaries behind the Section~\ref{sec:lies} numbers (parity probe,
+crop diagnostic, baseline and member scores, identifier-level holdout check, real-board check).
+Per-image prediction files for those runs are not part of this package. A completion receipt records the checks stated by its own schema;
+it is a checksummed record, not an independent attestation that no unrecorded
+experiment occurred. It does not close the separate data, model, or asset
+distribution gates.
+
+\input{generated/tables/receipts}
+
+\subsection{Validation scope}
+The paper build checks the complete cell matrix, deterministic table generation,
+per-cell source comments, and rejection of altered evidence or broken historical
+hash links. The export regressions separately test token boundaries, paired
+original/export hashes, protected scene records, and explicit PDF decoder
+failures. Passing these checks does not validate the scientific claims in the
+paper text or resolve a distribution licence.
+
+\subsection{Conditional localization diagnostic}
+% receipt: evidence/tools/reports/paper/FREEZE_2026-09-09.json
+Figure~\ref{fig:corners} retains the earlier detector summary as a separate
+measurement from recognition. This figure and the historical pipeline comparison
+use hash-pinned aggregate summaries without original run-completion receipts;
+copying their hashes does not retrospectively certify the original runs. Error is normalized by the mean projected board
+edge, and the figure reports excluded detections beside the elevation bands.
+\input{generated/figure_corner_elevation}

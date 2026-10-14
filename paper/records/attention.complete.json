@@ -1,0 +1,10 @@
+{
+  "schema": "paper-attention-excerpts/v1",
+  "source_receipt": "evidence/tools/reports/paper/residual_shift_2026-09-10/r1/residual_r1.complete.json",
+  "selection": "previously exported three examples; not an unbiased estimate or a mechanism test",
+  "files_sha256": {
+    "figures/attention/confirmation__deplorable__parity__000205.source1920x1080.png": "0831800bba24e9309b8477b4c433d43a1738b52054d990feac01d41cb45c94c3",
+    "figures/attention/confirmation__pjhanzlik__parity__000246.source1920x1080.png": "fa202d6f1a9fdf6a6b7dea39eda24399668eecbfed6919e344e9ce4048d12b59",
+    "figures/attention/confirmation__lyricsz__parity__000179.source1920x1080.png": "9352bc16010aac96863994b35e52a0e21b57c35e49462398625d6bb112995da0"
+  }
+}

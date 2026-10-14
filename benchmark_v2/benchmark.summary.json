@@ -1,0 +1,916 @@
+{
+  "benchmark_schema": 2,
+  "cohort": "benchmark",
+  "release_ready": false,
+  "repo_commit": "01c52fb9a69a5b36759b310ae18d26dd8ce662c1",
+  "position_groups": 500,
+  "images": 20000,
+  "partitions": {
+    "dev": 16000,
+    "final_test": 4000
+  },
+  "cells": {
+    "elevation:08_15/a1_dark/dev": 400,
+    "elevation:08_15/a1_light/dev": 400,
+    "elevation:15_25/a1_dark/dev": 400,
+    "elevation:15_25/a1_light/dev": 400,
+    "elevation:25_45/a1_dark/dev": 400,
+    "elevation:25_45/a1_light/dev": 400,
+    "elevation:45_60/a1_dark/dev": 400,
+    "elevation:45_60/a1_light/dev": 400,
+    "geometry:polyhaven/a1_dark/dev": 400,
+    "geometry:polyhaven/a1_light/dev": 400,
+    "geometry:deplorable/a1_dark/dev": 400,
+    "geometry:deplorable/a1_light/dev": 400,
+    "geometry:killgorack/a1_dark/dev": 400,
+    "geometry:killgorack/a1_light/dev": 400,
+    "geometry:lyricsz/a1_dark/dev": 400,
+    "geometry:lyricsz/a1_light/dev": 400,
+    "geometry:omie/a1_dark/dev": 400,
+    "geometry:omie/a1_light/dev": 400,
+    "geometry:phuong/a1_dark/dev": 400,
+    "geometry:phuong/a1_light/dev": 400,
+    "geometry:pjhanzlik/a1_dark/dev": 400,
+    "geometry:pjhanzlik/a1_light/dev": 400,
+    "geometry:nailfighter/a1_dark/dev": 400,
+    "geometry:nailfighter/a1_light/dev": 400,
+    "palette:cobalt_porcelain/a1_dark/dev": 400,
+    "palette:cobalt_porcelain/a1_light/dev": 400,
+    "palette:plum_mintgreen/a1_dark/dev": 400,
+    "palette:plum_mintgreen/a1_light/dev": 400,
+    "palette:indigo_lavender/a1_dark/dev": 400,
+    "palette:indigo_lavender/a1_light/dev": 400,
+    "palette:navy_coolrose/a1_dark/dev": 400,
+    "palette:navy_coolrose/a1_light/dev": 400,
+    "palette:wine_iceblue/a1_dark/dev": 400,
+    "palette:wine_iceblue/a1_light/dev": 400,
+    "palette:aubergine_periwinkle/a1_dark/dev": 400,
+    "palette:aubergine_periwinkle/a1_light/dev": 400,
+    "framing:compact/a1_dark/dev": 400,
+    "framing:compact/a1_light/dev": 400,
+    "framing:standard/a1_dark/dev": 400,
+    "framing:standard/a1_light/dev": 400,
+    "elevation:08_15/a1_dark/final_test": 100,
+    "elevation:08_15/a1_light/final_test": 100,
+    "elevation:15_25/a1_dark/final_test": 100,
+    "elevation:15_25/a1_light/final_test": 100,
+    "elevation:25_45/a1_dark/final_test": 100,
+    "elevation:25_45/a1_light/final_test": 100,
+    "elevation:45_60/a1_dark/final_test": 100,
+    "elevation:45_60/a1_light/final_test": 100,
+    "geometry:polyhaven/a1_dark/final_test": 100,
+    "geometry:polyhaven/a1_light/final_test": 100,
+    "geometry:deplorable/a1_dark/final_test": 100,
+    "geometry:deplorable/a1_light/final_test": 100,
+    "geometry:killgorack/a1_dark/final_test": 100,
+    "geometry:killgorack/a1_light/final_test": 100,
+    "geometry:lyricsz/a1_dark/final_test": 100,
+    "geometry:lyricsz/a1_light/final_test": 100,
+    "geometry:omie/a1_dark/final_test": 100,
+    "geometry:omie/a1_light/final_test": 100,
+    "geometry:phuong/a1_dark/final_test": 100,
+    "geometry:phuong/a1_light/final_test": 100,
+    "geometry:pjhanzlik/a1_dark/final_test": 100,
+    "geometry:pjhanzlik/a1_light/final_test": 100,
+    "geometry:nailfighter/a1_dark/final_test": 100,
+    "geometry:nailfighter/a1_light/final_test": 100,
+    "palette:cobalt_porcelain/a1_dark/final_test": 100,
+    "palette:cobalt_porcelain/a1_light/final_test": 100,
+    "palette:plum_mintgreen/a1_dark/final_test": 100,
+    "palette:plum_mintgreen/a1_light/final_test": 100,
+    "palette:indigo_lavender/a1_dark/final_test": 100,
+    "palette:indigo_lavender/a1_light/final_test": 100,
+    "palette:navy_coolrose/a1_dark/final_test": 100,
+    "palette:navy_coolrose/a1_light/final_test": 100,
+    "palette:wine_iceblue/a1_dark/final_test": 100,
+    "palette:wine_iceblue/a1_light/final_test": 100,
+    "palette:aubergine_periwinkle/a1_dark/final_test": 100,
+    "palette:aubergine_periwinkle/a1_light/final_test": 100,
+    "framing:compact/a1_dark/final_test": 100,
+    "framing:compact/a1_light/final_test": 100,
+    "framing:standard/a1_dark/final_test": 100,
+    "framing:standard/a1_light/final_test": 100
+  },
+  "unique_image_hashes": 18000,
+  "detector_invoked": false,
+  "recognizer_invoked": false,
+  "audit_sha256": "[redacted: withheld digest]",
+  "render_shards": [
+    {
+      "shard": "benchmark_dev_polyhaven_000",
+      "count": 500,
+      "runtime": {
+        "node": "v24.15.0",
+        "browser": "149.0.7827.55",
+        "requested_backend": "swiftshader",
+        "webgl": {
+          "ok": true,
+          "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+          "renderer": "WebKit WebGL",
+          "vendor": "WebKit",
+          "unmaskedRenderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+          "unmaskedVendor": "Google Inc. (Google)"
+        }
+      }
+    },
+    {
+      "shard": "benchmark_dev_polyhaven_001",
+      "count": 500,
+      "runtime": {
+        "node": "v24.15.0",
+        "browser": "149.0.7827.55",
+        "requested_backend": "swiftshader",
+        "webgl": {
+          "ok": true,
+          "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+          "renderer": "WebKit WebGL",
+          "vendor": "WebKit",
+          "unmaskedRenderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+          "unmaskedVendor": "Google Inc. (Google)"
+        }
+      }
+    },
+    {
+      "shard": "benchmark_dev_polyhaven_002",
+      "count": 500,
+      "runtime": {
+        "node": "v24.15.0",
+        "browser": "149.0.7827.55",
+        "requested_backend": "swiftshader",
+        "webgl": {
+          "ok": true,
+          "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+          "renderer": "WebKit WebGL",
+          "vendor": "WebKit",
+          "unmaskedRenderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+          "unmaskedVendor": "Google Inc. (Google)"
+        }
+      }
+    },
+    {
+      "shard": "benchmark_dev_polyhaven_003",
+      "count": 500,
+      "runtime": {
+        "node": "v24.15.0",
+        "browser": "149.0.7827.55",
+        "requested_backend": "swiftshader",
+        "webgl": {
+          "ok": true,
+          "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+          "renderer": "WebKit WebGL",
+          "vendor": "WebKit",
+          "unmaskedRenderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+          "unmaskedVendor": "Google Inc. (Google)"
+        }
+      }
+    },
+    {
+      "shard": "benchmark_dev_polyhaven_004",
+      "count": 500,
+      "runtime": {
+        "node": "v24.15.0",
+        "browser": "149.0.7827.55",
+        "requested_backend": "swiftshader",
+        "webgl": {
+          "ok": true,
+          "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+          "renderer": "WebKit WebGL",
+          "vendor": "WebKit",
+          "unmaskedRenderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+          "unmaskedVendor": "Google Inc. (Google)"
+        }
+      }
+    },
+    {
+      "shard": "benchmark_dev_polyhaven_005",
+      "count": 500,
+      "runtime": {
+        "node": "v24.15.0",
+        "browser": "149.0.7827.55",
+        "requested_backend": "swiftshader",
+        "webgl": {
+          "ok": true,
+          "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+          "renderer": "WebKit WebGL",
+          "vendor": "WebKit",
+          "unmaskedRenderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+          "unmaskedVendor": "Google Inc. (Google)"
+        }
+      }
+    },
+    {
+      "shard": "benchmark_dev_polyhaven_006",
+      "count": 500,
+      "runtime": {
+        "node": "v24.15.0",
+        "browser": "149.0.7827.55",
+        "requested_backend": "swiftshader",
+        "webgl": {
+          "ok": true,
+          "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+          "renderer": "WebKit WebGL",
+          "vendor": "WebKit",
+          "unmaskedRenderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+          "unmaskedVendor": "Google Inc. (Google)"
+        }
+      }
+    },
+    {
+      "shard": "benchmark_dev_polyhaven_007",
+      "count": 500,
+      "runtime": {
+        "node": "v24.15.0",
+        "browser": "149.0.7827.55",
+        "requested_backend": "swiftshader",
+        "webgl": {
+          "ok": true,
+          "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+          "renderer": "WebKit WebGL",
+          "vendor": "WebKit",
+          "unmaskedRenderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+          "unmaskedVendor": "Google Inc. (Google)"
+        }
+      }
+    },
+    {
+      "shard": "benchmark_dev_polyhaven_008",
+      "count": 500,
+      "runtime": {
+        "node": "v24.15.0",
+        "browser": "149.0.7827.55",
+        "requested_backend": "swiftshader",
+        "webgl": {
+          "ok": true,
+          "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+          "renderer": "WebKit WebGL",
+          "vendor": "WebKit",
+          "unmaskedRenderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+          "unmaskedVendor": "Google Inc. (Google)"
+        }
+      }
+    },
+    {
+      "shard": "benchmark_dev_polyhaven_009",
+      "count": 500,
+      "runtime": {
+        "node": "v24.15.0",
+        "browser": "149.0.7827.55",
+        "requested_backend": "swiftshader",
+        "webgl": {
+          "ok": true,
+          "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+          "renderer": "WebKit WebGL",
+          "vendor": "WebKit",
+          "unmaskedRenderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+          "unmaskedVendor": "Google Inc. (Google)"
+        }
+      }
+    },
+    {
+      "shard": "benchmark_dev_polyhaven_010",
+      "count": 500,
+      "runtime": {
+        "node": "v24.15.0",
+        "browser": "149.0.7827.55",
+        "requested_backend": "swiftshader",
+        "webgl": {
+          "ok": true,
+          "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+          "renderer": "WebKit WebGL",
+          "vendor": "WebKit",
+          "unmaskedRenderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+          "unmaskedVendor": "Google Inc. (Google)"
+        }
+      }
+    },
+    {
+      "shard": "benchmark_dev_polyhaven_011",
+      "count": 500,
+      "runtime": {
+        "node": "v24.15.0",
+        "browser": "149.0.7827.55",
+        "requested_backend": "swiftshader",
+        "webgl": {
+          "ok": true,
+          "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+          "renderer": "WebKit WebGL",
+          "vendor": "WebKit",
+          "unmaskedRenderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+          "unmaskedVendor": "Google Inc. (Google)"
+        }
+      }
+    },
+    {
+      "shard": "benchmark_dev_polyhaven_012",
+      "count": 500,
+      "runtime": {
+        "node": "v24.15.0",
+        "browser": "149.0.7827.55",
+        "requested_backend": "swiftshader",
+        "webgl": {
+          "ok": true,
+          "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+          "renderer": "WebKit WebGL",
+          "vendor": "WebKit",
+          "unmaskedRenderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+          "unmaskedVendor": "Google Inc. (Google)"
+        }
+      }
+    },
+    {
+      "shard": "benchmark_dev_polyhaven_013",
+      "count": 500,
+      "runtime": {
+        "node": "v24.15.0",
+        "browser": "149.0.7827.55",
+        "requested_backend": "swiftshader",
+        "webgl": {
+          "ok": true,
+          "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+          "renderer": "WebKit WebGL",
+          "vendor": "WebKit",
+          "unmaskedRenderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+          "unmaskedVendor": "Google Inc. (Google)"
+        }
+      }
+    },
+    {
+      "shard": "benchmark_dev_polyhaven_014",
+      "count": 500,
+      "runtime": {
+        "node": "v24.15.0",
+        "browser": "149.0.7827.55",
+        "requested_backend": "swiftshader",
+        "webgl": {
+          "ok": true,
+          "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+          "renderer": "WebKit WebGL",
+          "vendor": "WebKit",
+          "unmaskedRenderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+          "unmaskedVendor": "Google Inc. (Google)"
+        }
+      }
+    },
+    {
+      "shard": "benchmark_dev_polyhaven_015",
+      "count": 500,
+      "runtime": {
+        "node": "v24.15.0",
+        "browser": "149.0.7827.55",
+        "requested_backend": "swiftshader",
+        "webgl": {
+          "ok": true,
+          "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+          "renderer": "WebKit WebGL",
+          "vendor": "WebKit",
+          "unmaskedRenderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+          "unmaskedVendor": "Google Inc. (Google)"
+        }
+      }
+    },
+    {
+      "shard": "benchmark_dev_polyhaven_016",
+      "count": 500,
+      "runtime": {
+        "node": "v24.15.0",
+        "browser": "149.0.7827.55",
+        "requested_backend": "swiftshader",
+        "webgl": {
+          "ok": true,
+          "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+          "renderer": "WebKit WebGL",
+          "vendor": "WebKit",
+          "unmaskedRenderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+          "unmaskedVendor": "Google Inc. (Google)"
+        }
+      }
+    },
+    {
+      "shard": "benchmark_dev_polyhaven_017",
+      "count": 500,
+      "runtime": {
+        "node": "v24.15.0",
+        "browser": "149.0.7827.55",
+        "requested_backend": "swiftshader",
+        "webgl": {
+          "ok": true,
+          "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+          "renderer": "WebKit WebGL",
+          "vendor": "WebKit",
+          "unmaskedRenderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+          "unmaskedVendor": "Google Inc. (Google)"
+        }
+      }
+    },
+    {
+      "shard": "benchmark_dev_polyhaven_018",
+      "count": 500,
+      "runtime": {
+        "node": "v24.15.0",
+        "browser": "149.0.7827.55",
+        "requested_backend": "swiftshader",
+        "webgl": {
+          "ok": true,
+          "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+          "renderer": "WebKit WebGL",
+          "vendor": "WebKit",
+          "unmaskedRenderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+          "unmaskedVendor": "Google Inc. (Google)"
+        }
+      }
+    },
+    {
+      "shard": "benchmark_dev_polyhaven_019",
+      "count": 500,
+      "runtime": {
+        "node": "v24.15.0",
+        "browser": "149.0.7827.55",
+        "requested_backend": "swiftshader",
+        "webgl": {
+          "ok": true,
+          "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+          "renderer": "WebKit WebGL",
+          "vendor": "WebKit",
+          "unmaskedRenderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+          "unmaskedVendor": "Google Inc. (Google)"
+        }
+      }
+    },
+    {
+      "shard": "benchmark_dev_polyhaven_020",
+      "count": 400,
+      "runtime": {
+        "node": "v24.15.0",
+        "browser": "149.0.7827.55",
+        "requested_backend": "swiftshader",
+        "webgl": {
+          "ok": true,
+          "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+          "renderer": "WebKit WebGL",
+          "vendor": "WebKit",
+          "unmaskedRenderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+          "unmaskedVendor": "Google Inc. (Google)"
+        }
+      }
+    },
+    {
+      "shard": "benchmark_dev_deplorable_000",
+      "count": 500,
+      "runtime": {
+        "node": "v24.15.0",
+        "browser": "149.0.7827.55",
+        "requested_backend": "swiftshader",
+        "webgl": {
+          "ok": true,
+          "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+          "renderer": "WebKit WebGL",
+          "vendor": "WebKit",
+          "unmaskedRenderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+          "unmaskedVendor": "Google Inc. (Google)"
+        }
+      }
+    },
+    {
+      "shard": "benchmark_dev_deplorable_001",
+      "count": 300,
+      "runtime": {
+        "node": "v24.15.0",
+        "browser": "149.0.7827.55",
+        "requested_backend": "swiftshader",
+        "webgl": {
+          "ok": true,
+          "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+          "renderer": "WebKit WebGL",
+          "vendor": "WebKit",
+          "unmaskedRenderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+          "unmaskedVendor": "Google Inc. (Google)"
+        }
+      }
+    },
+    {
+      "shard": "benchmark_dev_killgorack_000",
+      "count": 500,
+      "runtime": {
+        "node": "v24.15.0",
+        "browser": "149.0.7827.55",
+        "requested_backend": "swiftshader",
+        "webgl": {
+          "ok": true,
+          "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+          "renderer": "WebKit WebGL",
+          "vendor": "WebKit",
+          "unmaskedRenderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+          "unmaskedVendor": "Google Inc. (Google)"
+        }
+      }
+    },
+    {
+      "shard": "benchmark_dev_killgorack_001",
+      "count": 300,
+      "runtime": {
+        "node": "v24.15.0",
+        "browser": "149.0.7827.55",
+        "requested_backend": "swiftshader",
+        "webgl": {
+          "ok": true,
+          "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+          "renderer": "WebKit WebGL",
+          "vendor": "WebKit",
+          "unmaskedRenderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+          "unmaskedVendor": "Google Inc. (Google)"
+        }
+      }
+    },
+    {
+      "shard": "benchmark_dev_lyricsz_000",
+      "count": 500,
+      "runtime": {
+        "node": "v24.15.0",
+        "browser": "149.0.7827.55",
+        "requested_backend": "swiftshader",
+        "webgl": {
+          "ok": true,
+          "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+          "renderer": "WebKit WebGL",
+          "vendor": "WebKit",
+          "unmaskedRenderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+          "unmaskedVendor": "Google Inc. (Google)"
+        }
+      }
+    },
+    {
+      "shard": "benchmark_dev_lyricsz_001",
+      "count": 300,
+      "runtime": {
+        "node": "v24.15.0",
+        "browser": "149.0.7827.55",
+        "requested_backend": "swiftshader",
+        "webgl": {
+          "ok": true,
+          "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+          "renderer": "WebKit WebGL",
+          "vendor": "WebKit",
+          "unmaskedRenderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+          "unmaskedVendor": "Google Inc. (Google)"
+        }
+      }
+    },
+    {
+      "shard": "benchmark_dev_omie_000",
+      "count": 500,
+      "runtime": {
+        "node": "v24.15.0",
+        "browser": "149.0.7827.55",
+        "requested_backend": "swiftshader",
+        "webgl": {
+          "ok": true,
+          "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+          "renderer": "WebKit WebGL",
+          "vendor": "WebKit",
+          "unmaskedRenderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+          "unmaskedVendor": "Google Inc. (Google)"
+        }
+      }
+    },
+    {
+      "shard": "benchmark_dev_omie_001",
+      "count": 300,
+      "runtime": {
+        "node": "v24.15.0",
+        "browser": "149.0.7827.55",
+        "requested_backend": "swiftshader",
+        "webgl": {
+          "ok": true,
+          "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+          "renderer": "WebKit WebGL",
+          "vendor": "WebKit",
+          "unmaskedRenderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+          "unmaskedVendor": "Google Inc. (Google)"
+        }
+      }
+    },
+    {
+      "shard": "benchmark_dev_phuong_000",
+      "count": 500,
+      "runtime": {
+        "node": "v24.15.0",
+        "browser": "149.0.7827.55",
+        "requested_backend": "swiftshader",
+        "webgl": {
+          "ok": true,
+          "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+          "renderer": "WebKit WebGL",
+          "vendor": "WebKit",
+          "unmaskedRenderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+          "unmaskedVendor": "Google Inc. (Google)"
+        }
+      }
+    },
+    {
+      "shard": "benchmark_dev_phuong_001",
+      "count": 300,
+      "runtime": {
+        "node": "v24.15.0",
+        "browser": "149.0.7827.55",
+        "requested_backend": "swiftshader",
+        "webgl": {
+          "ok": true,
+          "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+          "renderer": "WebKit WebGL",
+          "vendor": "WebKit",
+          "unmaskedRenderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+          "unmaskedVendor": "Google Inc. (Google)"
+        }
+      }
+    },
+    {
+      "shard": "benchmark_dev_pjhanzlik_000",
+      "count": 500,
+      "runtime": {
+        "node": "v24.15.0",
+        "browser": "149.0.7827.55",
+        "requested_backend": "swiftshader",
+        "webgl": {
+          "ok": true,
+          "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+          "renderer": "WebKit WebGL",
+          "vendor": "WebKit",
+          "unmaskedRenderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+          "unmaskedVendor": "Google Inc. (Google)"
+        }
+      }
+    },
+    {
+      "shard": "benchmark_dev_pjhanzlik_001",
+      "count": 300,
+      "runtime": {
+        "node": "v24.15.0",
+        "browser": "149.0.7827.55",
+        "requested_backend": "swiftshader",
+        "webgl": {
+          "ok": true,
+          "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+          "renderer": "WebKit WebGL",
+          "vendor": "WebKit",
+          "unmaskedRenderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+          "unmaskedVendor": "Google Inc. (Google)"
+        }
+      }
+    },
+    {
+      "shard": "benchmark_dev_nailfighter_000",
+      "count": 500,
+      "runtime": {
+        "node": "v24.15.0",
+        "browser": "149.0.7827.55",
+        "requested_backend": "swiftshader",
+        "webgl": {
+          "ok": true,
+          "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+          "renderer": "WebKit WebGL",
+          "vendor": "WebKit",
+          "unmaskedRenderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+          "unmaskedVendor": "Google Inc. (Google)"
+        }
+      }
+    },
+    {
+      "shard": "benchmark_dev_nailfighter_001",
+      "count": 300,
+      "runtime": {
+        "node": "v24.15.0",
+        "browser": "149.0.7827.55",
+        "requested_backend": "swiftshader",
+        "webgl": {
+          "ok": true,
+          "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+          "renderer": "WebKit WebGL",
+          "vendor": "WebKit",
+          "unmaskedRenderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+          "unmaskedVendor": "Google Inc. (Google)"
+        }
+      }
+    },
+    {
+      "shard": "benchmark_final_test_polyhaven_000",
+      "count": 500,
+      "runtime": {
+        "node": "v24.15.0",
+        "browser": "149.0.7827.55",
+        "requested_backend": "swiftshader",
+        "webgl": {
+          "ok": true,
+          "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+          "renderer": "WebKit WebGL",
+          "vendor": "WebKit",
+          "unmaskedRenderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+          "unmaskedVendor": "Google Inc. (Google)"
+        }
+      }
+    },
+    {
+      "shard": "benchmark_final_test_polyhaven_001",
+      "count": 500,
+      "runtime": {
+        "node": "v24.15.0",
+        "browser": "149.0.7827.55",
+        "requested_backend": "swiftshader",
+        "webgl": {
+          "ok": true,
+          "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+          "renderer": "WebKit WebGL",
+          "vendor": "WebKit",
+          "unmaskedRenderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+          "unmaskedVendor": "Google Inc. (Google)"
+        }
+      }
+    },
+    {
+      "shard": "benchmark_final_test_polyhaven_002",
+      "count": 500,
+      "runtime": {
+        "node": "v24.15.0",
+        "browser": "149.0.7827.55",
+        "requested_backend": "swiftshader",
+        "webgl": {
+          "ok": true,
+          "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+          "renderer": "WebKit WebGL",
+          "vendor": "WebKit",
+          "unmaskedRenderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+          "unmaskedVendor": "Google Inc. (Google)"
+        }
+      }
+    },
+    {
+      "shard": "benchmark_final_test_polyhaven_003",
+      "count": 500,
+      "runtime": {
+        "node": "v24.15.0",
+        "browser": "149.0.7827.55",
+        "requested_backend": "swiftshader",
+        "webgl": {
+          "ok": true,
+          "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+          "renderer": "WebKit WebGL",
+          "vendor": "WebKit",
+          "unmaskedRenderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+          "unmaskedVendor": "Google Inc. (Google)"
+        }
+      }
+    },
+    {
+      "shard": "benchmark_final_test_polyhaven_004",
+      "count": 500,
+      "runtime": {
+        "node": "v24.15.0",
+        "browser": "149.0.7827.55",
+        "requested_backend": "swiftshader",
+        "webgl": {
+          "ok": true,
+          "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+          "renderer": "WebKit WebGL",
+          "vendor": "WebKit",
+          "unmaskedRenderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+          "unmaskedVendor": "Google Inc. (Google)"
+        }
+      }
+    },
+    {
+      "shard": "benchmark_final_test_polyhaven_005",
+      "count": 100,
+      "runtime": {
+        "node": "v24.15.0",
+        "browser": "149.0.7827.55",
+        "requested_backend": "swiftshader",
+        "webgl": {
+          "ok": true,
+          "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+          "renderer": "WebKit WebGL",
+          "vendor": "WebKit",
+          "unmaskedRenderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+          "unmaskedVendor": "Google Inc. (Google)"
+        }
+      }
+    },
+    {
+      "shard": "benchmark_final_test_deplorable_000",
+      "count": 200,
+      "runtime": {
+        "node": "v24.15.0",
+        "browser": "149.0.7827.55",
+        "requested_backend": "swiftshader",
+        "webgl": {
+          "ok": true,
+          "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+          "renderer": "WebKit WebGL",
+          "vendor": "WebKit",
+          "unmaskedRenderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+          "unmaskedVendor": "Google Inc. (Google)"
+        }
+      }
+    },
+    {
+      "shard": "benchmark_final_test_killgorack_000",
+      "count": 200,
+      "runtime": {
+        "node": "v24.15.0",
+        "browser": "149.0.7827.55",
+        "requested_backend": "swiftshader",
+        "webgl": {
+          "ok": true,
+          "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+          "renderer": "WebKit WebGL",
+          "vendor": "WebKit",
+          "unmaskedRenderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+          "unmaskedVendor": "Google Inc. (Google)"
+        }
+      }
+    },
+    {
+      "shard": "benchmark_final_test_lyricsz_000",
+      "count": 200,
+      "runtime": {
+        "node": "v24.15.0",
+        "browser": "149.0.7827.55",
+        "requested_backend": "swiftshader",
+        "webgl": {
+          "ok": true,
+          "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+          "renderer": "WebKit WebGL",
+          "vendor": "WebKit",
+          "unmaskedRenderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+          "unmaskedVendor": "Google Inc. (Google)"
+        }
+      }
+    },
+    {
+      "shard": "benchmark_final_test_omie_000",
+      "count": 200,
+      "runtime": {
+        "node": "v24.15.0",
+        "browser": "149.0.7827.55",
+        "requested_backend": "swiftshader",
+        "webgl": {
+          "ok": true,
+          "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+          "renderer": "WebKit WebGL",
+          "vendor": "WebKit",
+          "unmaskedRenderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+          "unmaskedVendor": "Google Inc. (Google)"
+        }
+      }
+    },
+    {
+      "shard": "benchmark_final_test_phuong_000",
+      "count": 200,
+      "runtime": {
+        "node": "v24.15.0",
+        "browser": "149.0.7827.55",
+        "requested_backend": "swiftshader",
+        "webgl": {
+          "ok": true,
+          "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+          "renderer": "WebKit WebGL",
+          "vendor": "WebKit",
+          "unmaskedRenderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+          "unmaskedVendor": "Google Inc. (Google)"
+        }
+      }
+    },
+    {
+      "shard": "benchmark_final_test_pjhanzlik_000",
+      "count": 200,
+      "runtime": {
+        "node": "v24.15.0",
+        "browser": "149.0.7827.55",
+        "requested_backend": "swiftshader",
+        "webgl": {
+          "ok": true,
+          "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+          "renderer": "WebKit WebGL",
+          "vendor": "WebKit",
+          "unmaskedRenderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+          "unmaskedVendor": "Google Inc. (Google)"
+        }
+      }
+    },
+    {
+      "shard": "benchmark_final_test_nailfighter_000",
+      "count": 200,
+      "runtime": {
+        "node": "v24.15.0",
+        "browser": "149.0.7827.55",
+        "requested_backend": "swiftshader",
+        "webgl": {
+          "ok": true,
+          "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+          "renderer": "WebKit WebGL",
+          "vendor": "WebKit",
+          "unmaskedRenderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+          "unmaskedVendor": "Google Inc. (Google)"
+        }
+      }
+    }
+  ]
+}

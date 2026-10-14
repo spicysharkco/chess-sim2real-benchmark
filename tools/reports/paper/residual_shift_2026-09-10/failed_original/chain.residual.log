@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "$HOME/bench_experiments/codex_post_matrix_20260910/source/tools/paper/residual_shift.py", line 707, in <module>
+    main()
+  File "$HOME/bench_experiments/codex_post_matrix_20260910/source/tools/paper/residual_shift.py", line 703, in main
+    run(args)
+  File "$HOME/bench_experiments/codex_post_matrix_20260910/source/tools/paper/residual_shift.py", line 651, in run
+    contact_manifest, model_inputs = _run_attention(
+                                     ^^^^^^^^^^^^^^^
+  File "$HOME/bench_experiments/codex_post_matrix_20260910/source/tools/paper/residual_shift.py", line 552, in _run_attention
+    raise ValueError("attention capture changed the model forward result")
+ValueError: attention capture changed the model forward result

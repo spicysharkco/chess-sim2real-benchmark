@@ -1,0 +1,328 @@
+[
+  {
+    "expected_rows": "[redacted: private artefact]",
+    "name": "[redacted: private artefact]"
+  },
+  {
+    "expected_rows": 10000,
+    "name": "legacy_01"
+  },
+  {
+    "expected_rows": 4888,
+    "name": "legacy_02"
+  },
+  {
+    "expected_rows": 200,
+    "name": "legacy_03"
+  },
+  {
+    "expected_rows": 500,
+    "name": "legacy_04"
+  },
+  {
+    "expected_rows": 500,
+    "name": "legacy_05"
+  },
+  {
+    "expected_rows": 1000,
+    "name": "legacy_06"
+  },
+  {
+    "expected_rows": 500,
+    "name": "legacy_07"
+  },
+  {
+    "expected_rows": 1500,
+    "name": "legacy_08"
+  },
+  {
+    "expected_rows": 2000,
+    "name": "legacy_09"
+  },
+  {
+    "expected_rows": 1000,
+    "name": "legacy_10"
+  },
+  {
+    "expected_rows": 500,
+    "name": "legacy_11"
+  },
+  {
+    "expected_rows": 2000,
+    "name": "legacy_12"
+  },
+  {
+    "expected_rows": 500,
+    "name": "legacy_13"
+  },
+  {
+    "expected_rows": 2000,
+    "name": "legacy_14"
+  },
+  {
+    "expected_rows": 2000,
+    "name": "legacy_15"
+  },
+  {
+    "expected_rows": 300,
+    "name": "legacy_16"
+  },
+  {
+    "expected_rows": 2000,
+    "name": "legacy_17"
+  },
+  {
+    "expected_rows": 2000,
+    "name": "legacy_18"
+  },
+  {
+    "expected_rows": 2000,
+    "name": "legacy_19"
+  },
+  {
+    "expected_rows": 2000,
+    "name": "legacy_20"
+  },
+  {
+    "expected_rows": 4000,
+    "name": "legacy_21"
+  },
+  {
+    "expected_rows": 2000,
+    "name": "legacy_22"
+  },
+  {
+    "expected_rows": 2000,
+    "name": "legacy_23"
+  },
+  {
+    "expected_rows": 2000,
+    "name": "legacy_24"
+  },
+  {
+    "expected_rows": 2000,
+    "name": "legacy_25"
+  },
+  {
+    "expected_rows": 300,
+    "name": "legacy_26"
+  },
+  {
+    "expected_rows": 2000,
+    "name": "legacy_27"
+  },
+  {
+    "expected_rows": 1635,
+    "name": "legacy_28"
+  },
+  {
+    "expected_rows": 1263,
+    "name": "legacy_29"
+  },
+  {
+    "expected_rows": 300,
+    "name": "legacy_30"
+  },
+  {
+    "expected_rows": 300,
+    "name": "legacy_31"
+  },
+  {
+    "expected_rows": 300,
+    "name": "legacy_32"
+  },
+  {
+    "expected_rows": 300,
+    "name": "legacy_33"
+  },
+  {
+    "expected_rows": 300,
+    "name": "legacy_34"
+  },
+  {
+    "expected_rows": 300,
+    "name": "legacy_35"
+  },
+  {
+    "expected_rows": 300,
+    "name": "legacy_36"
+  },
+  {
+    "expected_rows": 300,
+    "name": "legacy_37"
+  },
+  {
+    "expected_rows": 12875,
+    "name": "snapshot_38",
+    "path": "$HOME/bench_sources/fen_pools/public_pool_fens.jsonl",
+    "sha256": "[redacted: withheld digest]"
+  },
+  {
+    "expected_rows": 10000,
+    "name": "snapshot_39",
+    "path": "$HOME/bench_sources/fen_pools/cr360_fens.jsonl",
+    "sha256": "[redacted: withheld digest]"
+  },
+  {
+    "expected_rows": 110365,
+    "name": "snapshot_40",
+    "path": "$HOME/bench_sources/fen_pools/low3_data-host_exclusions.jsonl",
+    "sha256": "[redacted: withheld digest]"
+  },
+  {
+    "expected_rows": 78349,
+    "name": "snapshot_41",
+    "path": "$HOME/bench_sources/fen_pools/occlusion_h_data-host_all.jsonl",
+    "sha256": "[redacted: withheld digest]"
+  },
+  {
+    "expected_rows": 86365,
+    "name": "snapshot_42",
+    "path": "$HOME/bench_sources/fen_pools/occlusion_low2_data-host_all.jsonl",
+    "sha256": "[redacted: withheld digest]"
+  },
+  {
+    "expected_rows": 4000,
+    "name": "snapshot_43",
+    "path": "$HOME/bench_sources/fen_pools/occlusion_h_blender4000.jsonl",
+    "sha256": "[redacted: withheld digest]"
+  },
+  {
+    "expected_rows": 500,
+    "name": "historical_benchmark_00",
+    "path": "$HOME/bench_v1/manifests/bench_elev_08_15.jsonl",
+    "sha256": "[redacted: withheld digest]"
+  },
+  {
+    "expected_rows": 500,
+    "name": "historical_benchmark_01",
+    "path": "$HOME/bench_v1/manifests/bench_elev_15_25.jsonl",
+    "sha256": "[redacted: withheld digest]"
+  },
+  {
+    "expected_rows": 500,
+    "name": "historical_benchmark_02",
+    "path": "$HOME/bench_v1/manifests/bench_elev_25_45.jsonl",
+    "sha256": "[redacted: withheld digest]"
+  },
+  {
+    "expected_rows": 500,
+    "name": "historical_benchmark_03",
+    "path": "$HOME/bench_v1/manifests/bench_elev_45_60.jsonl",
+    "sha256": "[redacted: withheld digest]"
+  },
+  {
+    "expected_rows": 500,
+    "name": "historical_benchmark_04",
+    "path": "$HOME/bench_v1/manifests/bench_framing_sheet.jsonl",
+    "sha256": "[redacted: withheld digest]"
+  },
+  {
+    "expected_rows": 300,
+    "name": "historical_benchmark_05",
+    "path": "$HOME/bench_v1/manifests/bench_geom_deplorable.jsonl",
+    "sha256": "[redacted: withheld digest]"
+  },
+  {
+    "expected_rows": 300,
+    "name": "historical_benchmark_06",
+    "path": "$HOME/bench_v1/manifests/bench_geom_killgorack.jsonl",
+    "sha256": "[redacted: withheld digest]"
+  },
+  {
+    "expected_rows": 300,
+    "name": "historical_benchmark_07",
+    "path": "$HOME/bench_v1/manifests/bench_geom_lyricsz.jsonl",
+    "sha256": "[redacted: withheld digest]"
+  },
+  {
+    "expected_rows": 300,
+    "name": "historical_benchmark_08",
+    "path": "$HOME/bench_v1/manifests/bench_geom_nailfighter.jsonl",
+    "sha256": "[redacted: withheld digest]"
+  },
+  {
+    "expected_rows": 300,
+    "name": "historical_benchmark_09",
+    "path": "$HOME/bench_v1/manifests/bench_geom_omie.jsonl",
+    "sha256": "[redacted: withheld digest]"
+  },
+  {
+    "expected_rows": 300,
+    "name": "historical_benchmark_10",
+    "path": "$HOME/bench_v1/manifests/bench_geom_phuong.jsonl",
+    "sha256": "[redacted: withheld digest]"
+  },
+  {
+    "expected_rows": 300,
+    "name": "historical_benchmark_11",
+    "path": "$HOME/bench_v1/manifests/bench_geom_pjhanzlik.jsonl",
+    "sha256": "[redacted: withheld digest]"
+  },
+  {
+    "expected_rows": 300,
+    "name": "historical_benchmark_12",
+    "path": "$HOME/bench_v1/manifests/bench_geom_polyhaven.jsonl",
+    "sha256": "[redacted: withheld digest]"
+  },
+  {
+    "expected_rows": 200,
+    "name": "historical_benchmark_13",
+    "path": "$HOME/bench_v1/manifests/bench_palette_0.jsonl",
+    "sha256": "[redacted: withheld digest]"
+  },
+  {
+    "expected_rows": 200,
+    "name": "historical_benchmark_14",
+    "path": "$HOME/bench_v1/manifests/bench_palette_1.jsonl",
+    "sha256": "[redacted: withheld digest]"
+  },
+  {
+    "expected_rows": 200,
+    "name": "historical_benchmark_15",
+    "path": "$HOME/bench_v1/manifests/bench_palette_2.jsonl",
+    "sha256": "[redacted: withheld digest]"
+  },
+  {
+    "expected_rows": 200,
+    "name": "historical_benchmark_16",
+    "path": "$HOME/bench_v1/manifests/bench_palette_3.jsonl",
+    "sha256": "[redacted: withheld digest]"
+  },
+  {
+    "expected_rows": 200,
+    "name": "historical_benchmark_17",
+    "path": "$HOME/bench_v1/manifests/bench_palette_4.jsonl",
+    "sha256": "[redacted: withheld digest]"
+  },
+  {
+    "expected_rows": 200,
+    "name": "historical_benchmark_18",
+    "path": "$HOME/bench_v1/manifests/bench_palette_5.jsonl",
+    "sha256": "[redacted: withheld digest]"
+  },
+  {
+    "expected_rows": 192,
+    "name": "prior_cohort_0",
+    "path": "$HOME/bench_experiments/codex_parity_20260909/prepare.manifest.jsonl",
+    "sha256": "[redacted: withheld digest]"
+  },
+  {
+    "expected_rows": 960,
+    "name": "prior_cohort_1",
+    "path": "$HOME/bench_experiments/codex_transfer_20260910/prepare.records.jsonl",
+    "sha256": "[redacted: withheld digest]"
+  },
+  {
+    "expected_rows": 288,
+    "name": "prior_cohort_2",
+    "path": "$HOME/bench_experiments/codex_guard_20260910/prepare.records.jsonl",
+    "sha256": "[redacted: withheld digest]"
+  },
+  {
+    "expected_rows": 6100960,
+    "name": "lichess_premove",
+    "path": "$HOME/bench_sources/lichess/lichess_db_puzzle.csv.zst",
+    "sha256": "[redacted: withheld digest]"
+  }
+]

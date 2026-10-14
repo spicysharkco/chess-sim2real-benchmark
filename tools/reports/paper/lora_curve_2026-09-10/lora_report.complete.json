@@ -1,0 +1,46 @@
+{
+  "status": "lora_curve_report_complete",
+  "release_ready": false,
+  "final_test_images_read": false,
+  "gpu_used": false,
+  "inputs_sha256": {
+    "$HOME/bench_experiments/codex_lora_curve_20260910/matrix.complete.json": "[redacted: withheld digest]",
+    "$HOME/bench_experiments/codex_post_matrix_20260910/source/docs/LORA_REPORT_PROTOCOL_2026-09-10.md": "8380e499658a3dbafada5c4081de8cf7c4a4a60b5962716d37f83d72e0f5182f",
+    "$HOME/bench_experiments/codex_post_matrix_20260910/source/tools/paper/lora_report.py": "38c943b64e266de84e8891fcca4ad289faaa45c641b81809bd6b4ba9b5515a1c",
+    "$HOME/bench_experiments/codex_lora_curve_20260910/results/b500_dark_s303.complete.json": "[redacted: withheld digest]",
+    "$HOME/bench_experiments/codex_lora_curve_20260910/results/b500_both_s303.complete.json": "[redacted: withheld digest]",
+    "$HOME/bench_experiments/codex_lora_curve_20260910/results/b2000_dark_s303.complete.json": "[redacted: withheld digest]",
+    "$HOME/bench_experiments/codex_lora_curve_20260910/results/b2000_both_s303.complete.json": "[redacted: withheld digest]",
+    "$HOME/bench_experiments/codex_lora_curve_20260910/results/b2000_dark_s304.complete.json": "[redacted: withheld digest]",
+    "$HOME/bench_experiments/codex_lora_curve_20260910/results/b2000_both_s304.complete.json": "[redacted: withheld digest]",
+    "$HOME/bench_experiments/codex_lora_curve_20260910/results/b2000_dark_s305.complete.json": "[redacted: withheld digest]",
+    "$HOME/bench_experiments/codex_lora_curve_20260910/results/b2000_both_s305.complete.json": "[redacted: withheld digest]",
+    "$HOME/bench_experiments/codex_lora_curve_20260910/results/b8000_dark_s303.complete.json": "[redacted: withheld digest]",
+    "$HOME/bench_experiments/codex_lora_curve_20260910/results/b8000_both_s303.complete.json": "[redacted: withheld digest]",
+    "$HOME/bench_experiments/codex_lora_curve_20260910/results/release.complete.json": "[redacted: withheld digest]"
+  },
+  "fixed_points": [
+    "b500_dark_s303",
+    "b500_both_s303",
+    "b2000_dark_s303",
+    "b2000_both_s303",
+    "b2000_dark_s304",
+    "b2000_both_s304",
+    "b2000_dark_s305",
+    "b2000_both_s305",
+    "b8000_dark_s303",
+    "b8000_both_s303"
+  ],
+  "independent_fen_rescore": true,
+  "bootstrap_intervals": "retained from bound run metrics",
+  "artifacts_sha256": {
+    "lora_report.json": "[redacted: withheld digest]",
+    "lora_report.md": "[redacted: withheld digest]"
+  },
+  "environment": {
+    "python": "3.12.13",
+    "host": "render-host",
+    "numpy": "2.5.2"
+  },
+  "completed_at": "2026-09-10T17:26:02.858422+00:00"
+}

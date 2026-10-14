@@ -1,0 +1,173 @@
+{
+  "schema": "paper-bibliography-evidence/v1",
+  "retrieved_at": "2026-09-10",
+  "scope": "The twelve citation keys required by paper/main.tex and the paper plan, plus four keys cited later (ladder, holdoutreuse, oren2023, fide). An identifier is included only when its canonical resolution was checked; a rejected identifier is kept with value null and the reason.",
+  "entries": {
+    "chessred": {
+      "bib_type": "inproceedings",
+      "title": "End-to-End Chess Recognition",
+      "authors": ["Athanasios Masouris", "Jan van Gemert"],
+      "year": 2024,
+      "primary_source_url": "https://www.scitepress.org/Papers/2024/123702/123702.pdf",
+      "identifiers": [
+        {"type": "doi", "value": "10.5220/0012370200003660", "canonical_url": "https://doi.org/10.5220/0012370200003660", "resolution": "resolved; HTTP 200 to SCITEPRESS on 2026-09-10"},
+        {"type": "arXiv", "value": "2310.04086", "canonical_url": "https://arxiv.org/abs/2310.04086", "resolution": "resolved; arXiv record confirms title, authors, and related DOI on 2026-09-10"}
+      ]
+    },
+    "chesscog": {
+      "bib_type": "article",
+      "title": "Determining Chess Game State From an Image",
+      "authors": ["Georg Wölflein", "Ognjen Arandjelović"],
+      "year": 2021,
+      "primary_source_url": "https://arxiv.org/abs/2104.14963",
+      "identifiers": [
+        {"type": "doi", "value": "10.3390/jimaging7060094", "canonical_url": "https://doi.org/10.3390/jimaging7060094", "resolution": "resolved to the Journal of Imaging landing page; publisher returned HTTP 403 to an automated request on 2026-09-10"},
+        {"type": "arXiv", "value": "2104.14963", "canonical_url": "https://arxiv.org/abs/2104.14963", "resolution": "resolved; arXiv record confirms journal reference and DOI on 2026-09-10"}
+      ]
+    },
+    "slcc": {
+      "bib_type": "misc",
+      "title": "SLCC v1 annotations",
+      "authors": ["Joël Seytre"],
+      "year": 2026,
+      "primary_source_url": "https://huggingface.co/datasets/joelseytre/slcc",
+      "identifiers": [
+        {"type": "dataset-record", "value": "joelseytre/slcc", "canonical_url": "https://huggingface.co/api/datasets/joelseytre/slcc", "resolution": "resolved; public API reports the dataset title, author, 2,174 frames, and association with arXiv:2608.30762 on 2026-09-10"},
+        {"type": "DOI/arXiv", "value": null, "resolution": "missing: no separate DOI or arXiv identifier is published for the dataset record; its associated paper is cited separately as chessqueries"}
+      ]
+    },
+    "cvchess": {
+      "bib_type": "misc",
+      "title": "CVChess: A Deep Learning Framework for Converting Chessboard Images to Forsyth-Edwards Notation",
+      "authors": ["Luthira Abeykoon", "Ved Patel", "Gawthaman Senthilvelan", "Darshan Kasundra"],
+      "year": 2025,
+      "primary_source_url": "https://arxiv.org/abs/2511.11522",
+      "identifiers": [
+        {"type": "arXiv", "value": "2511.11522", "canonical_url": "https://arxiv.org/abs/2511.11522", "resolution": "resolved; arXiv v3 record confirms title and authors on 2026-09-10"}
+      ]
+    },
+    "chessqueries": {
+      "bib_type": "misc",
+      "title": "ChessQueries: Toward Better Chess Board Recognition",
+      "authors": ["Joël Seytre"],
+      "year": 2026,
+      "primary_source_url": "https://arxiv.org/abs/2608.30762",
+      "identifiers": [
+        {"type": "arXiv", "value": "2608.30762", "canonical_url": "https://arxiv.org/abs/2608.30762", "resolution": "resolved; submitted 2026-08-31, title and author confirmed on 2026-09-10"}
+      ]
+    },
+    "fenify": {
+      "bib_type": "techreport",
+      "title": "Fenify: From Video to PGN: AI Chess Board Position Detection and Move Tracking",
+      "authors": ["Logan Spears"],
+      "year": 2026,
+      "primary_source_url": "https://fenify.ai/fenify-from-video-to-pgn.pdf",
+      "identifiers": [
+        {"type": "report-url", "value": "fenify-from-video-to-pgn.pdf", "canonical_url": "https://fenify.ai/fenify-from-video-to-pgn.pdf", "resolution": "resolved; 19-page PDF retrieved and title page, author, and July 2026 date inspected on 2026-09-10"},
+        {"type": "DOI/arXiv", "value": null, "resolution": "missing: the report does not state a DOI or arXiv identifier"}
+      ]
+    },
+    "cr360": {
+      "bib_type": "misc",
+      "title": "ChessRender360: High-Fidelity Rendered Chess Dataset with Multi-Modal Annotations",
+      "authors": ["Marko Kojić"],
+      "year": 2024,
+      "primary_source_url": "https://zenodo.org/records/13356818",
+      "identifiers": [
+        {"type": "doi", "value": "10.5281/zenodo.13356818", "canonical_url": "https://doi.org/10.5281/zenodo.13356818", "resolution": "resolved; HTTP 200 to Zenodo v1.0 record on 2026-09-10"}
+      ]
+    },
+    "dinov2": {
+      "bib_type": "misc",
+      "title": "DINOv2: Learning Robust Visual Features without Supervision",
+      "authors": ["Maxime Oquab", "Timothée Darcet", "Théo Moutakanni", "Huy Vo", "Marc Szafraniec", "Vasil Khalidov", "Pierre Fernandez", "Daniel Haziza", "Francisco Massa", "Alaaeldin El-Nouby", "Mahmoud Assran", "Nicolas Ballas", "Wojciech Galuba", "Russell Howes", "Po-Yao Huang", "Shang-Wen Li", "Ishan Misra", "Michael Rabbat", "Vasu Sharma", "Gabriel Synnaeve", "Hu Xu", "Hervé Jégou", "Julien Mairal", "Patrick Labatut", "Armand Joulin", "Piotr Bojanowski"],
+      "year": 2023,
+      "primary_source_url": "https://arxiv.org/abs/2304.07193",
+      "identifiers": [
+        {"type": "arXiv", "value": "2304.07193", "canonical_url": "https://arxiv.org/abs/2304.07193", "resolution": "resolved; arXiv v2 record confirms title and author list on 2026-09-10"}
+      ]
+    },
+    "domainrand": {
+      "bib_type": "inproceedings",
+      "title": "Domain Randomization for Transferring Deep Neural Networks from Simulation to the Real World",
+      "authors": ["Josh Tobin", "Rachel Fong", "Alex Ray", "Jonas Schneider", "Wojciech Zaremba", "Pieter Abbeel"],
+      "year": 2017,
+      "primary_source_url": "https://doi.org/10.1109/IROS.2017.8202133",
+      "identifiers": [
+        {"type": "doi", "value": "10.1109/IROS.2017.8202133", "canonical_url": "https://doi.org/10.1109/IROS.2017.8202133", "resolution": "resolved; HTTP 202 to IEEE Xplore, and Crossref record confirms title, authors, pages, and conference on 2026-09-10"},
+        {"type": "arXiv", "value": "1703.06907", "canonical_url": "https://arxiv.org/abs/1703.06907", "resolution": "resolved; arXiv record confirms title and authors on 2026-09-10"}
+      ]
+    },
+    "recht2019": {
+      "bib_type": "inproceedings",
+      "title": "Do ImageNet Classifiers Generalize to ImageNet?",
+      "authors": ["Benjamin Recht", "Rebecca Roelofs", "Ludwig Schmidt", "Vaishaal Shankar"],
+      "year": 2019,
+      "primary_source_url": "https://proceedings.mlr.press/v97/recht19a.html",
+      "identifiers": [
+        {"type": "arXiv", "value": "1902.10811", "canonical_url": "https://arxiv.org/abs/1902.10811", "resolution": "resolved; arXiv v2 record confirms title and authors on 2026-09-10"}
+      ]
+    },
+    "lora": {
+      "bib_type": "inproceedings",
+      "title": "LoRA: Low-Rank Adaptation of Large Language Models",
+      "authors": ["Edward J. Hu", "Yelong Shen", "Phillip Wallis", "Zeyuan Allen-Zhu", "Yuanzhi Li", "Shean Wang", "Lu Wang", "Weizhu Chen"],
+      "year": 2022,
+      "primary_source_url": "https://openreview.net/forum?id=nZeVKeeFYf9",
+      "identifiers": [
+        {"type": "arXiv", "value": "2106.09685", "canonical_url": "https://arxiv.org/abs/2106.09685", "resolution": "resolved; arXiv v2 record confirms title and authors on 2026-09-10"}
+      ]
+    },
+    "mobilenetv4": {
+      "bib_type": "misc",
+      "title": "MobileNetV4: Universal Models for the Mobile Ecosystem",
+      "authors": ["Danfeng Qin", "Chas Leichner", "Manolis Delakis", "Marco Fornoni", "Shixin Luo", "Fan Yang", "Weijun Wang", "Colby Banbury", "Chengxi Ye", "Berkin Akin", "Vaibhav Aggarwal", "Tenghui Zhu", "Daniele Moro", "Andrew Howard"],
+      "year": 2024,
+      "primary_source_url": "https://arxiv.org/abs/2404.10518",
+      "identifiers": [
+        {"type": "arXiv", "value": "2404.10518", "canonical_url": "https://arxiv.org/abs/2404.10518", "resolution": "resolved; arXiv v2 record confirms title and authors on 2026-09-10"}
+      ]
+    },
+    "ladder": {
+      "bib_type": "inproceedings",
+      "title": "The Ladder: A Reliable Leaderboard for Machine Learning Competitions",
+      "authors": ["Avrim Blum", "Moritz Hardt"],
+      "year": 2015,
+      "primary_source_url": null,
+      "identifiers": [
+        {"type": "arXiv", "value": "1502.04585", "canonical_url": "https://arxiv.org/abs/1502.04585", "resolution": "resolved; arXiv v1 record (export API and abs page) confirms title and authors on 2026-10-12; PMLR v37 record confirms ICML 2015 (32nd), pp. 1006-1014"}
+      ]
+    },
+    "holdoutreuse": {
+      "bib_type": "article",
+      "title": "The reusable holdout: Preserving validity in adaptive data analysis",
+      "authors": ["Cynthia Dwork", "Vitaly Feldman", "Moritz Hardt", "Toniann Pitassi", "Omer Reingold", "Aaron Roth"],
+      "year": 2015,
+      "primary_source_url": null,
+      "identifiers": [
+        {"type": "DOI", "value": "10.1126/science.aaa9375", "canonical_url": "https://doi.org/10.1126/science.aaa9375", "resolution": "resolved; Crossref record confirms title, six authors, Science 349(6248):636-638, issued 2015-08-07, on 2026-10-12"},
+        {"type": "arXiv", "value": null, "resolution": "rejected: arXiv 1506.02629, previously listed here, is the different NIPS 2015 paper 'Generalization in Adaptive Data Analysis and Holdout Reuse' (same authors); the Science paper has no arXiv record of its own, so the identifier was removed from references.bib on 2026-10-12"}
+      ]
+    },
+    "oren2023": {
+      "bib_type": "inproceedings",
+      "title": "Proving Test Set Contamination in Black Box Language Models",
+      "authors": ["Yonatan Oren", "Nicole Meister", "Niladri Chatterji", "Faisal Ladhak", "Tatsunori B. Hashimoto"],
+      "year": 2024,
+      "primary_source_url": null,
+      "identifiers": [
+        {"type": "arXiv", "value": "2310.17623", "canonical_url": "https://arxiv.org/abs/2310.17623", "resolution": "resolved; arXiv v2 record confirms title and authors on 2026-10-12; OpenReview KS8mIvetg2 confirms ICLR 2024 (oral) with the same authors"}
+      ]
+    },
+    "fide": {
+      "bib_type": "misc",
+      "title": "FIDE Laws of Chess, Article 2.1",
+      "authors": ["Fédération Internationale des Échecs"],
+      "year": 2023,
+      "primary_source_url": "https://handbook.fide.com/chapter/E012023",
+      "identifiers": [
+        {"type": "web-page", "value": "handbook.fide.com/chapter/E012023", "canonical_url": "https://handbook.fide.com/chapter/E012023", "resolution": "resolved; HTTP 200 on 2026-10-12, page titled FIDE Laws of Chess taking effect from 1 January 2023, Article 2.1 states the board orientation"}
+      ]
+    }
+  }
+}

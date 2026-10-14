@@ -1,0 +1,534 @@
+{
+  "files": {
+    "benchmark_v2/adaptation.complete.json": {
+      "derived_export_view": true,
+      "embedded_hashes_rebound": false,
+      "sha256": "0093bde181e331f6eb4c7ebb6499c880aed67214ef32d98e6482aba58589ed6f"
+    },
+    "benchmark_v2/adaptation.summary.json": {
+      "derived_export_view": true,
+      "embedded_hashes_rebound": false,
+      "sha256": "9038737422b51a07e1c33402ac8c444a03c4be90f88ae7b09dbb6534c387c201"
+    },
+    "benchmark_v2/benchmark.complete.json": {
+      "derived_export_view": true,
+      "embedded_hashes_rebound": false,
+      "sha256": "f9d852ff7a8fcc1ffb3b105415818e2c1c73c7a96e8d6477e9f9f8cace49b09c"
+    },
+    "benchmark_v2/benchmark.summary.json": {
+      "derived_export_view": true,
+      "embedded_hashes_rebound": false,
+      "sha256": "167b5d67bd30b70356b095bc5db1417b779830fe3281ba6999104e2bf9ba1bff"
+    },
+    "benchmark_v2/design.complete.json": {
+      "derived_export_view": true,
+      "embedded_hashes_rebound": false,
+      "sha256": "06f9510f91d5d6c31bda12c4f7faf19170d7ffce46c53f03457bfd5ae3343524"
+    },
+    "benchmark_v2/design.plan.json": {
+      "derived_export_view": true,
+      "embedded_hashes_rebound": false,
+      "sha256": "2c38ef81e945c5e722d22366d8e8914392d7154fa08ca8cc6dc24766806be29b"
+    },
+    "benchmark_v2/exclusion_audit.complete.json": {
+      "derived_export_view": true,
+      "embedded_hashes_rebound": false,
+      "sha256": "d10af2b74ec5d140039a5cb795c7c29eb259f380411cd5586c37fd09d1499877"
+    },
+    "benchmark_v2/exclusion_audit.json": {
+      "derived_export_view": true,
+      "embedded_hashes_rebound": false,
+      "path_privacy_rescrub": true,
+      "sha256": "d3ad13893c31b01ef208ea49ca08b577346d6ce90e439644d13704ec3caed79c"
+    },
+    "data/holdout/leak_check_render-host.json": {
+      "derived_export_view": true,
+      "embedded_hashes_rebound": false,
+      "sha256": "fd2df1ac8beaa034aa377ba70dae80a8151cd740d98b4f553575f94e9dc08ecf"
+    },
+    "docs/ADAPTATION_POOL_2026-09-10.md": {
+      "derived_export_view": true,
+      "embedded_hashes_rebound": false,
+      "sha256": "0dda7c8bd299608ee05a455e2cc864408afea345498da9abf577380042e1fbd9"
+    },
+    "docs/BENCHMARK_V2_2026-09-10.md": {
+      "derived_export_view": true,
+      "embedded_hashes_rebound": false,
+      "sha256": "26219a0d2d3abe8291f04a25328608d77f8828007c3770d93d87693e25ef8b42"
+    },
+    "docs/C3_NUMERICAL_DIAGNOSTIC_2026-09-10.md": {
+      "derived_export_view": false,
+      "embedded_hashes_rebound": false,
+      "sha256": "a654390b49bb5122385f33b6522b576b66c203a8cbc4c43fd04fcfc10250e5f6"
+    },
+    "docs/C3_PRECISION_AMENDMENT_2026-09-10.md": {
+      "derived_export_view": false,
+      "embedded_hashes_rebound": false,
+      "sha256": "4499fc3a32f030b299703950bf886ce50f230e2ee3a87111f8bd7aaab6c7b2ba"
+    },
+    "docs/FIGURE_PIPELINE_2026-09-10.md": {
+      "derived_export_view": false,
+      "embedded_hashes_rebound": false,
+      "sha256": "d4045b3386f2cd375a339b3ff4604ee8bb1b6e4444cd9f42e12587c25a485823"
+    },
+    "docs/LORA_CURVE_2026-09-10.md": {
+      "derived_export_view": true,
+      "embedded_hashes_rebound": false,
+      "sha256": "f92f89ff6b6dd89c0bb6d2e48d0cdb922680eee15492eb74fb81e1bde6775650"
+    },
+    "docs/LORA_REPORT_PROTOCOL_2026-09-10.md": {
+      "derived_export_view": false,
+      "embedded_hashes_rebound": false,
+      "sha256": "8380e499658a3dbafada5c4081de8cf7c4a4a60b5962716d37f83d72e0f5182f"
+    },
+    "docs/RESIDUAL_SHIFT_PROTOCOL_2026-09-10.md": {
+      "derived_export_view": true,
+      "embedded_hashes_rebound": false,
+      "path_privacy_rescrub": true,
+      "sha256": "b4089976b9b34173074a98fc01ff637a84f3dd2664a87f362aeb40aa76dfffc8"
+    },
+    "docs/TIMING_PROTOCOL_2026-09-10.md": {
+      "derived_export_view": true,
+      "embedded_hashes_rebound": false,
+      "path_privacy_rescrub": true,
+      "sha256": "6892321a23f035aa4f9727243caf98205bef38c1c588082cee0186939c100935"
+    },
+    "docs/records/BENCHMARK_ASSET_INVENTORY_2026-09-10.json": {
+      "derived_export_view": true,
+      "embedded_hashes_rebound": false,
+      "sha256": "7745901ba322f1be61a54e5390e9323eef760b624bcf643dade82c24b3ff8b10"
+    },
+    "docs/records/BENCHMARK_ATTRIBUTIONS_2026-09-10.md": {
+      "derived_export_view": false,
+      "embedded_hashes_rebound": false,
+      "prior_version": "docs/records/BENCHMARK_ATTRIBUTIONS_BEFORE_2026-09-14.md",
+      "sha256": "e645a6372f80b39d0c0db5173fd0ddc72c699ed8bf415a6a8cf4b3fbe5aec295",
+      "source_kind": "current_operator_decision"
+    },
+    "docs/records/BENCHMARK_ATTRIBUTIONS_BEFORE_2026-09-14.md": {
+      "derived_export_view": false,
+      "embedded_hashes_rebound": false,
+      "sha256": "7dab296b10e13d229fd10bbbf652e6df1d4fc6398eda04710a0f4c54abe8f69f"
+    },
+    "docs/records/C2_BUDGET_SEMANTICS_2026-09-10.md": {
+      "derived_export_view": false,
+      "embedded_hashes_rebound": false,
+      "sha256": "d9b206dbf29ba72540d0f3741a575fd3ccda72536fdb4d77f81caa75e65aaae3"
+    },
+    "docs/records/PARITY_CONVENTIONS.complete.json": {
+      "derived_export_view": true,
+      "embedded_hashes_rebound": false,
+      "sha256": "7f9c28e6f44d34f2ae7c8010e3583a823a640bab3227e22fc071df796509d4f3"
+    },
+    "docs/records/PARITY_CONVENTIONS.md": {
+      "derived_export_view": true,
+      "embedded_hashes_rebound": false,
+      "sha256": "0a174b62d3036b93de25b5a1fa5e8fb66daa75cc8140d1a75f03780badb59c8b"
+    },
+    "docs/records/PHUONG_DECISION_2026-09-14.md": {
+      "derived_export_view": false,
+      "embedded_hashes_rebound": false,
+      "sha256": "46565f3bb81f22399a20e21061fc5ac0504f808348be1616b4e5087c5971e8ed",
+      "source_kind": "current_operator_decision"
+    },
+    "docs/records/PHUONG_LICENCE_RECOVERY.complete.json": {
+      "derived_export_view": true,
+      "embedded_hashes_rebound": false,
+      "sha256": "05cac37c17c5daa0d364b0c3bec72303344418dabb1e0e0dc82fda9663279517"
+    },
+    "docs/records/PHUONG_LICENCE_RECOVERY_2026-09-10.md": {
+      "derived_export_view": false,
+      "embedded_hashes_rebound": false,
+      "sha256": "118d5e4418ad15ecbcbf5726a675999a3934e405c0edf505bfd4c30b2d06d7f7"
+    },
+    "docs/records/PHUONG_RELEASE_STATUS_2026-09-14.complete.json": {
+      "derived_export_view": true,
+      "embedded_hashes_rebound": false,
+      "sha256": "4ecfa6e603d9b435f618ee41821bacc3a1ede46b4e3347bc937602778cbd5552",
+      "source_kind": "historical_operator_decision"
+    },
+    "docs/records/PHUONG_RELEASE_STATUS_2026-09-15.complete.json": {
+      "derived_export_view": true,
+      "embedded_hashes_rebound": false,
+      "sha256": "731989dd0bc68ded9f92639990e4b30dddb98ca0f27c0ea7ca8f01e433a95b32",
+      "source_kind": "historical_operator_decision"
+    },
+    "docs/records/PHUONG_RELEASE_STATUS_2026-10-12.complete.json": {
+      "derived_export_view": true,
+      "embedded_hashes_rebound": false,
+      "sha256": "14992c4c8ca062f7e7570a2e46c70901dbcbdbc060dfc6e3b9427c51e82fffe8",
+      "source_kind": "current_operator_decision"
+    },
+    "docs/records/RELEASE_LICENCE_REVIEW.complete.json": {
+      "derived_export_view": true,
+      "embedded_hashes_rebound": false,
+      "sha256": "9c74918305bf25167341cbaa32ce6d933a71fa0660d7f1e29864feb801d6d325"
+    },
+    "docs/records/RELEASE_LICENCE_REVIEW_2026-09-10.md": {
+      "derived_export_view": true,
+      "embedded_hashes_rebound": false,
+      "sha256": "ac59b569286fb25a927a25667b2df3c1e19f1b5a2aee8612eedbab5fad9a80e9"
+    },
+    "docs/records/phuong_licence_recovery_2026-09-10/distribution_AUTHORS.md": {
+      "derived_export_view": false,
+      "embedded_hashes_rebound": false,
+      "sha256": "9ffacae479020254ee8a63d1154a00826a0d6d6a01fe75f59ba0fcc85f4aa81f"
+    },
+    "docs/records/phuong_licence_recovery_2026-09-10/evidence.json": {
+      "derived_export_view": true,
+      "embedded_hashes_rebound": false,
+      "sha256": "a7ecaf0a2dcef1c2e83829b101e3741837d8c4e491fb197d3638dd0e89884a89"
+    },
+    "reports/historical_pipeline.csv": {
+      "derived_export_view": true,
+      "embedded_hashes_rebound": false,
+      "sha256": "7ffe07cf57839940678ee9f3a9ab768e588b11ca5d9479144107a1bbf009d68a"
+    },
+    "reports/historical_pipeline.md": {
+      "derived_export_view": true,
+      "embedded_hashes_rebound": false,
+      "sha256": "cd373ceeeffd5238bd19677ca66310120f7f9d220666d29cb89af4de6939cd9e"
+    },
+    "tools/reports/paper/FREEZE_2026-09-09.json": {
+      "derived_export_view": false,
+      "embedded_hashes_rebound": false,
+      "sha256": "ca9e1a249f625189bb6fe885c981351dfe3a22d83f032b7a19c9afb08031554a"
+    },
+    "tools/reports/paper/cq_baseline_2026-09-08.json": {
+      "derived_export_view": true,
+      "embedded_hashes_rebound": false,
+      "sha256": "9762a68d355c768941daa6f703f666f96872779dc25f4737e74840b3ca0cf29c"
+    },
+    "tools/reports/paper/cq_baseline_chesscog_2026-09-08.json": {
+      "derived_export_view": true,
+      "embedded_hashes_rebound": false,
+      "sha256": "bff79c13df1183b5ce9754f75a4691fd0db4c3673ae37ced06c77c4fbed31dc7"
+    },
+    "tools/reports/paper/cq_baseline_cvchess_2026-09-08.json": {
+      "derived_export_view": true,
+      "embedded_hashes_rebound": false,
+      "sha256": "d882038cab5524378fb8c5f9f1d92d019b5d46d2d914f784f267adf2905672ab"
+    },
+    "tools/reports/paper/crop_diag_2026-09-09.json": {
+      "derived_export_view": false,
+      "embedded_hashes_rebound": false,
+      "sha256": "aacccf0ad150da396ad6e3b27e4510baf3ff233a9784eea1bce150bf6ab3b6f9"
+    },
+    "tools/reports/paper/figures/adaptation.csv": {
+      "derived_export_view": false,
+      "embedded_hashes_rebound": false,
+      "sha256": "2fa49931a577705e76d5dd173830e61a35bc963ec504fe9944f5f31dfe08a7c4"
+    },
+    "tools/reports/paper/figures/corner_elevation.csv": {
+      "derived_export_view": false,
+      "embedded_hashes_rebound": false,
+      "sha256": "d3ad4af6a4418a9ae92a2943421ddf6586b1b4e6b07f081f563b2ecf55bd3978"
+    },
+    "tools/reports/paper/figures/heatmap.csv": {
+      "derived_export_view": false,
+      "embedded_hashes_rebound": false,
+      "sha256": "662c41b2d8b0acf68e32fcaf216e281234c9ad03a5a67b38ea7c308563f70f9a"
+    },
+    "tools/reports/paper/figures/timing.csv": {
+      "derived_export_view": false,
+      "embedded_hashes_rebound": false,
+      "sha256": "b05ed94f378faf318c4c04575d6471a9c2bf14ab0a3f2fdbbe4ff2d082545f88"
+    },
+    "tools/reports/paper/lora_curve_2026-09-10/lora_report.complete.json": {
+      "derived_export_view": true,
+      "embedded_hashes_rebound": false,
+      "path_privacy_rescrub": true,
+      "sha256": "b675475b85af7ca16569c5edd77eb9f9a4c7b50714e9df6deebe2058beb4de10"
+    },
+    "tools/reports/paper/lora_curve_2026-09-10/lora_report.json": {
+      "derived_export_view": true,
+      "embedded_hashes_rebound": false,
+      "sha256": "d460ebc985dddfac89d6e7562ff33ee9c12fb4acae25ae359c74e6ae1132efc7"
+    },
+    "tools/reports/paper/member_cvchess_full.tsv.json": {
+      "derived_export_view": true,
+      "embedded_hashes_rebound": false,
+      "sha256": "91b850ea57443fa22470d5607807c1fdd5dfc991854322097df87312f0ac9d09"
+    },
+    "tools/reports/paper/member_cvchess_raw.tsv.json": {
+      "derived_export_view": true,
+      "embedded_hashes_rebound": false,
+      "sha256": "5b5b0ef06ccf76cb82240e13be4345bb73225a74bed8210d23d522b0ad3945ca"
+    },
+    "tools/reports/paper/member_cvchess_warp_high.tsv.json": {
+      "derived_export_view": true,
+      "embedded_hashes_rebound": false,
+      "sha256": "36ec759cb483b3eacb0c5d6ce4e7acb1dadcac91e9d739650bbd61a09d551b47"
+    },
+    "tools/reports/paper/member_cvchess_warp_low.tsv.json": {
+      "derived_export_view": true,
+      "embedded_hashes_rebound": false,
+      "sha256": "70bf6825433563f3dd02cf00ac303214b7e483a7fd89dc03e24a6f09e46d0dcb"
+    },
+    "tools/reports/paper/member_slcctest_full.tsv.json": {
+      "derived_export_view": true,
+      "embedded_hashes_rebound": false,
+      "sha256": "c07663a189199a4dc2232d2c8e7cf3e28b6923e2c95cb2b62b7ddcd6c4501591"
+    },
+    "tools/reports/paper/member_slcctest_raw.tsv.json": {
+      "derived_export_view": true,
+      "embedded_hashes_rebound": false,
+      "sha256": "902067f7a7ef3f74a252f3689ef1f25bd39846ef712127f5201b756f5ed5b24a"
+    },
+    "tools/reports/paper/member_slcctest_warp_high.tsv.json": {
+      "derived_export_view": true,
+      "embedded_hashes_rebound": false,
+      "sha256": "5cc2522cec70d2c8225249cab873ef089645698f7e2cbd9a5899c46c4db3e0da"
+    },
+    "tools/reports/paper/member_slcctest_warp_low.tsv.json": {
+      "derived_export_view": true,
+      "embedded_hashes_rebound": false,
+      "sha256": "ae33afbc2d3b21c373ec1023076a985313be860b496fe63c2e6b61a36656246e"
+    },
+    "tools/reports/paper/parity_probe_2026-09-09/analysis.json": {
+      "derived_export_view": false,
+      "embedded_hashes_rebound": false,
+      "sha256": "b797fc2b73f1612e324a4e46435e1dbb0f8d9185da11baf9ab45fca40a840e64"
+    },
+    "tools/reports/paper/parity_probe_2026-09-09/result_r1.complete.json": {
+      "derived_export_view": true,
+      "embedded_hashes_rebound": false,
+      "sha256": "120fc0a74b82e051103de47a7e898b5ccbfb4c519110e9828bb0c53e066698aa"
+    },
+    "tools/reports/paper/real_photo_2026-09-11/a1_light_2026-10-04/score_cq_cpu_20261004.json": {
+      "derived_export_view": true,
+      "embedded_hashes_rebound": false,
+      "sha256": "030c246dddd5416c8616430b10a883e10e58f30af569cb6f12bfd31d845e2d3d"
+    },
+    "tools/reports/paper/residual_shift_2026-09-10/diagnostics/precision_results.complete.json": {
+      "derived_export_view": true,
+      "embedded_hashes_rebound": false,
+      "path_privacy_rescrub": true,
+      "sha256": "058f03f2deca1677438cad22b9f8d5289d7d6c035925c4ec0d1120dc2f402445"
+    },
+    "tools/reports/paper/residual_shift_2026-09-10/diagnostics/precision_results.results.json": {
+      "derived_export_view": false,
+      "embedded_hashes_rebound": false,
+      "sha256": "574ca0904b1f9b36d1d1966cae1801c28a8baafa9b04f2c4345cbbf324c23296"
+    },
+    "tools/reports/paper/residual_shift_2026-09-10/examples/manifest.json": {
+      "derived_export_view": false,
+      "embedded_hashes_rebound": false,
+      "sha256": "921678e0272363ee315859bad7d07c0753f7cc45ac6ffbac4ff11ae507cbbbbe"
+    },
+    "tools/reports/paper/residual_shift_2026-09-10/overall_recovery.complete.json": {
+      "derived_export_view": true,
+      "embedded_hashes_rebound": false,
+      "path_privacy_rescrub": true,
+      "sha256": "7f315867a72d9ae7a5fa170764e3acbab94309c0a6411e5998d83fe73e789e7d"
+    },
+    "tools/reports/paper/residual_shift_2026-09-10/overall_recovery.summary.json": {
+      "derived_export_view": true,
+      "embedded_hashes_rebound": false,
+      "path_privacy_rescrub": true,
+      "sha256": "1bf3f43dc0214da249762aa1cb60cabb2a61cdf8f27a7d8435781cab0a76e601"
+    },
+    "tools/reports/paper/residual_shift_2026-09-10/r1/residual_r1.attention_selection.json": {
+      "derived_export_view": true,
+      "embedded_hashes_rebound": false,
+      "path_privacy_rescrub": true,
+      "sha256": "f6451573bf332c91f5d643e4921d4a9928e5512e487533622fb1dcad435d5f94"
+    },
+    "tools/reports/paper/residual_shift_2026-09-10/r1/residual_r1.complete.json": {
+      "derived_export_view": true,
+      "embedded_hashes_rebound": false,
+      "path_privacy_rescrub": true,
+      "sha256": "818656981473a5d861759071316e9ec90d5825d0de917373debd25848471dee7"
+    },
+    "tools/reports/paper/residual_shift_2026-09-10/r1/residual_r1.contact_sheets.json": {
+      "derived_export_view": false,
+      "embedded_hashes_rebound": false,
+      "sha256": "9277f86e2fc1eea615e968a8a8cbfa8965db2992750fbb3cdfcf63ac877e2164"
+    },
+    "tools/reports/paper/residual_shift_2026-09-10/r1/residual_r1.metrics.json": {
+      "derived_export_view": false,
+      "embedded_hashes_rebound": false,
+      "sha256": "be65e0dd681acf3f30a996217e40702d5822aaf7acb828928287271bc9d029e7"
+    },
+    "tools/reports/paper/timing_2026-09-10/timing.complete.json": {
+      "derived_export_view": true,
+      "embedded_hashes_rebound": false,
+      "sha256": "0a34e1fa6afb988bcbfe773531346ebfd1df8d6d3e623b403352a091320c0872"
+    },
+    "tools/reports/paper/timing_2026-09-10/timing.runs.json": {
+      "derived_export_view": true,
+      "embedded_hashes_rebound": false,
+      "path_privacy_rescrub": true,
+      "sha256": "2257bdb7e7c57f6222000ad380dc171acbf4388007b516bf127aa9a32d7746a7"
+    },
+    "tools/reports/paper/timing_2026-09-10/timing.runs/cq_release.complete.json": {
+      "derived_export_view": true,
+      "embedded_hashes_rebound": false,
+      "path_privacy_rescrub": true,
+      "sha256": "831ea4cea4ea395b8a287d47879d671e6ef6637b68c4b9b686b370a2a7f61475"
+    },
+    "tools/reports/paper/timing_2026-09-10/timing.runs/cq_release.summary.json": {
+      "derived_export_view": false,
+      "embedded_hashes_rebound": false,
+      "sha256": "bf5be3fad32f7b847c836bda0c8111418b2fdc0e2dc8b624dbfc4da178590d9c"
+    },
+    "tools/reports/paper/timing_2026-09-10/timing.runs/lora_both_n2000_s303.complete.json": {
+      "derived_export_view": true,
+      "embedded_hashes_rebound": false,
+      "path_privacy_rescrub": true,
+      "sha256": "ab04b769b226de35b92c3e61eea53b732ce4fc7a4df44682a53d50c8486b9c80"
+    },
+    "tools/reports/paper/timing_2026-09-10/timing.runs/lora_both_n2000_s303.summary.json": {
+      "derived_export_view": false,
+      "embedded_hashes_rebound": false,
+      "sha256": "bdafd885b59931596b137bc1ae142c5634adef60c9489a5b69249ce47404bef5"
+    },
+    "tools/reports/paper/timing_2026-09-10/timing.runs/lora_both_n2000_s304.complete.json": {
+      "derived_export_view": true,
+      "embedded_hashes_rebound": false,
+      "path_privacy_rescrub": true,
+      "sha256": "32c9313986e6a7b57221d5bf59b052c17967dbef59e243e5ce2c995ff545f7a7"
+    },
+    "tools/reports/paper/timing_2026-09-10/timing.runs/lora_both_n2000_s304.summary.json": {
+      "derived_export_view": false,
+      "embedded_hashes_rebound": false,
+      "sha256": "ea2106c467b1f7ce4f2b098c4b01b257a483cae4494c3ff2837d15fe412a822f"
+    },
+    "tools/reports/paper/timing_2026-09-10/timing.runs/lora_both_n2000_s305.complete.json": {
+      "derived_export_view": true,
+      "embedded_hashes_rebound": false,
+      "path_privacy_rescrub": true,
+      "sha256": "fbc12beb62840f937e7e0f78bc7269b20bf45fc9ce5d3a0a6a44f6e94f3eac49"
+    },
+    "tools/reports/paper/timing_2026-09-10/timing.runs/lora_both_n2000_s305.summary.json": {
+      "derived_export_view": false,
+      "embedded_hashes_rebound": false,
+      "sha256": "fa50eed87592c4169d2fa3b91670042a3ab327b6eb06a44bdfb07b9120f5e335"
+    },
+    "tools/reports/paper/timing_2026-09-10/timing.runs/lora_both_n500_s303.complete.json": {
+      "derived_export_view": true,
+      "embedded_hashes_rebound": false,
+      "path_privacy_rescrub": true,
+      "sha256": "11b71f85e6f4ad1ddcb9bb6ea5343998df4d0a869d4ef5dad3b837ecba9baa0d"
+    },
+    "tools/reports/paper/timing_2026-09-10/timing.runs/lora_both_n500_s303.summary.json": {
+      "derived_export_view": false,
+      "embedded_hashes_rebound": false,
+      "sha256": "070ae9222cce87760eefad5780f0544eb52d6f5d8a9dac51264974441e2905c8"
+    },
+    "tools/reports/paper/timing_2026-09-10/timing.runs/lora_both_n8000_s303.complete.json": {
+      "derived_export_view": true,
+      "embedded_hashes_rebound": false,
+      "path_privacy_rescrub": true,
+      "sha256": "e9e4f3932dec08575819d08b308404f87976b570002598caca74770cebb47d52"
+    },
+    "tools/reports/paper/timing_2026-09-10/timing.runs/lora_both_n8000_s303.summary.json": {
+      "derived_export_view": false,
+      "embedded_hashes_rebound": false,
+      "sha256": "e9eb8a93767c7b7aec6a838b6a2e08c328f86dbce0d4b9dc96ac8be893e1cf55"
+    },
+    "tools/reports/paper/timing_2026-09-10/timing.runs/lora_dark_n2000_s303.complete.json": {
+      "derived_export_view": true,
+      "embedded_hashes_rebound": false,
+      "path_privacy_rescrub": true,
+      "sha256": "0b7042b18381ad61a27f2c7c79fd5b7f67ce93459bc25287c602490c042d5926"
+    },
+    "tools/reports/paper/timing_2026-09-10/timing.runs/lora_dark_n2000_s303.summary.json": {
+      "derived_export_view": false,
+      "embedded_hashes_rebound": false,
+      "sha256": "2ca59b4b81127a66fe457802a729e3435d2be09ac734c78bc8ee61d905372306"
+    },
+    "tools/reports/paper/timing_2026-09-10/timing.runs/lora_dark_n2000_s304.complete.json": {
+      "derived_export_view": true,
+      "embedded_hashes_rebound": false,
+      "path_privacy_rescrub": true,
+      "sha256": "ebda2ed1cb04d0b8aa2e814dfe7419baffebdb4df60870572cb929c2b300aadf"
+    },
+    "tools/reports/paper/timing_2026-09-10/timing.runs/lora_dark_n2000_s304.summary.json": {
+      "derived_export_view": false,
+      "embedded_hashes_rebound": false,
+      "sha256": "d9b756b72ac0e49600272b451551f82f4a429f842649bbd0d1c9a5a1c9176275"
+    },
+    "tools/reports/paper/timing_2026-09-10/timing.runs/lora_dark_n2000_s305.complete.json": {
+      "derived_export_view": true,
+      "embedded_hashes_rebound": false,
+      "path_privacy_rescrub": true,
+      "sha256": "a6a352fbf23655578a5d7807c8f6f8c51bcc16e78697d5f49171dcfd3315086a"
+    },
+    "tools/reports/paper/timing_2026-09-10/timing.runs/lora_dark_n2000_s305.summary.json": {
+      "derived_export_view": false,
+      "embedded_hashes_rebound": false,
+      "sha256": "6c74d02806444a8299c76c4d7cb8612fd5145673ebc0ba6866159e962cb96c46"
+    },
+    "tools/reports/paper/timing_2026-09-10/timing.runs/lora_dark_n500_s303.complete.json": {
+      "derived_export_view": true,
+      "embedded_hashes_rebound": false,
+      "path_privacy_rescrub": true,
+      "sha256": "645b60c46aa5db321d7d50640118469f2511dc370a63a30a3a857b34646bf9c0"
+    },
+    "tools/reports/paper/timing_2026-09-10/timing.runs/lora_dark_n500_s303.summary.json": {
+      "derived_export_view": false,
+      "embedded_hashes_rebound": false,
+      "sha256": "2aa56a1e69c852a260ae24dec8f105a30a13cfebbef8b8e336ebd758b19bd190"
+    },
+    "tools/reports/paper/timing_2026-09-10/timing.runs/lora_dark_n8000_s303.complete.json": {
+      "derived_export_view": true,
+      "embedded_hashes_rebound": false,
+      "path_privacy_rescrub": true,
+      "sha256": "a1b042ba561438de350a16132076317f1ad76e362fb8ffe50142354d22f41d60"
+    },
+    "tools/reports/paper/timing_2026-09-10/timing.runs/lora_dark_n8000_s303.summary.json": {
+      "derived_export_view": false,
+      "embedded_hashes_rebound": false,
+      "sha256": "59d1b423152bdd94fe62ace67d0b2c2fa86c23f9bad6ad5f697a118efbbf2518"
+    },
+    "tools/reports/paper/timing_2026-09-10/timing.runs/private_full.complete.json": {
+      "derived_export_view": true,
+      "embedded_hashes_rebound": false,
+      "path_privacy_rescrub": true,
+      "sha256": "30ab2d299a539a32b131aac45deb492a222cef9231463f4f9bba9948d06f1add"
+    },
+    "tools/reports/paper/timing_2026-09-10/timing.runs/private_full.summary.json": {
+      "derived_export_view": false,
+      "embedded_hashes_rebound": false,
+      "sha256": "a1507c9bf8563291678c592e5609eebaa32796583ad6c535d221ac55df00fa62"
+    },
+    "tools/reports/paper/timing_2026-09-10/timing.runs/private_raw.complete.json": {
+      "derived_export_view": true,
+      "embedded_hashes_rebound": false,
+      "path_privacy_rescrub": true,
+      "sha256": "608ebf8048e456f4c0612e17ee9336d317a7ed78b489d360789a3b9eb036ec35"
+    },
+    "tools/reports/paper/timing_2026-09-10/timing.runs/private_raw.summary.json": {
+      "derived_export_view": false,
+      "embedded_hashes_rebound": false,
+      "sha256": "bd4870ce4826b5ffc7685199e246c3aa39c0723eae90f70558c10bd6aeb404b4"
+    },
+    "tools/reports/paper/timing_2026-09-10/timing.runs/private_warp_high.complete.json": {
+      "derived_export_view": true,
+      "embedded_hashes_rebound": false,
+      "path_privacy_rescrub": true,
+      "sha256": "1e32bfa630766438069eecf7e7a4295592d32eff22e9678dfb2705578f634a3f"
+    },
+    "tools/reports/paper/timing_2026-09-10/timing.runs/private_warp_high.summary.json": {
+      "derived_export_view": false,
+      "embedded_hashes_rebound": false,
+      "sha256": "012cd65eb198e6139cfef37412738ecd855ba6564c77ff3da54433049ad288d3"
+    },
+    "tools/reports/paper/timing_2026-09-10/timing.runs/private_warp_low.complete.json": {
+      "derived_export_view": true,
+      "embedded_hashes_rebound": false,
+      "path_privacy_rescrub": true,
+      "sha256": "937118396e40435fa947e721d1144ff99227df157267976fbf9b2a9fa26beaa1"
+    },
+    "tools/reports/paper/timing_2026-09-10/timing.runs/private_warp_low.summary.json": {
+      "derived_export_view": false,
+      "embedded_hashes_rebound": false,
+      "sha256": "58cac52eb64fadc0958d6895f08512b4c7258a5d7e75797d6621e6fa16927866"
+    }
+  },
+  "note": "Export-only derived views. Each sha256 is the digest of the copy in this directory. Embedded historical hashes refer to original bytes; the digests of those bytes are not recorded here.",
+  "schema": "paper-evidence-index/v1",
+  "upstream_export_receipt_sha256": "[redacted: withheld digest]",
+  "upstream_manifest_sha256": "[redacted: withheld digest]"
+}

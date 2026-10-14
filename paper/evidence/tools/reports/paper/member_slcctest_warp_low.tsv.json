@@ -1,0 +1,11 @@
+{
+  "exact": 0.11413043478260869,
+  "images": "$DATA_ROOT/ext/slcc_conv/images",
+  "members": [
+    "cq_dinov3l"
+  ],
+  "ms_per_img": 199.41993770392045,
+  "n": 368,
+  "per_square": 0.7208305027173914,
+  "variant": "warp_low"
+}

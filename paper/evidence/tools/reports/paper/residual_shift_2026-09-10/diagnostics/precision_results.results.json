@@ -1,0 +1,41 @@
+[
+  {
+    "condition": "high_auto",
+    "matmul_precision": "high",
+    "sdp_backend": "auto",
+    "dtype": "torch.float32",
+    "capture_max_abs": 0.0018221735954284668,
+    "restore_max_abs": 0.0,
+    "capture_equivalent": false,
+    "restore_equivalent": true,
+    "hooks_restored": true,
+    "ordinary_saved_argmax_mismatches": 0,
+    "capture_saved_argmax_mismatches": 0
+  },
+  {
+    "condition": "highest_auto",
+    "matmul_precision": "highest",
+    "sdp_backend": "auto",
+    "dtype": "torch.float32",
+    "capture_max_abs": 3.24249267578125e-05,
+    "restore_max_abs": 0.0,
+    "capture_equivalent": true,
+    "restore_equivalent": true,
+    "hooks_restored": true,
+    "ordinary_saved_argmax_mismatches": 0,
+    "capture_saved_argmax_mismatches": 0
+  },
+  {
+    "condition": "highest_math",
+    "matmul_precision": "highest",
+    "sdp_backend": "math",
+    "dtype": "torch.float32",
+    "capture_max_abs": 1.239776611328125e-05,
+    "restore_max_abs": 0.0,
+    "capture_equivalent": true,
+    "restore_equivalent": true,
+    "hooks_restored": true,
+    "ordinary_saved_argmax_mismatches": 0,
+    "capture_saved_argmax_mismatches": 0
+  }
+]

@@ -1,0 +1,5 @@
+elevation_low_deg,elevation_high_deg,n,usable,not_found,divergent,median_edge_pct,p90_edge_pct,median_px,p90_px
+8,15,500,498,0,2,2.008,4.492,11.49,26.22
+15,25,500,496,0,4,1.157,2.154,7.04,12.47
+25,45,500,499,0,1,0.632,0.874,4.36,5.73
+45,60,500,498,0,2,0.277,0.386,2.01,2.93

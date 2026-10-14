@@ -1,0 +1,46 @@
+{
+  "attribution_path": "docs/records/BENCHMARK_ATTRIBUTIONS_2026-09-10.md",
+  "attribution_sha256": "[redacted: withheld digest]",
+  "basis": "operator decision dated 2026-09-14, not recovered upstream version evidence",
+  "decision_path": "docs/records/PHUONG_DECISION_2026-09-14.md",
+  "decision_sha256": "46565f3bb81f22399a20e21061fc5ac0504f808348be1616b4e5087c5971e8ed",
+  "family": "phuong",
+  "family_render_release_ready": true,
+  "gated_families": [],
+  "historical_records_unchanged": true,
+  "model_distribution": "base_weights_and_adapters_withheld",
+  "notice_update_basis_commit": "073057c48ef85e6ecea74b5acd69e1fd10ce0ea4",
+  "package_attribution_terms": "CC BY 4.0",
+  "package_blockers": [
+    "clean_package_reproduction_smoke_test",
+    "operator_publication_go"
+  ],
+  "package_release_ready": false,
+  "previous_status": {
+    "path": "docs/records/PHUONG_RELEASE_STATUS_2026-09-14.complete.json",
+    "sha256": "[redacted: withheld digest]"
+  },
+  "public_author": "Leo King",
+  "published": false,
+  "release_ready": true,
+  "remaining_blockers": [],
+  "required_notices_sha256": {
+    "LICENSE.md": "[redacted: withheld digest]",
+    "LICENSES/Apache-2.0.txt": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "LICENSES/CC-BY-4.0.txt": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411",
+    "LICENSES/MIT-three.js.txt": "7dddf7c5b8fd10ee654db8857d75d104b5557889aa5a91fc4ca545ea7c07062f",
+    "LICENSES/PolyForm-Noncommercial-1.0.0.md": "c0ea4a896d2c8c394b29f9427589996db826cd501c512279ff0ed3ef48fabbe5",
+    "rendering/LICENSE.md": "265ca7e695d25aa21a283d511610ced5508791f4751699c3bf10266674335fe2",
+    "src/LICENSE.md": "c3fc7b651a9a79e6a735f5634d15671b3b322bb9eaface615a36a5fc73935753",
+    "tools/paper/LICENSE.md": "fc751a401cd83c54dedd29c4746211c17c378236b805ff1750e92558357f9401"
+  },
+  "schema": "benchmark-data-licensing-status/v1",
+  "scope": "benchmark_data_asset_licensing",
+  "status": "author_notice_bindings_updated",
+  "supersedes_gate_only": [
+    "docs/records/RELEASE_LICENCE_REVIEW.complete.json",
+    "docs/records/PHUONG_LICENCE_RECOVERY.complete.json"
+  ],
+  "upstream_licence": "CC-BY; version not displayed",
+  "upstream_version_recovered": false
+}

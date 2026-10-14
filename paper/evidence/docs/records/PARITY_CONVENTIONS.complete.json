@@ -1,0 +1,667 @@
+{
+  "complete": true,
+  "final_test_images_read": false,
+  "gpu_used": false,
+  "legacy_samples": [
+    {
+      "dimensions": "[redacted: private artefact]",
+      "fen_mirrored": false,
+      "host": "render-host",
+      "pixel_check": null,
+      "representative": "[redacted: private artefact]",
+      "sha256": "[redacted: private artefact]",
+      "source": "private train set"
+    },
+    {
+      "dimensions": "[redacted: private artefact]",
+      "fen_mirrored": false,
+      "host": "render-host",
+      "pixel_check": {
+        "even_square_luma_median": 152.0,
+        "odd_minus_even": 55.0,
+        "odd_square_luma_median": 207.0
+      },
+      "representative": "[redacted: private artefact]",
+      "sha256": "[redacted: private artefact]",
+      "source": "synth/angles"
+    },
+    {
+      "dimensions": "[redacted: private artefact]",
+      "fen_mirrored": false,
+      "host": "render-host",
+      "pixel_check": {
+        "even_square_luma_median": 152.0,
+        "odd_minus_even": 55.0,
+        "odd_square_luma_median": 207.0
+      },
+      "representative": "[redacted: private artefact]",
+      "sha256": "[redacted: private artefact]",
+      "source": "synth/colors_b"
+    },
+    {
+      "dimensions": "[redacted: private artefact]",
+      "fen_mirrored": false,
+      "host": "render-host",
+      "pixel_check": {
+        "even_square_luma_median": 152.0,
+        "odd_minus_even": 55.0,
+        "odd_square_luma_median": 207.0
+      },
+      "representative": "[redacted: private artefact]",
+      "sha256": "[redacted: private artefact]",
+      "source": "synth/geometry"
+    },
+    {
+      "dimensions": "[redacted: private artefact]",
+      "fen_mirrored": false,
+      "host": "render-host",
+      "pixel_check": {
+        "even_square_luma_median": 152.0,
+        "odd_minus_even": 55.0,
+        "odd_square_luma_median": 207.0
+      },
+      "representative": "[redacted: private artefact]",
+      "sha256": "[redacted: private artefact]",
+      "source": "synth/geometry_b"
+    },
+    {
+      "dimensions": "[redacted: private artefact]",
+      "fen_mirrored": false,
+      "host": "render-host",
+      "pixel_check": {
+        "even_square_luma_median": 152.0,
+        "odd_minus_even": 55.0,
+        "odd_square_luma_median": 207.0
+      },
+      "representative": "[redacted: private artefact]",
+      "sha256": "[redacted: private artefact]",
+      "source": "synth/lowangle"
+    },
+    {
+      "dimensions": "[redacted: private artefact]",
+      "fen_mirrored": false,
+      "host": "render-host",
+      "pixel_check": {
+        "even_square_luma_median": 152.0,
+        "odd_minus_even": 55.0,
+        "odd_square_luma_median": 207.0
+      },
+      "representative": "[redacted: private artefact]",
+      "sha256": "[redacted: private artefact]",
+      "source": "synth/lowangle_b"
+    },
+    {
+      "dimensions": "[redacted: private artefact]",
+      "fen_mirrored": false,
+      "host": "render-host",
+      "pixel_check": {
+        "even_square_luma_median": 152.0,
+        "odd_minus_even": 55.0,
+        "odd_square_luma_median": 207.0
+      },
+      "representative": "[redacted: private artefact]",
+      "sha256": "[redacted: private artefact]",
+      "source": "synth/mixed"
+    },
+    {
+      "dimensions": "[redacted: private artefact]",
+      "fen_mirrored": false,
+      "host": "render-host",
+      "pixel_check": {
+        "even_square_luma_median": 152.0,
+        "odd_minus_even": 55.0,
+        "odd_square_luma_median": 207.0
+      },
+      "representative": "[redacted: private artefact]",
+      "sha256": "[redacted: private artefact]",
+      "source": "synth/ph_angles"
+    },
+    {
+      "dimensions": "[redacted: private artefact]",
+      "fen_mirrored": false,
+      "host": "render-host",
+      "pixel_check": {
+        "even_square_luma_median": 152.0,
+        "odd_minus_even": 55.0,
+        "odd_square_luma_median": 207.0
+      },
+      "representative": "[redacted: private artefact]",
+      "sha256": "[redacted: private artefact]",
+      "source": "synth/ph_colors"
+    },
+    {
+      "dimensions": "[redacted: private artefact]",
+      "fen_mirrored": false,
+      "host": "render-host",
+      "pixel_check": {
+        "even_square_luma_median": 152.0,
+        "odd_minus_even": 55.0,
+        "odd_square_luma_median": 207.0
+      },
+      "representative": "[redacted: private artefact]",
+      "sha256": "[redacted: private artefact]",
+      "source": "synth/ph_colors_glossy"
+    },
+    {
+      "dimensions": "[redacted: private artefact]",
+      "fen_mirrored": false,
+      "host": "render-host",
+      "pixel_check": {
+        "even_square_luma_median": 152.0,
+        "odd_minus_even": 55.0,
+        "odd_square_luma_median": 207.0
+      },
+      "representative": "[redacted: private artefact]",
+      "sha256": "[redacted: private artefact]",
+      "source": "synth/ph_geometry"
+    },
+    {
+      "dimensions": "[redacted: private artefact]",
+      "fen_mirrored": false,
+      "host": "render-host",
+      "pixel_check": {
+        "even_square_luma_median": 152.0,
+        "odd_minus_even": 55.0,
+        "odd_square_luma_median": 207.0
+      },
+      "representative": "[redacted: private artefact]",
+      "sha256": "[redacted: private artefact]",
+      "source": "synth/ph_geometry_c"
+    },
+    {
+      "dimensions": "[redacted: private artefact]",
+      "fen_mirrored": false,
+      "host": "render-host",
+      "pixel_check": {
+        "even_square_luma_median": 152.0,
+        "odd_minus_even": 55.0,
+        "odd_square_luma_median": 207.0
+      },
+      "representative": "[redacted: private artefact]",
+      "sha256": "[redacted: private artefact]",
+      "source": "synth/ph_geometry_d"
+    },
+    {
+      "dimensions": "[redacted: private artefact]",
+      "fen_mirrored": false,
+      "host": "render-host",
+      "pixel_check": {
+        "even_square_luma_median": 152.0,
+        "odd_minus_even": 55.0,
+        "odd_square_luma_median": 207.0
+      },
+      "representative": "[redacted: private artefact]",
+      "sha256": "[redacted: private artefact]",
+      "source": "synth/ph_lowangle"
+    },
+    {
+      "dimensions": "[redacted: private artefact]",
+      "fen_mirrored": false,
+      "host": "render-host",
+      "pixel_check": {
+        "even_square_luma_median": 152.0,
+        "odd_minus_even": 55.0,
+        "odd_square_luma_median": 207.0
+      },
+      "representative": "[redacted: private artefact]",
+      "sha256": "[redacted: private artefact]",
+      "source": "synth/ph_lowangle_b"
+    },
+    {
+      "dimensions": "[redacted: private artefact]",
+      "fen_mirrored": false,
+      "host": "render-host",
+      "pixel_check": {
+        "even_square_luma_median": 152.0,
+        "odd_minus_even": 55.0,
+        "odd_square_luma_median": 207.0
+      },
+      "representative": "[redacted: private artefact]",
+      "sha256": "[redacted: private artefact]",
+      "source": "synth/ph_lowangle_c"
+    },
+    {
+      "dimensions": "[redacted: private artefact]",
+      "fen_mirrored": false,
+      "host": "render-host",
+      "pixel_check": {
+        "even_square_luma_median": 152.0,
+        "odd_minus_even": 55.0,
+        "odd_square_luma_median": 207.0
+      },
+      "representative": "[redacted: private artefact]",
+      "sha256": "[redacted: private artefact]",
+      "source": "synth/ph_lowangle_d"
+    },
+    {
+      "dimensions": "[redacted: private artefact]",
+      "fen_mirrored": false,
+      "host": "render-host",
+      "pixel_check": {
+        "even_square_luma_median": 151.0,
+        "odd_minus_even": 52.0,
+        "odd_square_luma_median": 203.0
+      },
+      "representative": "[redacted: private artefact]",
+      "sha256": "[redacted: private artefact]",
+      "source": "synth/ph_occlusion_low"
+    },
+    {
+      "dimensions": "[redacted: private artefact]",
+      "fen_mirrored": false,
+      "host": "render-host",
+      "pixel_check": {
+        "even_square_luma_median": 151.0,
+        "odd_minus_even": 54.5,
+        "odd_square_luma_median": 205.5
+      },
+      "representative": "[redacted: private artefact]",
+      "sha256": "[redacted: private artefact]",
+      "source": "synth/ph_occlusion_low2"
+    },
+    {
+      "dimensions": "[redacted: private artefact]",
+      "fen_mirrored": false,
+      "host": "render-host",
+      "pixel_check": {
+        "even_square_luma_median": 152.0,
+        "odd_minus_even": 55.0,
+        "odd_square_luma_median": 207.0
+      },
+      "representative": "[redacted: private artefact]",
+      "sha256": "[redacted: private artefact]",
+      "source": "synth/ph_staunton_a"
+    },
+    {
+      "dimensions": "[redacted: private artefact]",
+      "fen_mirrored": false,
+      "host": "render-host",
+      "pixel_check": {
+        "even_square_luma_median": 152.0,
+        "odd_minus_even": 55.0,
+        "odd_square_luma_median": 207.0
+      },
+      "representative": "[redacted: private artefact]",
+      "sha256": "[redacted: private artefact]",
+      "source": "synth/ph_staunton_b"
+    },
+    {
+      "dimensions": "[redacted: private artefact]",
+      "fen_mirrored": false,
+      "host": "render-host",
+      "pixel_check": {
+        "even_square_luma_median": 152.0,
+        "odd_minus_even": 55.0,
+        "odd_square_luma_median": 207.0
+      },
+      "representative": "[redacted: private artefact]",
+      "sha256": "[redacted: private artefact]",
+      "source": "synth/ph_staunton_c"
+    },
+    {
+      "dimensions": "[redacted: private artefact]",
+      "fen_mirrored": false,
+      "host": "render-host",
+      "pixel_check": {
+        "even_square_luma_median": 152.0,
+        "odd_minus_even": 55.0,
+        "odd_square_luma_median": 207.0
+      },
+      "representative": "[redacted: private artefact]",
+      "sha256": "[redacted: private artefact]",
+      "source": "synth/ph_staunton_glossy"
+    },
+    {
+      "dimensions": "[redacted: private artefact]",
+      "fen_mirrored": false,
+      "host": "render-host",
+      "pixel_check": {
+        "even_square_luma_median": 152.0,
+        "odd_minus_even": 55.0,
+        "odd_square_luma_median": 207.0
+      },
+      "representative": "[redacted: private artefact]",
+      "sha256": "[redacted: private artefact]",
+      "source": "synth/ph_staunton_glossy_low"
+    },
+    {
+      "dimensions": "[redacted: private artefact]",
+      "fen_mirrored": false,
+      "host": "render-host",
+      "pixel_check": {
+        "even_square_luma_median": 152.0,
+        "odd_minus_even": 55.0,
+        "odd_square_luma_median": 207.0
+      },
+      "representative": "[redacted: private artefact]",
+      "sha256": "[redacted: private artefact]",
+      "source": "synth/ph_staunton_low"
+    },
+    {
+      "dimensions": "[redacted: private artefact]",
+      "fen_mirrored": false,
+      "host": "render-host",
+      "pixel_check": null,
+      "representative": "[redacted: private artefact]",
+      "sha256": "[redacted: private artefact]",
+      "source": "holdout/cr360_scheme"
+    },
+    {
+      "dimensions": "[redacted: private artefact]",
+      "fen_mirrored": false,
+      "host": "render-host",
+      "pixel_check": null,
+      "representative": "[redacted: private artefact]",
+      "sha256": "[redacted: private artefact]",
+      "source": "holdout/cr360_yaw"
+    },
+    {
+      "dimensions": "[redacted: private artefact]",
+      "fen_mirrored": false,
+      "host": "render-host",
+      "pixel_check": {
+        "even_square_luma_median": 150.0,
+        "odd_minus_even": 65.0,
+        "odd_square_luma_median": 215.0
+      },
+      "representative": "[redacted: private artefact]",
+      "sha256": "[redacted: private artefact]",
+      "source": "holdout/ph_colors_h"
+    },
+    {
+      "dimensions": "[redacted: private artefact]",
+      "fen_mirrored": false,
+      "host": "render-host",
+      "pixel_check": {
+        "even_square_luma_median": 150.0,
+        "odd_minus_even": 65.0,
+        "odd_square_luma_median": 215.0
+      },
+      "representative": "[redacted: private artefact]",
+      "sha256": "[redacted: private artefact]",
+      "source": "holdout/ph_colors_h_f"
+    },
+    {
+      "dimensions": "[redacted: private artefact]",
+      "fen_mirrored": false,
+      "host": "render-host",
+      "pixel_check": {
+        "even_square_luma_median": 152.0,
+        "odd_minus_even": 55.0,
+        "odd_square_luma_median": 207.0
+      },
+      "representative": "[redacted: private artefact]",
+      "sha256": "[redacted: private artefact]",
+      "source": "holdout/ph_geometry_h"
+    },
+    {
+      "dimensions": "[redacted: private artefact]",
+      "fen_mirrored": false,
+      "host": "render-host",
+      "pixel_check": {
+        "even_square_luma_median": 152.0,
+        "odd_minus_even": 55.0,
+        "odd_square_luma_median": 207.0
+      },
+      "representative": "[redacted: private artefact]",
+      "sha256": "[redacted: private artefact]",
+      "source": "holdout/ph_geometry_h2"
+    },
+    {
+      "dimensions": "[redacted: private artefact]",
+      "fen_mirrored": false,
+      "host": "render-host",
+      "pixel_check": {
+        "even_square_luma_median": 152.0,
+        "odd_minus_even": 55.0,
+        "odd_square_luma_median": 207.0
+      },
+      "representative": "[redacted: private artefact]",
+      "sha256": "[redacted: private artefact]",
+      "source": "holdout/ph_geometry_h2_f"
+    },
+    {
+      "dimensions": "[redacted: private artefact]",
+      "fen_mirrored": false,
+      "host": "render-host",
+      "pixel_check": {
+        "even_square_luma_median": 152.0,
+        "odd_minus_even": 55.0,
+        "odd_square_luma_median": 207.0
+      },
+      "representative": "[redacted: private artefact]",
+      "sha256": "[redacted: private artefact]",
+      "source": "holdout/ph_lowangle"
+    },
+    {
+      "dimensions": "[redacted: private artefact]",
+      "fen_mirrored": false,
+      "host": "render-host",
+      "pixel_check": {
+        "even_square_luma_median": 152.0,
+        "odd_minus_even": 55.0,
+        "odd_square_luma_median": 207.0
+      },
+      "representative": "[redacted: private artefact]",
+      "sha256": "[redacted: private artefact]",
+      "source": "holdout/ph_lowangle_h"
+    },
+    {
+      "dimensions": "[redacted: private artefact]",
+      "fen_mirrored": false,
+      "host": "render-host",
+      "pixel_check": {
+        "even_square_luma_median": 152.0,
+        "odd_minus_even": 54.0,
+        "odd_square_luma_median": 206.0
+      },
+      "representative": "[redacted: private artefact]",
+      "sha256": "[redacted: private artefact]",
+      "source": "holdout/ph_occlusion_h"
+    },
+    {
+      "dimensions": "[redacted: private artefact]",
+      "fen_mirrored": false,
+      "host": "data-host",
+      "pixel_check": {
+        "even_square_luma_median": 152.0,
+        "odd_minus_even": 55.0,
+        "odd_square_luma_median": 207.0
+      },
+      "representative": "[redacted: private artefact]",
+      "sha256": "[redacted: private artefact]",
+      "source": "synth/mixed_data-host"
+    },
+    {
+      "dimensions": "[redacted: private artefact]",
+      "fen_mirrored": false,
+      "host": "data-host",
+      "pixel_check": {
+        "even_square_luma_median": 152.0,
+        "odd_minus_even": 55.0,
+        "odd_square_luma_median": 207.0
+      },
+      "representative": "[redacted: private artefact]",
+      "sha256": "[redacted: private artefact]",
+      "source": "synth/ph_angles_data-host"
+    },
+    {
+      "dimensions": "[redacted: private artefact]",
+      "fen_mirrored": false,
+      "host": "data-host",
+      "pixel_check": {
+        "even_square_luma_median": 152.0,
+        "odd_minus_even": 55.0,
+        "odd_square_luma_median": 207.0
+      },
+      "representative": "[redacted: private artefact]",
+      "sha256": "[redacted: private artefact]",
+      "source": "synth/ph_colors_data-host"
+    },
+    {
+      "dimensions": "[redacted: private artefact]",
+      "fen_mirrored": false,
+      "host": "data-host",
+      "pixel_check": {
+        "even_square_luma_median": 152.0,
+        "odd_minus_even": 55.0,
+        "odd_square_luma_median": 207.0
+      },
+      "representative": "[redacted: private artefact]",
+      "sha256": "[redacted: private artefact]",
+      "source": "synth/ph_geometry_data-host"
+    },
+    {
+      "dimensions": "[redacted: private artefact]",
+      "fen_mirrored": false,
+      "host": "data-host",
+      "pixel_check": {
+        "even_square_luma_median": 152.0,
+        "odd_minus_even": 55.0,
+        "odd_square_luma_median": 207.0
+      },
+      "representative": "[redacted: private artefact]",
+      "sha256": "[redacted: private artefact]",
+      "source": "synth/ph_lowangle_b_data-host"
+    },
+    {
+      "dimensions": "[redacted: private artefact]",
+      "fen_mirrored": false,
+      "host": "data-host",
+      "pixel_check": {
+        "even_square_luma_median": 152.0,
+        "odd_minus_even": 55.0,
+        "odd_square_luma_median": 207.0
+      },
+      "representative": "[redacted: private artefact]",
+      "sha256": "[redacted: private artefact]",
+      "source": "synth/ph_lowangle_c_data-host"
+    },
+    {
+      "dimensions": "[redacted: private artefact]",
+      "fen_mirrored": false,
+      "host": "data-host",
+      "pixel_check": {
+        "even_square_luma_median": 152.0,
+        "odd_minus_even": 55.0,
+        "odd_square_luma_median": 207.0
+      },
+      "representative": "[redacted: private artefact]",
+      "sha256": "[redacted: private artefact]",
+      "source": "synth/ph_lowangle_data-host"
+    },
+    {
+      "dimensions": "[redacted: private artefact]",
+      "fen_mirrored": false,
+      "host": "data-host",
+      "pixel_check": {
+        "even_square_luma_median": 151.0,
+        "odd_minus_even": 55.0,
+        "odd_square_luma_median": 206.0
+      },
+      "representative": "[redacted: private artefact]",
+      "sha256": "[redacted: private artefact]",
+      "source": "synth/ph_staunton_blender"
+    },
+    {
+      "dimensions": "[redacted: private artefact]",
+      "fen_mirrored": false,
+      "host": "data-host",
+      "pixel_check": {
+        "even_square_luma_median": 152.0,
+        "odd_minus_even": 55.0,
+        "odd_square_luma_median": 207.0
+      },
+      "representative": "[redacted: private artefact]",
+      "sha256": "[redacted: private artefact]",
+      "source": "synth/ph_staunton_blender_low"
+    },
+    {
+      "dimensions": "[redacted: private artefact]",
+      "fen_mirrored": false,
+      "host": "data-host",
+      "pixel_check": {
+        "even_square_luma_median": 152.0,
+        "odd_minus_even": 55.0,
+        "odd_square_luma_median": 207.0
+      },
+      "representative": "[redacted: private artefact]",
+      "sha256": "[redacted: private artefact]",
+      "source": "synth/ph_staunton_blender_occl"
+    },
+    {
+      "dimensions": "[redacted: private artefact]",
+      "fen_mirrored": false,
+      "host": "data-host",
+      "pixel_check": {
+        "even_square_luma_median": 152.0,
+        "odd_minus_even": 55.0,
+        "odd_square_luma_median": 207.0
+      },
+      "representative": "[redacted: private artefact]",
+      "sha256": "[redacted: private artefact]",
+      "source": "synth/ph_staunton_blender_occl2"
+    },
+    {
+      "dimensions": "[redacted: private artefact]",
+      "fen_mirrored": false,
+      "host": "data-host",
+      "pixel_check": {
+        "even_square_luma_median": 152.0,
+        "odd_minus_even": 54.0,
+        "odd_square_luma_median": 206.0
+      },
+      "representative": "[redacted: private artefact]",
+      "sha256": "[redacted: private artefact]",
+      "source": "synth/ph_staunton_blender_occl3"
+    },
+    {
+      "dimensions": "[redacted: private artefact]",
+      "fen_mirrored": false,
+      "host": "data-host",
+      "pixel_check": {
+        "even_square_luma_median": 152.0,
+        "odd_minus_even": 54.0,
+        "odd_square_luma_median": 206.0
+      },
+      "representative": "[redacted: private artefact]",
+      "sha256": "[redacted: private artefact]",
+      "source": "synth/ph_staunton_blender_occl4"
+    },
+    {
+      "dimensions": "[redacted: private artefact]",
+      "fen_mirrored": false,
+      "host": "data-host",
+      "pixel_check": {
+        "even_square_luma_median": 152.0,
+        "odd_minus_even": 54.0,
+        "odd_square_luma_median": 206.0
+      },
+      "representative": "[redacted: private artefact]",
+      "sha256": "[redacted: private artefact]",
+      "source": "synth/ph_staunton_blender_occl4b"
+    },
+    {
+      "dimensions": "[redacted: private artefact]",
+      "fen_mirrored": false,
+      "host": "data-host",
+      "pixel_check": {
+        "even_square_luma_median": 152.0,
+        "odd_minus_even": 54.0,
+        "odd_square_luma_median": 206.0
+      },
+      "representative": "[redacted: private artefact]",
+      "sha256": "[redacted: private artefact]",
+      "source": "synth/ph_staunton_blender_shape3"
+    }
+  ],
+  "public_samples": 5,
+  "release_ready": false,
+  "schema": "parity-conventions-audit/v1",
+  "scope": "one representative per source, not a dataset-universal guarantee",
+  "source_inventory_note": "25 populated render-host synth dirs rather than historical 26; 15 extra data-host dirs include duplicate/retry lineages",
+  "table_sha256": "[redacted: withheld digest]",
+  "unresolved": [
+    "SLCC named physical corner parity"
+  ]
+}

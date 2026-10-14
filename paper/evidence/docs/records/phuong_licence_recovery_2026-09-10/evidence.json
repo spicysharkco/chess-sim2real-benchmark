@@ -1,0 +1,247 @@
+{
+  "status": "asset_version_not_recovered",
+  "asset_url": "https://blendswap.com/blend/29244",
+  "author": "Phuong2647",
+  "asset_specific_generic_grant": "CC-BY with creator attribution",
+  "exact_licence_version": null,
+  "legal_code_url": null,
+  "pages": [
+    {
+      "url": "https://blendswap.com/blend/29244",
+      "http_status": 200,
+      "sha256": "[redacted: withheld digest]",
+      "captured_at_utc": "2026-09-10T18:42:49.180171+00:00"
+    },
+    {
+      "url": "https://blendswap.com/blend/29244/download",
+      "http_status": 200,
+      "sha256": "[redacted: withheld digest]",
+      "captured_at_utc": "2026-09-10T18:42:49.675882+00:00"
+    },
+    {
+      "url": "https://blendswap.com/terms",
+      "http_status": 200,
+      "sha256": "[redacted: withheld digest]",
+      "captured_at_utc": "2026-09-10T18:42:50.273514+00:00"
+    }
+  ],
+  "archive_access_failures": [
+    {
+      "surface": "Internet Archive CDX",
+      "http_status": 503,
+      "sha256": "[redacted: withheld digest]"
+    },
+    {
+      "surface": "Internet Archive CDX",
+      "http_status": 503,
+      "sha256": "[redacted: withheld digest]"
+    },
+    {
+      "surface": "Internet Archive availability API",
+      "http_status": 429,
+      "sha256": "[redacted: withheld digest]"
+    },
+    {
+      "surface": "Internet Archive availability API",
+      "http_status": 429,
+      "sha256": "[redacted: withheld digest]"
+    }
+  ],
+  "api_probe": {
+    "url": "https://blendswap.com/api/v1/assets/29244",
+    "http_status": 401,
+    "response_sha256": "[redacted: withheld digest]",
+    "interpretation": "No authenticated asset payload obtained. Global API enum mapping is not used to backfill a historical asset grant."
+  },
+  "agent_retrieval_log_sha256": "[redacted: withheld digest]",
+  "distribution": {
+    "url": "https://github.com/castle-engine/bad-chess/releases/download/chess-models/chess-models.zip",
+    "sha256": "1b7c9f03e0bfc9836e9c775bb04dda390cd1d860d5aeb31e7cef935cfcd2a9c4",
+    "bytes": 2247473,
+    "matches_registered_source_archive": true,
+    "members": [
+      {
+        "name": "chess/",
+        "bytes": 0
+      },
+      {
+        "name": "chess/black_pawn.bin",
+        "bytes": 83944
+      },
+      {
+        "name": "chess/chess_board.bin",
+        "bytes": 15084
+      },
+      {
+        "name": "chess/chess_board.gltf",
+        "bytes": 4481
+      },
+      {
+        "name": "chess/white_pawn.bin",
+        "bytes": 68872
+      },
+      {
+        "name": "chess/black_rook.bin",
+        "bytes": 235388
+      },
+      {
+        "name": "chess/black_pawn.gltf",
+        "bytes": 1839
+      },
+      {
+        "name": "chess/black_knight.bin",
+        "bytes": 369344
+      },
+      {
+        "name": "chess/white_pawn.gltf",
+        "bytes": 1881
+      },
+      {
+        "name": "chess/white_rook.bin",
+        "bytes": 235292
+      },
+      {
+        "name": "chess/white_rook.gltf",
+        "bytes": 1892
+      },
+      {
+        "name": "chess/black_king.bin",
+        "bytes": 119632
+      },
+      {
+        "name": "chess/black_rook.gltf",
+        "bytes": 1842
+      },
+      {
+        "name": "chess/black_bishop.bin",
+        "bytes": 302628
+      },
+      {
+        "name": "chess/black_knight.gltf",
+        "bytes": 1925
+      },
+      {
+        "name": "chess/white_knight.bin",
+        "bytes": 369280
+      },
+      {
+        "name": "chess/white_knight.gltf",
+        "bytes": 1972
+      },
+      {
+        "name": "chess/white_bishop.bin",
+        "bytes": 296420
+      },
+      {
+        "name": "chess/black_king.gltf",
+        "bytes": 1835
+      },
+      {
+        "name": "chess/white_king.bin",
+        "bytes": 160528
+      },
+      {
+        "name": "chess/white_king.gltf",
+        "bytes": 1882
+      },
+      {
+        "name": "chess/black_queen.bin",
+        "bytes": 150664
+      },
+      {
+        "name": "chess/black_bishop.gltf",
+        "bytes": 1843
+      },
+      {
+        "name": "chess/white_bishop.gltf",
+        "bytes": 1892
+      },
+      {
+        "name": "chess/black_queen.gltf",
+        "bytes": 1841
+      },
+      {
+        "name": "chess/white_queen.bin",
+        "bytes": 150664
+      },
+      {
+        "name": "chess/white_queen.gltf",
+        "bytes": 1892
+      },
+      {
+        "name": "chess/chess-set.blend",
+        "bytes": 4180284
+      }
+    ],
+    "gltf_files": 13,
+    "gltf_asset_metadata": [
+      {
+        "generator": "Khronos glTF Blender I/O v3.6.27",
+        "version": "2.0"
+      },
+      {
+        "generator": "Khronos glTF Blender I/O v3.6.27",
+        "version": "2.0"
+      },
+      {
+        "generator": "Khronos glTF Blender I/O v3.6.27",
+        "version": "2.0"
+      },
+      {
+        "generator": "Khronos glTF Blender I/O v3.6.27",
+        "version": "2.0"
+      },
+      {
+        "generator": "Khronos glTF Blender I/O v3.6.27",
+        "version": "2.0"
+      },
+      {
+        "generator": "Khronos glTF Blender I/O v3.6.27",
+        "version": "2.0"
+      },
+      {
+        "generator": "Khronos glTF Blender I/O v3.6.27",
+        "version": "2.0"
+      },
+      {
+        "generator": "Khronos glTF Blender I/O v3.6.27",
+        "version": "2.0"
+      },
+      {
+        "generator": "Khronos glTF Blender I/O v3.6.27",
+        "version": "2.0"
+      },
+      {
+        "generator": "Khronos glTF Blender I/O v3.6.27",
+        "version": "2.0"
+      },
+      {
+        "generator": "Khronos glTF Blender I/O v3.6.27",
+        "version": "2.0"
+      },
+      {
+        "generator": "Khronos glTF Blender I/O v3.6.27",
+        "version": "2.0"
+      },
+      {
+        "generator": "Khronos glTF Blender I/O v3.6.27",
+        "version": "2.0"
+      }
+    ],
+    "packed_blend_sha256": "40aeb63a6a4d2cfb235396eea5ba5236e027917818f80b26ab8d5aafa9e2729a",
+    "packed_blend_licence_scan": "Only DNA field names copyright/license matched, not licence values; Blender was not executed.",
+    "notice": "No licence or README file in the 28-member archive."
+  },
+  "redistributor_authors": {
+    "url": "https://github.com/castle-engine/bad-chess/blob/1edd1e4539931e6251e04bf55dd491dfe3762182/project/version_1_designed_in_editor/data/AUTHORS.md",
+    "sha256": "9ffacae479020254ee8a63d1154a00826a0d6d6a01fe75f59ba0fcc85f4aa81f",
+    "statement": "Phuong2647, source asset 29244, CC-BY; no version"
+  },
+  "scope": {
+    "accounts_created": false,
+    "credentials_submitted": false,
+    "contacts_sent": false,
+    "published": false,
+    "frozen_assets_modified": false
+  }
+}

@@ -1,0 +1,29 @@
+\section{Related work}
+\label{sec:related}
+
+\paragraph{Chess-position recognition.} Classical pipelines detect board lines, rectify the board,
+extract squares and classify pieces \cite{chesscog}. ChessReD \cite{chessred} showed that direct
+end-to-end prediction from smartphone photographs is possible and that exact-board accuracy is far
+harder than per-square accuracy. ChessQueries \cite{chessqueries} decodes 64 learned square queries
+against a DINOv2 encoder \cite{dinov2} and reports 99.5 exact on ChessReD, 98.5 on ChessCog, 87.1
+on SLCC and 87.6 on CVChess; we reproduce all four within 0.4 points through the authors' code path
+and use the release checkpoint as our external baseline throughout. That paper also reports
+few-shot low-rank adaptation (LoRA) and query-attention analysis; our contribution is not adapter tuning but a
+matched-position, fixed-update protocol with a preregistered real-photo retention gate, and a
+convention factor its analysis does not report varying. For Fenify \cite{fenify}, the report describes direct board prediction with a
+mobile encoder and whole-game decoding from video with a legal-move beam search. ChessRender360
+\cite{cr360} is the closest synthetic dataset; its public record describes randomised cameras,
+materials, backgrounds and lighting, and does not document a paired single-factor protocol, a
+convention factor, or an audit of position overlap with other public pools.
+
+\paragraph{Sim-to-real evaluation.} Domain randomisation \cite{domainrand} treats rendering as a
+way to cover factor combinations that are rare or expensive to photograph. Our generator is a small
+instance of that idea aimed at evaluation rather than training: each split varies one factor, and
+the paired design lets a factor effect be read as a within-position difference.
+
+\paragraph{Benchmarks that mislead.} Adaptive reuse of a held-out set can inflate reported accuracy
+\cite{ladder,holdoutreuse}, and re-collected test sets can show drops that are attributable to harder
+sampling rather than to adaptivity \cite{recht2019}; both mechanisms are relevant here and we do not
+separate them. Training and evaluation contamination has been studied directly for language models
+\cite{oren2023}. Our contribution is not a new account of either but three concrete instances in one
+perception pipeline, one of them with a paired counterfactual.

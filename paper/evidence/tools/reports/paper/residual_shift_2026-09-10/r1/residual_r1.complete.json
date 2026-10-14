@@ -1,0 +1,60 @@
+{
+  "status": "c3_residual_complete",
+  "result_disposition": "descriptive_complete_even_if_no_pattern",
+  "accepted": null,
+  "cohort": "fixed_confirmation_parity_a1_dark",
+  "boards": 288,
+  "attention_boards": 30,
+  "attention_queries_per_board": 64,
+  "input_sha256": {
+    "$HOME/bench_experiments/codex_transfer_20260910/prepare.complete.json": "[redacted: withheld digest]",
+    "$HOME/bench_experiments/codex_transfer_20260910/render_validation.complete.json": "[redacted: withheld digest]",
+    "$HOME/bench_experiments/codex_transfer_20260910/confirmation.complete.json": "[redacted: withheld digest]",
+    "$HOME/bench_experiments/codex_transfer_20260910/prepare.json": "[redacted: withheld digest]",
+    "$HOME/bench_experiments/codex_transfer_20260910/prepare.records.jsonl": "[redacted: withheld digest]",
+    "$HOME/bench_experiments/codex_transfer_20260910/render_validation.records.jsonl": "[redacted: withheld digest]",
+    "$HOME/bench_experiments/codex_transfer_20260910/confirmation.predictions.jsonl": "[redacted: withheld digest]"
+  },
+  "model_inputs": {
+    "upstream_commit": "2a9f3c00619133541c65de4315149037b5dece80",
+    "attention_source_sha256": "af091615c10157259ceddcdb0ce6e0e871c74b046b7ef5b87db0c84939ed9d15",
+    "checkpoint_sha256": "6151bdd98fbe25f32080c097eba7ae75808b5615160e4867240931085fc762e5",
+    "attention_precision": "fp32_highest_auto_sdp",
+    "historical_prediction_precision": "fp32_high_tf32"
+  },
+  "source_sha256": {
+    "$HOME/bench_experiments/codex_post_matrix_20260910/source_r1/tools/paper/residual_shift.py": "740c783b2aeda053669de6ce392b88993a399357c6749dd6b4fe783e253e1b8e",
+    "$HOME/bench_experiments/codex_post_matrix_20260910/source_r1/docs/C3_PRECISION_AMENDMENT_2026-09-10.md": "4499fc3a32f030b299703950bf886ce50f230e2ee3a87111f8bd7aaab6c7b2ba",
+    "$HOME/bench_experiments/codex_post_matrix_20260910/source_r1/tools/paper/benchmark_io.py": "cc55557c5761ad73705e7c4d35b7a7a1a5495aed138052354910827150295371",
+    "$HOME/bench_experiments/codex_post_matrix_20260910/source_r1/tools/paper/transfer_cohort.py": "[redacted: withheld digest]",
+    "$HOME/bench_experiments/codex_post_matrix_20260910/source_r1/tools/paper/parity_probe.py": "[redacted: withheld digest]",
+    "$HOME/bench_experiments/codex_post_matrix_20260910/source_r1/docs/RESIDUAL_SHIFT_PROTOCOL_2026-09-10.md": "[redacted: withheld digest]"
+  },
+  "selection_sha256": "[redacted: withheld digest]",
+  "contact_sheet_manifest_sha256": "9277f86e2fc1eea615e968a8a8cbfa8965db2992750fbb3cdfcf63ac877e2164",
+  "contact_sheet_count": 60,
+  "final_test_images_read": false,
+  "release_ready": false,
+  "interpretation_boundary": "attention is descriptive localization evidence, not causal proof",
+  "artifacts_sha256": {
+    "residual_r1.attention_checks.jsonl": "54a9a42e82c8865ca4371dc79b5083e044c65109490149eb6d939bfca6b7f6ae",
+    "residual_r1.attention_raw.npz": "199e8ca6efc4cddd6abf9ecf0271a85ec4a08441c79043905ba62e449cd36c63",
+    "residual_r1.attention_selection.json": "[redacted: withheld digest]",
+    "residual_r1.contact_sheets.json": "9277f86e2fc1eea615e968a8a8cbfa8965db2992750fbb3cdfcf63ac877e2164",
+    "residual_r1.default_predictions.jsonl": "d16e35f5b7175bffd18a686ed13570069ea2ee74e1b3737e86d94da9f2e1ee32",
+    "residual_r1.md": "d3bb7857eabe0649205adc52d6db2b9a74d8fc158aa60d658a409a93ebdf03aa",
+    "residual_r1.metrics.json": "be65e0dd681acf3f30a996217e40702d5822aaf7acb828928287271bc9d029e7"
+  },
+  "environment": {
+    "python": "3.12.13",
+    "host": "render-host",
+    "numpy": "2.5.2",
+    "cv2": "5.0.0",
+    "torch": "2.11.0+cu128",
+    "torchvision": "0.26.0+cu128",
+    "gpu": "NVIDIA GeForce RTX 3090",
+    "cuda": "12.8",
+    "float32_matmul_precision": "high"
+  },
+  "completed_at": "2026-09-10T17:58:46.353755+00:00"
+}

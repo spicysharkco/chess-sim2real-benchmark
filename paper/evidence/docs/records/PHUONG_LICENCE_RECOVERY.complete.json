@@ -1,0 +1,13 @@
+{
+  "status": "licence_recovery_complete_version_unresolved",
+  "generic_asset_cc_by_grant_confirmed": true,
+  "exact_version_recovered": false,
+  "release_ready": false,
+  "published": false,
+  "frozen_assets_modified": false,
+  "artifacts_sha256": {
+    "PHUONG_LICENCE_RECOVERY_2026-09-10.md": "118d5e4418ad15ecbcbf5726a675999a3934e405c0edf505bfd4c30b2d06d7f7",
+    "phuong_licence_recovery_2026-09-10/evidence.json": "[redacted: withheld digest]",
+    "phuong_licence_recovery_2026-09-10/distribution_AUTHORS.md": "9ffacae479020254ee8a63d1154a00826a0d6d6a01fe75f59ba0fcc85f4aa81f"
+  }
+}

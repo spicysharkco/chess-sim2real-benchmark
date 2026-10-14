@@ -1,0 +1,349 @@
+{
+  "schema": "benchmark-asset-custody/v1",
+  "status": "frozen_inputs_rehashed",
+  "source_commit": "01c52fb9a69a5b36759b310ae18d26dd8ce662c1",
+  "receipts_sha256": {
+    "benchmark.complete.json": "[redacted: withheld digest]",
+    "adaptation.complete.json": "[redacted: withheld digest]",
+    "design.complete.json": "[redacted: withheld digest]",
+    "design.plan.json": "[redacted: withheld digest]",
+    "benchmark.jsonl": "[redacted: withheld digest]",
+    "adaptation.jsonl": "[redacted: withheld digest]"
+  },
+  "source_files_verified": 80,
+  "asset_files_verified": 39,
+  "families": {
+    "polyhaven": {
+      "author": "Riley Queen",
+      "source_url": "https://polyhaven.com/a/chess_set",
+      "source_descriptor": {
+        "source": "Poly Haven chess_set 1k glTF",
+        "url": "https://polyhaven.com/a/chess_set",
+        "license": "CC0",
+        "fixed_grid_fit_scale": 0.82,
+        "geometry_jitter": false
+      },
+      "renderer": "renderer_ph_colors_h.html",
+      "actual_source_files_sha256": {
+        "rendering/assets/polyhaven_chess_set/README.md": "[redacted: withheld digest]",
+        "rendering/assets/polyhaven_chess_set/chess_set.bin": "c73476fd032a2cb4a9c256f70573eed260708132fdc42fec161c6216711560b3",
+        "rendering/assets/polyhaven_chess_set/chess_set_1k.gltf": "3e21ecd0c2ffb703dfdb3f3ea7a379c1dbd4ec513ba2cb8e6cb1e5f276d7eb91",
+        "rendering/assets/polyhaven_chess_set/downloads.tsv": "1acfa35f52a26c0164bd77a11b8bfdc4367cc8c6a07439f1eda6cfb2d2e2c15e",
+        "rendering/assets/polyhaven_chess_set/textures/chess_set_board_arm_1k.jpg": "67387308ce3a6424a1666e742c6556853344c01fbfcda8453b6e2e2f62bc6d30",
+        "rendering/assets/polyhaven_chess_set/textures/chess_set_board_diff_1k.jpg": "cca44d214f48ebe2205362a3996265d1fed727e094835bec2c873e91c653eaa5",
+        "rendering/assets/polyhaven_chess_set/textures/chess_set_board_nor_gl_1k.jpg": "bc5657ec58e0e04a2e8fa6d50ec0f6e3009b1c22b8391ccdde1a4d5d9db30d4d",
+        "rendering/assets/polyhaven_chess_set/textures/chess_set_pieces_black_arm_1k.jpg": "e0413b36e970c645bd9b6192bfe788b318d9bd9f4f3746cf137552bfee118982",
+        "rendering/assets/polyhaven_chess_set/textures/chess_set_pieces_black_diff_1k.jpg": "74471018f96f197c963cc89e7dae19960b03bc2e4bf448e4b0beb51bfee5b85d",
+        "rendering/assets/polyhaven_chess_set/textures/chess_set_pieces_black_nor_gl_1k.jpg": "b92343bba552e82f271f86def504e806e73c6f5dfc4469a90fa5b4f66013bfcd",
+        "rendering/assets/polyhaven_chess_set/textures/chess_set_pieces_white_arm_1k.jpg": "9604c461ee6d5d4f5937891b0468ff7efd354299074b139d04029b03c326e434",
+        "rendering/assets/polyhaven_chess_set/textures/chess_set_pieces_white_diff_1k.jpg": "d9e06002509d73c3f343e1643f0c89ef84e24602f1f6858b5628e8f3e55ae77d",
+        "rendering/assets/polyhaven_chess_set/textures/chess_set_pieces_white_nor_gl_1k.jpg": "51c31dc44d1d0f01c10b759be7903bea9d5b04781b63dc45738dd70a6e31dd6c"
+      },
+      "output_mapping": {
+        "rule": "factors.geometry == polyhaven",
+        "benchmark": {
+          "dev": 10400,
+          "final_test": 2600
+        },
+        "adaptation": {
+          "adaptation_train": 2000
+        }
+      },
+      "licence_review": "CC0"
+    },
+    "deplorable": {
+      "author": "Deplorable Mountaineer",
+      "source_url": "https://deplorablemountaineer.itch.io/chess-board-and-pieces",
+      "source_descriptor": {
+        "source": "Deplorable Mountaineer Chess Board and Pieces",
+        "url": "https://deplorablemountaineer.itch.io/chess-board-and-pieces",
+        "license": "CC0 1.0 Universal",
+        "asset_identity": "deplorable_mountaineer_chess/chess_pieces.json",
+        "asset_sha256": "489e258aeb49b0d7e5dafd3ba56b257e709d5a6eefa38b7686ed84c823972430",
+        "source_archive_sha256": "585a53483ced76b3627941e5594c10a66eadc33d44826024c0b38d9f28164422",
+        "geometry_jitter": false,
+        "holdout_only": false,
+        "normalization": "original CC0 Deplorable Mountaineer Staunton meshes; native Blender triangles and source smooth normals; shared max-width .82 scale; base aligned at y=0; no silhouette jitter"
+      },
+      "renderer": "renderer_ph_geometry.html",
+      "actual_source_files_sha256": {
+        "rendering/assets/deplorable_mountaineer_chess/README.md": "[redacted: withheld digest]",
+        "rendering/assets/deplorable_mountaineer_chess/SHA256SUMS": "39ca5fed71f8126327502787ca7aed27f93fc957b659dcbd4019acc3994e967a",
+        "rendering/assets/deplorable_mountaineer_chess/chess_pieces.json": "489e258aeb49b0d7e5dafd3ba56b257e709d5a6eefa38b7686ed84c823972430"
+      },
+      "output_mapping": {
+        "rule": "factors.geometry == deplorable",
+        "benchmark": {
+          "dev": 800,
+          "final_test": 200
+        },
+        "adaptation": {
+          "adaptation_train": 2000
+        }
+      },
+      "licence_review": "CC0"
+    },
+    "killgorack": {
+      "author": "KillGorack",
+      "source_url": "https://opengameart.org/content/chess-board-pieces",
+      "source_descriptor": {
+        "source": "KillGorack Chess board and pieces",
+        "url": "https://opengameart.org/content/chess-board-pieces",
+        "license": "CC0",
+        "asset_identity": "killgorack_chess_20260906/chess_pieces.json",
+        "asset_sha256": "6ed3b3ee918939b9a5845045dad73274ead13c86369f5455fe7e033a41c3257c",
+        "source_archive_sha256": "21f538bfc320064aceb66a4ff63c81afbcdc2f95f2563f32a0e95763819a065e",
+        "geometry_jitter": false,
+        "holdout_only": false,
+        "normalization": "six original white meshes reused both neutral sides; native Blender triangles/corner normals; shared max-width .82 scale"
+      },
+      "renderer": "renderer_staunton_a.html",
+      "actual_source_files_sha256": {
+        "rendering/assets/killgorack_chess_20260906/chess_pieces.json": "6ed3b3ee918939b9a5845045dad73274ead13c86369f5455fe7e033a41c3257c"
+      },
+      "output_mapping": {
+        "rule": "factors.geometry == killgorack",
+        "benchmark": {
+          "dev": 800,
+          "final_test": 200
+        },
+        "adaptation": {
+          "adaptation_train": 2000
+        }
+      },
+      "licence_review": "CC0"
+    },
+    "lyricsz": {
+      "author": "Lyricsz",
+      "source_url": "https://opengameart.org/content/stylized-chess-pieces",
+      "source_descriptor": {
+        "source": "OpenGameArt Stylized Chess Pieces by Lyricsz",
+        "url": "https://opengameart.org/content/stylized-chess-pieces",
+        "license": "CC0",
+        "asset_identity": "lyricsz_stylized_chess_cc0_20260906",
+        "asset_sha256": "d70b99ed7711fcf65cfa0d09c03685a245befa3cf1d70ffbdd79df55668a4ffa",
+        "asset_sha256_kind": "SHA256 of sorted GLB filename/checksum lines",
+        "source_archive_sha256": "7c3a280d76f754a96219a285be9d8f9cc51535272eb0e6302d2005a442db8792",
+        "geometry_jitter": false,
+        "uniform_source_scale": 2.3,
+        "normalization": "original black and white GLBs; one shared source scale; upright Y-up bases retained",
+        "mesh_sha256": {
+          "Bishop_Black.glb": "33c777af4cb4913187640fa5d4e51edcf34976948a8898fbf71758b98dc9ea87",
+          "Bishop_White.glb": "9f5a0af84bd75c0ec4984167d4a32d72a3b800ee4f9671e46cb9ef85e6539756",
+          "King_Black.glb": "6554eab615bc70eff8d00288b55f6486984c2b3de0716a9bb293d78e3e9fe184",
+          "King_White.glb": "eb7b89d4fe2d05171c633edbcb49eefd49bc9b2c066971fd6ecadf81b227fb81",
+          "Knight_Black.glb": "5d87d163830d690820a0139c29a85eaecf77eed72bda7093f57e357f05a06fa8",
+          "Knight_White.glb": "eec74697ab68db3e9263e9f95d06d8cd9698725a56d4ff383caab90dae0e67d9",
+          "Pawn_Black.glb": "3fc9fe371546d506d729ec932c19ab3cf785afed46b01e19c96e21ecdf04abd9",
+          "Pawn_White.glb": "eded168f63dce0ea9facbda6e9c5e49afe90cd084e5ea90f677de23af2abffce",
+          "Queen_Black.glb": "891ad6253ff8f0847028ffc43ddfc5803eb8276ade480c7a95e7114026c4f355",
+          "Queen_White.glb": "517b74e8019f500ba2bd8fab5dca97088d7c54260fcf2ed866bae4b6705dea14",
+          "Rook_Black.glb": "e6216c6b224b1b00ff32d819f4f74f5e1b16740a6ec00e5a98a239b2da9696c7",
+          "Rook_White.glb": "41835b81573328215d759b0e24ce4bb2deb57b76a3e5f00ab7a7327709f65b18"
+        }
+      },
+      "renderer": "renderer_ph_geometry_d.html",
+      "actual_source_files_sha256": {
+        "rendering/assets/lyricsz_stylized_chess_cc0_20260906/Bishop_Black.glb": "33c777af4cb4913187640fa5d4e51edcf34976948a8898fbf71758b98dc9ea87",
+        "rendering/assets/lyricsz_stylized_chess_cc0_20260906/Bishop_White.glb": "9f5a0af84bd75c0ec4984167d4a32d72a3b800ee4f9671e46cb9ef85e6539756",
+        "rendering/assets/lyricsz_stylized_chess_cc0_20260906/King_Black.glb": "6554eab615bc70eff8d00288b55f6486984c2b3de0716a9bb293d78e3e9fe184",
+        "rendering/assets/lyricsz_stylized_chess_cc0_20260906/King_White.glb": "eb7b89d4fe2d05171c633edbcb49eefd49bc9b2c066971fd6ecadf81b227fb81",
+        "rendering/assets/lyricsz_stylized_chess_cc0_20260906/Knight_Black.glb": "5d87d163830d690820a0139c29a85eaecf77eed72bda7093f57e357f05a06fa8",
+        "rendering/assets/lyricsz_stylized_chess_cc0_20260906/Knight_White.glb": "eec74697ab68db3e9263e9f95d06d8cd9698725a56d4ff383caab90dae0e67d9",
+        "rendering/assets/lyricsz_stylized_chess_cc0_20260906/Pawn_Black.glb": "3fc9fe371546d506d729ec932c19ab3cf785afed46b01e19c96e21ecdf04abd9",
+        "rendering/assets/lyricsz_stylized_chess_cc0_20260906/Pawn_White.glb": "eded168f63dce0ea9facbda6e9c5e49afe90cd084e5ea90f677de23af2abffce",
+        "rendering/assets/lyricsz_stylized_chess_cc0_20260906/Queen_Black.glb": "891ad6253ff8f0847028ffc43ddfc5803eb8276ade480c7a95e7114026c4f355",
+        "rendering/assets/lyricsz_stylized_chess_cc0_20260906/Queen_White.glb": "517b74e8019f500ba2bd8fab5dca97088d7c54260fcf2ed866bae4b6705dea14",
+        "rendering/assets/lyricsz_stylized_chess_cc0_20260906/README.md": "1dfd4edb90b3d151cfcf1d16310dc6c01f44ea7c6ead35a5e57a262a1552ef7b",
+        "rendering/assets/lyricsz_stylized_chess_cc0_20260906/Rook_Black.glb": "e6216c6b224b1b00ff32d819f4f74f5e1b16740a6ec00e5a98a239b2da9696c7",
+        "rendering/assets/lyricsz_stylized_chess_cc0_20260906/Rook_White.glb": "41835b81573328215d759b0e24ce4bb2deb57b76a3e5f00ab7a7327709f65b18",
+        "rendering/assets/lyricsz_stylized_chess_cc0_20260906/SHA256SUMS": "82fb30b3f01152037f16df7738ac659a4b00860f5cd111a76602d46234d83a79"
+      },
+      "output_mapping": {
+        "rule": "factors.geometry == lyricsz",
+        "benchmark": {
+          "dev": 800,
+          "final_test": 200
+        },
+        "adaptation": {
+          "adaptation_train": 2000
+        }
+      },
+      "licence_review": "CC0"
+    },
+    "omie": {
+      "author": "Omie\u2019s Assets",
+      "source_url": "https://omies-assets.itch.io/3d-chesscheckers-set",
+      "source_descriptor": {
+        "source": "Omies Assets Low Poly 3D Chess/Checkers Set",
+        "url": "https://omies-assets.itch.io/3d-chesscheckers-set",
+        "license": "CC0",
+        "asset_identity": "omie_chess_cc0_20260906/chess_pieces.json",
+        "asset_sha256": "8137e1b787ad72fb53120314cf9c776a720e1fd19c7d7786044dc9b028d2b44e",
+        "source_archive_sha256": "c6737d2f0d8ce5e8011f01bf801346250d61ce060013982722aff3d3f029ff7b",
+        "geometry_jitter": false,
+        "holdout_only": true,
+        "uniform_source_scale": 0.09322241894302023,
+        "normalization": "white artist meshes for both neutral sides; preserve all source corners and normals; shared scale and base alignment; no training use"
+      },
+      "renderer": "renderer_ph_geometry_h2.html",
+      "actual_source_files_sha256": {
+        "rendering/assets/omie_chess_cc0_20260906/README.md": "[redacted: withheld digest]",
+        "rendering/assets/omie_chess_cc0_20260906/chess_pieces.json": "8137e1b787ad72fb53120314cf9c776a720e1fd19c7d7786044dc9b028d2b44e"
+      },
+      "output_mapping": {
+        "rule": "factors.geometry == omie",
+        "benchmark": {
+          "dev": 800,
+          "final_test": 200
+        },
+        "adaptation": {
+          "adaptation_train": 2000
+        }
+      },
+      "licence_review": "CC0"
+    },
+    "phuong": {
+      "author": "Phuong2647",
+      "source_url": "https://blendswap.com/blend/29244",
+      "source_descriptor": {
+        "source": "Phuong2647 Chess set (Castle Engine glTF distribution)",
+        "url": "https://blendswap.com/blend/29244",
+        "license": "CC-BY; credit Phuong2647",
+        "license_text": "Free under CC-BY. Please credit Phuong2647 when you use it.",
+        "public_distribution_url": "https://github.com/castle-engine/bad-chess/releases/download/chess-models/chess-models.zip",
+        "asset_identity": "phuong_chess_20260907/chess_pieces.json",
+        "asset_sha256": "452c1bfde52cdb54db850353fda91b60b3f9f29c06610a9b142d2c77e960fc91",
+        "source_archive_sha256": "1b7c9f03e0bfc9836e9c775bb04dda390cd1d860d5aeb31e7cef935cfcd2a9c4",
+        "geometry_jitter": false,
+        "holdout_only": false,
+        "normalization": "original six white glTF meshes and node transforms; native normals; shared max-width .82 scale; no silhouette jitter"
+      },
+      "renderer": "renderer_staunton_c.html",
+      "actual_source_files_sha256": {
+        "rendering/assets/phuong_chess_20260907/chess_pieces.json": "452c1bfde52cdb54db850353fda91b60b3f9f29c06610a9b142d2c77e960fc91"
+      },
+      "output_mapping": {
+        "rule": "factors.geometry == phuong",
+        "benchmark": {
+          "dev": 800,
+          "final_test": 200
+        },
+        "adaptation": {
+          "adaptation_train": 2000
+        }
+      },
+      "licence_review": "CC-BY version unresolved"
+    },
+    "pjhanzlik": {
+      "author": "pjhanzlik",
+      "source_url": "https://opengameart.org/content/chess",
+      "source_descriptor": {
+        "source": "OpenGameArt Chess by pjhanzlik",
+        "url": "https://opengameart.org/content/chess",
+        "license": "CC0",
+        "asset_identity": "pjhanzlik_chess_cc0_20260906/Chess.glb",
+        "asset_sha256": "1678dd307f2d944d39786739448bca631cfdf0a13bdbb439954fb749b4a35a9a",
+        "geometry_jitter": false,
+        "uniform_source_scale": 0.32,
+        "normalization": "original white meshes for both sides; translate base minY to zero; preserve artist proportions"
+      },
+      "renderer": "renderer_ph_geometry_h.html",
+      "actual_source_files_sha256": {
+        "rendering/assets/pjhanzlik_chess_cc0_20260906/Chess.glb": "1678dd307f2d944d39786739448bca631cfdf0a13bdbb439954fb749b4a35a9a",
+        "rendering/assets/pjhanzlik_chess_cc0_20260906/README.md": "[redacted: withheld digest]",
+        "rendering/assets/pjhanzlik_chess_cc0_20260906/SHA256SUMS": "65e37a370c4d597ebe9cb735952ca9f2dba70bc72a45ec81d96226ef6cd40adb"
+      },
+      "output_mapping": {
+        "rule": "factors.geometry == pjhanzlik",
+        "benchmark": {
+          "dev": 800,
+          "final_test": 200
+        },
+        "adaptation": {
+          "adaptation_train": 2000
+        }
+      },
+      "licence_review": "CC0"
+    },
+    "nailfighter": {
+      "author": "Nailfighter",
+      "source_url": "https://nailfighter.itch.io/lowpoly-chess-set",
+      "source_descriptor": {
+        "source": "Nailfighter Low Poly Chess Set",
+        "url": "https://nailfighter.itch.io/lowpoly-chess-set",
+        "license": "CC0",
+        "asset_identity": "nailfighter_chess_cc0_20260906/chess_pieces.json",
+        "asset_sha256": "0d96781041e87b0330f7646cb0720f63acbb42a8f6806d935d81dace20a6951a",
+        "source_archive_sha256": "822ea937524c420fc60a54ff97ecd7aff498a9993dbc071f92e363e1bc0c5247",
+        "geometry_jitter": false,
+        "holdout_only": false,
+        "uniform_source_scale": 0.1822221932587846,
+        "normalization": "artist FBX meshes; King identity and other meshes baked model transforms; shared maximum-width .82 normalization; no silhouette jitter"
+      },
+      "renderer": "renderer_ph_geometry.html",
+      "actual_source_files_sha256": {
+        "rendering/assets/nailfighter_chess_cc0_20260906/README.md": "[redacted: withheld digest]",
+        "rendering/assets/nailfighter_chess_cc0_20260906/chess_pieces.json": "0d96781041e87b0330f7646cb0720f63acbb42a8f6806d935d81dace20a6951a"
+      },
+      "output_mapping": {
+        "rule": "factors.geometry == nailfighter",
+        "benchmark": {
+          "dev": 800,
+          "final_test": 200
+        },
+        "adaptation": {
+          "adaptation_train": 2000
+        }
+      },
+      "licence_review": "CC0"
+    }
+  },
+  "runtime_source_sha256": {
+    "rendering/GLTFLoader.js": "5c15967ba830918a9caea6338712c994c354bccd4edc4569bde411c3ec06a3e6",
+    "rendering/annotate_orientation.py": "2d2048e807d833e970ff5d7c37eb392023344549fe26e510300f1cd385be8849",
+    "rendering/benchmark_v2.js": "336af9c750d2c5b4e54fb5ec0db0b9fe7970c90a3e565ac3095dcb9a51a810ea",
+    "rendering/deplorable_geometry.json": "b4f960dd96bc16631ce41f23a75294e829016599c9fcbb6d8d949f8cd90b6bb0",
+    "rendering/generate_benchmark_v2.py": "b9e22a553e1a7efeee5ae0057b4d90bbabe1ac70a493d877cdccecd307717d4a",
+    "rendering/generate_colors_b.py": "4b1daf6e697fbef52393fa0ac891c2c1149ed785dc7553b17c117de42d5fa24a",
+    "rendering/generate_geometry.py": "c095b0800d5c93555962c45e66048613f98c24a2f82f8235bb7e72e0f288edcb",
+    "rendering/holdout_palettes.json": "3fa6fa460adc5c63330931140b3d1e2f5525c957bfb3d3e0efe21da1064a251c",
+    "rendering/killgorack_geometry.json": "2484cc233d61c4082314a14b5b2e8f58e8491842ad7863863da272f28d4e09fb",
+    "rendering/lyricsz_geometry.json": "6f4076d1baaab1d2abc62db2d3cabea3d3d026a567b297c45a09682ce7fa362c",
+    "rendering/nailfighter_geometry.json": "fff49886446c216c31be9b01069d686fc4f18c08399aa8742b5cc9f327c6a604",
+    "rendering/omie_geometry.json": "ef05f25ab3f238e334ab37934710c582654e8332c03abc726dbe1b509a2a9706",
+    "rendering/phuong_geometry.json": "c093db3fd02dcfadc613e5857cf3241284a183b8298b690fcea1512f18b4e2eb",
+    "rendering/pjhanzlik_geometry.json": "00d16163ed34f1bc39522cba4397f2555897ec8287e7c3d5a1ff42be037d28bd",
+    "rendering/render_batch.mjs": "[redacted: withheld digest]",
+    "rendering/renderer_ph_colors_h.html": "52a2f8eedad49410e305a2edb393ff48852abadaed2b033d674eeca4f8fd4ec9",
+    "rendering/renderer_ph_geometry.html": "31b6eb61a4700e373fb1a32d06d263106786f86dca4c9a68c5f0e7e51e4f9d09",
+    "rendering/renderer_ph_geometry_d.html": "d502045a4c280bb0efb9f5eaca986ca42bd1d3fe409dc16e69d2dd5529662a73",
+    "rendering/renderer_ph_geometry_h.html": "84e33494791311caa93afd28a0a71fb23dead5d5b2deb435973003c371cef3c1",
+    "rendering/renderer_ph_geometry_h2.html": "0612ec791977e3bd164a7312b48da59740dacea99c8d66a107ae04f67f89b6b2",
+    "rendering/renderer_staunton_a.html": "63f958f0bf694a4877905e44bc62a7c24239f4dc54179a1089dd1fb4cbd2e047",
+    "rendering/renderer_staunton_c.html": "83058e5325ac0e37c60e87f0b340e03eafc5bbc1818c8939f56f399c6e6b0c75",
+    "rendering/three.min.js": "9274bbcec8d96168626c732b5d31c775aa8cfb7eaa0599bec0c175908a2c1ce2",
+    "src/board.py": "f9dc2aafc8569d67dd4b9d067691df28061b9f415e78535409e819eca7f08352",
+    "tools/paper/adaptation_metrics.py": "1bed6bf9c77819c399aea6791fdced4c65e6e593463d8bf5b6dd0a59e0c1501c",
+    "tools/paper/annotate_benchmark.py": "99bde035fe2bb565c29c02b4a6973c000f4b34efc524ca5733da829ce36008d5",
+    "tools/paper/benchmark_io.py": "cc55557c5761ad73705e7c4d35b7a7a1a5495aed138052354910827150295371",
+    "tools/paper/benchmark_v2.py": "ea646aac2d44690485843191116d5183ec452ec14e3fc8e3ef004f4f0e3702b4",
+    "tools/paper/chesscog_render_from_manifest.py": "[redacted: withheld digest]",
+    "tools/paper/cq_baseline.py": "[redacted: withheld digest]",
+    "tools/paper/crop_diagnostic.py": "72a4d00a49a06df760c107e2d483b42bc9ebc51820e8d54600f9ca53bde3c878",
+    "tools/paper/fen_pools.py": "[redacted: withheld digest]",
+    "tools/paper/freeze_benchmark.py": "f6c0708b36ebf643d4ab51848365ff5216aca0d508e5ad6c100bd93a12e8199c",
+    "tools/paper/guard_study.py": "5699f9b9e6b8db71e8f4b6777dd4fa6303b9af4b236a9f4bb8822d4e20fce1e5",
+    "tools/paper/member_eval.py": "[redacted: withheld digest]",
+    "tools/paper/parity_probe.py": "[redacted: withheld digest]",
+    "tools/paper/parity_rules.py": "f6a23641bcc4ab0dd40ac47f539f2f79c155fdfe6775aaa845baa68270895ffc",
+    "tools/paper/run_benchmark_v2.py": "a61b4ea57ce663eed394f9ee08736b66669496cd02d104c47982ffaa2485b46f",
+    "tools/paper/score_benchmark.py": "[redacted: withheld digest]",
+    "tools/paper/transfer_cohort.py": "[redacted: withheld digest]",
+    "tools/paper/transfer_study.py": "[redacted: withheld digest]"
+  },
+  "final_test_images_read": false,
+  "gpu_used": false,
+  "release_ready": false,
+  "scope": "Metadata and source-file integrity only; no rendered-image access or performance evaluation."
+}

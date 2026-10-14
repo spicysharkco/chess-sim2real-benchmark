@@ -1,0 +1,43 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{fvextra}
+\usepackage{placeins}
+\usepackage{xurl}
+\usepackage{microtype}
+\usepackage{amsmath}
+\usepackage[hidelinks]{hyperref}
+\setlength{\emergencystretch}{2em}
+\usepackage{natbib}
+
+\title{What Synthetic Data Buys and Costs: A Sim-to-Real Evaluation Case Study in
+Chess-Position Recognition}
+\author{Leo King\\ \normalsize Independent Researcher\\ \normalsize \texttt{github.com/spicysharkco}}
+\date{October 2026}
+
+\begin{document}
+\maketitle
+
+\input{sections/00_abstract}
+\input{sections/01_introduction}
+\input{sections/02_related}
+\input{sections/03_benchmark}\input{generated/figure_generator}
+\input{sections/04_lies}
+\input{generated/figure_router_harm}
+\input{generated/figure_heatmap}
+\input{sections/05_adaptation}\input{generated/figure_adaptation}
+\input{sections/06_cost}\input{generated/figure_timing}
+\input{sections/07_limitations}
+\input{sections/08_release}
+
+\bibliographystyle{plainnat}
+\bibliography{references}
+
+\clearpage
+\appendix
+\input{sections/appendix}
+
+\end{document}

@@ -1,0 +1,29 @@
+\section{Release package}
+\label{sec:release}
+
+The release package is a sanitised export of the author's repository. Identifiers of private
+machines and paths are replaced, and digests of the unredacted form of rewritten files are withheld. The package contains the
+generator and renderers, the v2 manifests and freeze receipts, the adaptation-pool manifests, the
+scoring and diagnostic tools, the figure pipeline that produced every generated figure and table in
+this paper from receipts, the licence register (Tables~\ref{tab:licences} and~\ref{tab:datasetlicences}), and the convention table. The paper source and PDF are in the package. The licence
+map splits the package by material class: the generator and renderers are source-available under a
+noncommercial licence (PolyForm Noncommercial 1.0.0); the scoring, diagnostic and export tools are
+Apache-2.0; manifests, receipts, hash lists and rendered images are CC BY-NC 4.0, with attribution to
+each piece family's creator; the paper text, figures and tables are CC BY-NC 4.0 and the paper's build
+scripts are Apache-2.0; an added permission lets anyone, companies included, evaluate models on the
+benchmark and publish the scores; vendored third-party code keeps its upstream notices; the upstream base weights are
+non-commercial and are linked, not redistributed; the adapters derive from those weights and are
+withheld.
+
+The manifest rows of the 100-group test partition (positions, seeds, cameras and image
+hashes) are in the package. Its images are not, and the author scored no model on it. Anyone can
+rebuild its pixels from the manifest and the generator, so it is unscored, not hidden
+(Section~\ref{sec:limitations}). Images published later can be checked against the image hashes in
+the manifest.
+
+Every number in the generated tables carries a source comment naming
+its receipt. The package README gives a bounded reproduction path: install, re-render four
+benchmark images and compare their hashes, then score them with the public baseline on CPU. It does
+not re-render the full benchmark and does not rerun adaptation training. The earlier private systems
+are reported from their pinned summaries and are not redistributed. Private material used during
+development, including the leaderboard those systems were tuned on, is not part of the release.

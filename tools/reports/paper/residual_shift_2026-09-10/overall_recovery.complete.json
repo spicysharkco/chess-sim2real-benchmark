@@ -1,0 +1,35 @@
+{
+  "status": "complete_after_c3_precision_instrumentation_recovery",
+  "release_ready": false,
+  "final_test_images_read": false,
+  "c2_retention_passes": 0,
+  "c2_points": 10,
+  "c4_systems": 15,
+  "c3_boards": 288,
+  "c3_attention_boards": 30,
+  "c3_query_maps": 1920,
+  "independent_confusion_histogram_and_argmax_check": true,
+  "receipts_sha256": {
+    "$HOME/bench_experiments/codex_lora_curve_20260910/matrix.complete.json": "[redacted: withheld digest]",
+    "$HOME/bench_experiments/codex_post_matrix_20260910/lora_report.complete.json": "[redacted: withheld digest]",
+    "$HOME/bench_experiments/codex_timing_20260910/timing.complete.json": "[redacted: withheld digest]",
+    "$HOME/bench_experiments/codex_post_matrix_20260910/precision_results.complete.json": "[redacted: withheld digest]",
+    "$HOME/bench_experiments/codex_post_matrix_20260910/residual_r1.complete.json": "[redacted: withheld digest]"
+  },
+  "preserved_failed_attempts_sha256": {
+    "$HOME/bench_experiments/codex_post_matrix_20260910/chain.residual.log": "[redacted: withheld digest]",
+    "$HOME/bench_experiments/codex_post_matrix_20260910/residual.incomplete": "c48bb13a8d144b24d02eea263a61655bcd28cc1dc7ca19401a10d009731b2f20",
+    "$HOME/bench_experiments/codex_post_matrix_20260910/precision_probe.log": "[redacted: withheld digest]"
+  },
+  "original_chain_exit": 1,
+  "recovery_exit": 0,
+  "artifacts_sha256": {
+    "overall_recovery.summary.json": "[redacted: withheld digest]"
+  },
+  "environment": {
+    "python": "3.12.13",
+    "host": "render-host",
+    "numpy": "2.5.2"
+  },
+  "completed_at": "2026-09-10T18:02:58.606613+00:00"
+}

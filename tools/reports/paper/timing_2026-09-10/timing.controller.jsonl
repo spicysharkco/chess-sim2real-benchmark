@@ -1,0 +1,15 @@
+{"model_alias":"cq_release","returncode":0}
+{"model_alias":"private_full","returncode":0}
+{"model_alias":"private_raw","returncode":0}
+{"model_alias":"private_warp_high","returncode":0}
+{"model_alias":"private_warp_low","returncode":0}
+{"model_alias":"lora_dark_n500_s303","returncode":0}
+{"model_alias":"lora_both_n500_s303","returncode":0}
+{"model_alias":"lora_dark_n2000_s303","returncode":0}
+{"model_alias":"lora_both_n2000_s303","returncode":0}
+{"model_alias":"lora_dark_n2000_s304","returncode":0}
+{"model_alias":"lora_both_n2000_s304","returncode":0}
+{"model_alias":"lora_dark_n2000_s305","returncode":0}
+{"model_alias":"lora_both_n2000_s305","returncode":0}
+{"model_alias":"lora_dark_n8000_s303","returncode":0}
+{"model_alias":"lora_both_n8000_s303","returncode":0}

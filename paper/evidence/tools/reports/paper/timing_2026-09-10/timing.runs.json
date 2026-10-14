@@ -1,0 +1,154 @@
+{
+  "runs": [
+    {
+      "model_alias": "cq_release",
+      "receipt": "$HOME/bench_experiments/codex_timing_20260910/timing.runs/cq_release.complete.json",
+      "receipt_sha256": "[redacted: withheld digest]",
+      "summary": {
+        "images": 500,
+        "median_ms": 64.41373401321471,
+        "p90_ms": 65.72402181336656
+      }
+    },
+    {
+      "model_alias": "private_full",
+      "receipt": "$HOME/bench_experiments/codex_timing_20260910/timing.runs/private_full.complete.json",
+      "receipt_sha256": "[redacted: withheld digest]",
+      "summary": {
+        "images": 500,
+        "median_ms": 195.51590154878795,
+        "p90_ms": 244.21589984558523
+      }
+    },
+    {
+      "model_alias": "private_raw",
+      "receipt": "$HOME/bench_experiments/codex_timing_20260910/timing.runs/private_raw.complete.json",
+      "receipt_sha256": "[redacted: withheld digest]",
+      "summary": {
+        "images": 500,
+        "median_ms": 79.69427248463035,
+        "p90_ms": 81.07150885043666
+      }
+    },
+    {
+      "model_alias": "private_warp_high",
+      "receipt": "$HOME/bench_experiments/codex_timing_20260910/timing.runs/private_warp_high.complete.json",
+      "receipt_sha256": "[redacted: withheld digest]",
+      "summary": {
+        "images": 500,
+        "median_ms": 195.230568991974,
+        "p90_ms": 197.550364874769
+      }
+    },
+    {
+      "model_alias": "private_warp_low",
+      "receipt": "$HOME/bench_experiments/codex_timing_20260910/timing.runs/private_warp_low.complete.json",
+      "receipt_sha256": "[redacted: withheld digest]",
+      "summary": {
+        "images": 500,
+        "median_ms": 168.9843480126001,
+        "p90_ms": 170.85299176396802
+      }
+    },
+    {
+      "model_alias": "lora_dark_n500_s303",
+      "receipt": "$HOME/bench_experiments/codex_timing_20260910/timing.runs/lora_dark_n500_s303.complete.json",
+      "receipt_sha256": "[redacted: withheld digest]",
+      "summary": {
+        "images": 500,
+        "median_ms": 71.87583402264863,
+        "p90_ms": 72.64205599203706
+      }
+    },
+    {
+      "model_alias": "lora_both_n500_s303",
+      "receipt": "$HOME/bench_experiments/codex_timing_20260910/timing.runs/lora_both_n500_s303.complete.json",
+      "receipt_sha256": "[redacted: withheld digest]",
+      "summary": {
+        "images": 500,
+        "median_ms": 72.40334304515272,
+        "p90_ms": 73.31576787400991
+      }
+    },
+    {
+      "model_alias": "lora_dark_n2000_s303",
+      "receipt": "$HOME/bench_experiments/codex_timing_20260910/timing.runs/lora_dark_n2000_s303.complete.json",
+      "receipt_sha256": "[redacted: withheld digest]",
+      "summary": {
+        "images": 500,
+        "median_ms": 72.29243102483451,
+        "p90_ms": 73.07686194544658
+      }
+    },
+    {
+      "model_alias": "lora_both_n2000_s303",
+      "receipt": "$HOME/bench_experiments/codex_timing_20260910/timing.runs/lora_both_n2000_s303.complete.json",
+      "receipt_sha256": "[redacted: withheld digest]",
+      "summary": {
+        "images": 500,
+        "median_ms": 71.50097901467234,
+        "p90_ms": 72.49613099265844
+      }
+    },
+    {
+      "model_alias": "lora_dark_n2000_s304",
+      "receipt": "$HOME/bench_experiments/codex_timing_20260910/timing.runs/lora_dark_n2000_s304.complete.json",
+      "receipt_sha256": "[redacted: withheld digest]",
+      "summary": {
+        "images": 500,
+        "median_ms": 71.86355901649222,
+        "p90_ms": 72.94822888216004
+      }
+    },
+    {
+      "model_alias": "lora_both_n2000_s304",
+      "receipt": "$HOME/bench_experiments/codex_timing_20260910/timing.runs/lora_both_n2000_s304.complete.json",
+      "receipt_sha256": "[redacted: withheld digest]",
+      "summary": {
+        "images": 500,
+        "median_ms": 72.79547152575105,
+        "p90_ms": 73.67501197149977
+      }
+    },
+    {
+      "model_alias": "lora_dark_n2000_s305",
+      "receipt": "$HOME/bench_experiments/codex_timing_20260910/timing.runs/lora_dark_n2000_s305.complete.json",
+      "receipt_sha256": "[redacted: withheld digest]",
+      "summary": {
+        "images": 500,
+        "median_ms": 72.4997150246054,
+        "p90_ms": 73.47741106059402
+      }
+    },
+    {
+      "model_alias": "lora_both_n2000_s305",
+      "receipt": "$HOME/bench_experiments/codex_timing_20260910/timing.runs/lora_both_n2000_s305.complete.json",
+      "receipt_sha256": "[redacted: withheld digest]",
+      "summary": {
+        "images": 500,
+        "median_ms": 73.12104647280648,
+        "p90_ms": 74.02517904993147
+      }
+    },
+    {
+      "model_alias": "lora_dark_n8000_s303",
+      "receipt": "$HOME/bench_experiments/codex_timing_20260910/timing.runs/lora_dark_n8000_s303.complete.json",
+      "receipt_sha256": "[redacted: withheld digest]",
+      "summary": {
+        "images": 500,
+        "median_ms": 72.40286754677072,
+        "p90_ms": 73.25700600631535
+      }
+    },
+    {
+      "model_alias": "lora_both_n8000_s303",
+      "receipt": "$HOME/bench_experiments/codex_timing_20260910/timing.runs/lora_both_n8000_s303.complete.json",
+      "receipt_sha256": "[redacted: withheld digest]",
+      "summary": {
+        "images": 500,
+        "median_ms": 72.65541545348242,
+        "p90_ms": 73.56759605463594
+      }
+    }
+  ]
+}

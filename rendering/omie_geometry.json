@@ -1,0 +1,12 @@
+{
+  "source": "Omies Assets Low Poly 3D Chess/Checkers Set",
+  "url": "https://omies-assets.itch.io/3d-chesscheckers-set",
+  "license": "CC0",
+  "asset_identity": "omie_chess_cc0_20260906/chess_pieces.json",
+  "asset_sha256": "8137e1b787ad72fb53120314cf9c776a720e1fd19c7d7786044dc9b028d2b44e",
+  "source_archive_sha256": "c6737d2f0d8ce5e8011f01bf801346250d61ce060013982722aff3d3f029ff7b",
+  "geometry_jitter": false,
+  "holdout_only": true,
+  "uniform_source_scale": 0.09322241894302023,
+  "normalization": "white artist meshes for both neutral sides; preserve all source corners and normals; shared scale and base alignment; no training use"
+}

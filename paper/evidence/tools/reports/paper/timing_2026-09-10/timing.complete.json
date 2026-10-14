@@ -1,0 +1,38 @@
+{
+  "status": "c4_timing_complete",
+  "accepted": true,
+  "release_ready": false,
+  "models": 15,
+  "model_aliases": [
+    "cq_release",
+    "private_full",
+    "private_raw",
+    "private_warp_high",
+    "private_warp_low",
+    "lora_dark_n500_s303",
+    "lora_both_n500_s303",
+    "lora_dark_n2000_s303",
+    "lora_both_n2000_s303",
+    "lora_dark_n2000_s304",
+    "lora_both_n2000_s304",
+    "lora_dark_n2000_s305",
+    "lora_both_n2000_s305",
+    "lora_dark_n8000_s303",
+    "lora_both_n8000_s303"
+  ],
+  "selection_receipt_sha256": "[redacted: withheld digest]",
+  "final_test_images_read": false,
+  "scored_partition": "dev",
+  "artifacts_sha256": {
+    "timing.controller.jsonl": "01cbc34350efcdc4ee36e2ff832e05ee258256e37b76c54d181c6ea784174727",
+    "timing.md": "78fbd1d31c4257ccc903ae076ca3c8cc2288ba3b21186d81643db41ed6f21ffa",
+    "timing.runs.json": "[redacted: withheld digest]"
+  },
+  "environment": {
+    "python": "3.12.13",
+    "host": "render-host",
+    "numpy": "2.5.2",
+    "cv2": "5.0.0"
+  },
+  "completed_at": "2026-09-10T17:46:57.031850+00:00"
+}

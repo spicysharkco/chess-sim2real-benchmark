@@ -1,0 +1,15 @@
+{
+  "evidence_index_sha256": "c32940ad7a6ba8bdc04d88c070ff8e000127845c53bb86b5e60fe3b3ba19c8a6",
+  "outputs_sha256": {
+    "adaptation.tex": "b174c7f988c6a7116dfb56f0921ece83e77b46ed1b98ee6ac712be9b151fe370",
+    "conventions.tex": "b30bc73252b22a5a987279e3cd352ea20d4f0efc08cd3fea5325dd2d355d2eee",
+    "design.tex": "b27922928b8a21d197942ccb4f9694805600131748346aa421f3f25eace7c9c3",
+    "licences.tex": "efd00e188031933be9b4f229c88a31b28b408ee1b1add0b5d7e8342a4858d332",
+    "per_cell.tex": "ca68600ba6c103cb4daff6bd6ad7fe85121bd20748074b4ff96f941e400c6d8d",
+    "receipts.tex": "dd6420e08bc8e820eda715e27cc27fe955a5f541a3b2245722416c62ff66943a",
+    "timing.tex": "22343bed62b3a4ed46b8d01c9d0d4a796b89e3008fdfec998f5a4f4ea6aa9fab"
+  },
+  "published": false,
+  "schema": "paper-tables/v1",
+  "script_sha256": "12ac605eac8933e05e005621727c95ddda903d3f018525b921b5d81d9f7d3a73"
+}

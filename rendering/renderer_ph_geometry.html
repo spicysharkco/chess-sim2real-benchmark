@@ -1,0 +1,125 @@
+<!doctype html>
+<meta charset="utf-8">
+<style>html,body{margin:0;width:100%;height:100%;overflow:hidden;background:rgb(38,38,46)}canvas{display:block}</style>
+<body></body>
+<script src="./three.min.js"></script>
+
+<script src="./benchmark_v2.js"></script>
+<script>
+const W=1920,H=1080,BG=0x26262e,LIGHT=0xd7cebe,DARK=0xaa947e;
+// Artist-authored CC0 meshes are already normalised uniformly to .82-square width.
+let renderer,scene,camera,root;
+const prototypes={}; // legacy Deplorable lineage remains fixed here
+const benchmarkV2Prototypes={deplorable:prototypes,nailfighter:{}};
+const benchmarkV2Assets={
+ deplorable:'./assets/deplorable_mountaineer_chess/chess_pieces.json',
+ nailfighter:'./assets/nailfighter_chess_cc0_20260906/chess_pieces.json'
+};
+const benchmarkV2Loads={};
+let expectedBenchmarkV2Geometry={};
+
+function mesh(geometry, material, y=0){ const m=new THREE.Mesh(geometry,material);m.position.y=y;m.castShadow=false;m.receiveShadow=false;return m; }
+function parseFen(fen){
+ const out=[];fen.split('/').forEach((rank,r)=>{let c=0;for(const ch of rank){if(/[1-8]/.test(ch))c+=+ch;else{out.push({ch,r,c});c++;}}});return out;
+}
+function init(){
+ renderer=new THREE.WebGLRenderer({antialias:true,preserveDrawingBuffer:true,alpha:false});
+ renderer.setSize(W,H,false);renderer.setPixelRatio(1);renderer.outputEncoding=THREE.sRGBEncoding;
+ renderer.setClearColor(BG,1);document.body.appendChild(renderer.domElement);
+ scene=new THREE.Scene();scene.background=new THREE.Color(BG);
+ camera=new THREE.PerspectiveCamera(35,W/H,.1,100);
+ scene.add(new THREE.HemisphereLight(0xffffff,0x5b5964,.64));
+ const key=new THREE.DirectionalLight(0xffffff,.78);key.position.set(-4,9,5);scene.add(key);
+}
+async function loadFamily(family){
+ if(!Object.prototype.hasOwnProperty.call(benchmarkV2Assets,family))throw new Error('unapproved benchmark v2 JSON geometry');
+ if(benchmarkV2Loads[family])return benchmarkV2Loads[family];
+ benchmarkV2Loads[family]=(async()=>{
+ const response=await fetch(benchmarkV2Assets[family]);
+ if(!response.ok)throw new Error('CC0 Staunton asset fetch failed: '+response.status);
+ const asset=await response.json();
+ const target=benchmarkV2Prototypes[family];
+ for(const upper of 'PNBRQK'){
+   const piece=asset.pieces[upper];
+   if(!piece)throw new Error('CC0 Staunton mesh missing: '+upper);
+   const geometry=new THREE.BufferGeometry();
+   geometry.setAttribute('position',new THREE.Float32BufferAttribute(piece.positions,3));
+   geometry.setAttribute('normal',new THREE.Float32BufferAttribute(piece.normals,3));
+   geometry.setIndex(piece.indices);geometry.computeBoundingSphere();
+   for(const side of [0,1]){
+     const object=new THREE.Mesh(geometry,new THREE.MeshStandardMaterial({
+       color:new THREE.Color(side===0?0xe4e4e4:0x484848).convertSRGBToLinear(),
+       roughness:.42,metalness:.03
+     }));
+     object.castShadow=false;object.receiveShadow=false;
+     target[side===0?upper:upper.toLowerCase()]=object;
+   }
+ }
+ })();
+ return benchmarkV2Loads[family];
+}
+function loadPieces(){return loadFamily('deplorable');}
+function configureCamera(cfg){
+ const az=cfg.azimuth_deg*Math.PI/180, el=cfg.elevation_deg*Math.PI/180;
+ let actualRoll=cfg.roll_deg;
+ function setAt(d){
+   const h=d*Math.cos(el);camera.position.set(h*Math.sin(az),d*Math.sin(el),h*Math.cos(az));
+   camera.up.set(0,1,0);camera.lookAt(0,.28,0);camera.rotateZ(actualRoll*Math.PI/180);camera.updateMatrixWorld(true);
+ }
+ let d=17;
+ const edge=4.003;
+ const corners=[];
+ for(const y of [0,-.10])for(const x of [-edge,edge])for(const z of [-edge,edge])corners.push([x,y,z]);
+ function projected(points=corners){setAt(d);return points.map(v=>new THREE.Vector3(...v).project(camera));}
+ function fitDistance(){
+   for(let n=0;n<8;n++){
+     const ps=projected(),xs=ps.map(p=>p.x),ys=ps.map(p=>p.y);
+     const wf=(Math.max(...xs)-Math.min(...xs))/2, hf=(Math.max(...ys)-Math.min(...ys))/2;
+     // Fit the requested board width while guaranteeing the full slab volume
+     // remains at least 20 physical pixels inside every 1920x1080 frame edge.
+     const maxX=Math.max(...xs.map(Math.abs)),maxY=Math.max(...ys.map(Math.abs));
+     d*=Math.max(wf/cfg.target_board_width_fraction,hf/.78,
+                 maxX/(1-40/W),maxY/(1-40/H));
+   }
+ }
+ fitDistance();
+ const ps=projected(),xs=ps.map(p=>(p.x+1)/2),ys=ps.map(p=>(1-p.y)/2);
+ const bounds={left:Math.min(...xs),top:Math.min(...ys),right:Math.max(...xs),bottom:Math.max(...ys)};
+ return {distance:d,actual_roll_deg:actualRoll,projected_board_bounds:bounds,
+         projected_board_width_fraction:bounds.right-bounds.left,
+         projected_board_height_fraction:bounds.bottom-bounds.top};
+}
+window.renderConfig=async(row)=>{
+ const benchmarkV2=BenchmarkV2.isRow(row);
+ let selectedPrototypes=prototypes;
+ if(benchmarkV2){
+   const family=row.factors&&row.factors.geometry;
+   if(!Object.prototype.hasOwnProperty.call(benchmarkV2Assets,family))throw new Error('unapproved benchmark v2 JSON geometry');
+   BenchmarkV2.validateRow(row,expectedBenchmarkV2Geometry[family],family);
+   await loadFamily(family);selectedPrototypes=benchmarkV2Prototypes[family];
+ }
+ if(root)scene.remove(root);root=new THREE.Group();scene.add(root);
+ const boardMaterials=benchmarkV2?BenchmarkV2.boardMaterials(THREE,row):{
+   light:new THREE.MeshBasicMaterial({color:new THREE.Color(LIGHT).convertSRGBToLinear()}),
+   dark:new THREE.MeshBasicMaterial({color:new THREE.Color(DARK).convertSRGBToLinear()})};
+ const lm=boardMaterials.light,dm=boardMaterials.dark;
+ for(let r=0;r<8;r++)for(let c=0;c<8;c++){
+   const sq=mesh(new THREE.BoxGeometry(1.005,.10,1.005),benchmarkV2?boardMaterials[BenchmarkV2.squareRole(row,r,c)]:((r+c)%2===1?lm:dm),-.05);
+   sq.position.x=c-3.5;sq.position.z=r-3.5;root.add(sq);
+ }
+ // Neutral piece albedos intentionally stay outside board.py's warm wood mask.
+ const benchmarkV2PieceMaterials=benchmarkV2?BenchmarkV2.pieceMaterials(THREE,row):null;
+ for(const p of parseFen(row.fen)){
+   const q=selectedPrototypes[p.ch].clone();
+   if(benchmarkV2)BenchmarkV2.recolor(q,benchmarkV2PieceMaterials,p.ch===p.ch.toUpperCase()?'white':'black');
+   q.position.set(p.c-3.5,.001,p.r-3.5);q.rotation.y=((p.r*8+p.c)*1.618)%6.283;root.add(q);
+ }
+ const measured=benchmarkV2?BenchmarkV2.configureCamera(THREE,camera,root,row.camera,W,H):configureCamera(row.camera);renderer.render(scene,camera);
+ return measured;
+};
+init();Promise.all([
+ loadPieces(),
+ BenchmarkV2.loadGeometry('./deplorable_geometry.json').then(value=>{expectedBenchmarkV2Geometry.deplorable=value;}),
+ BenchmarkV2.loadGeometry('./nailfighter_geometry.json').then(value=>{expectedBenchmarkV2Geometry.nailfighter=value;})
+]).then(()=>window.__rendererReady=true).catch(error=>{console.error(error);throw error});
+</script>

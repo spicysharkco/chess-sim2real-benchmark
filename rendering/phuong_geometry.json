@@ -1,0 +1,13 @@
+{
+  "source": "Phuong2647 Chess set (Castle Engine glTF distribution)",
+  "url": "https://blendswap.com/blend/29244",
+  "license": "CC-BY; credit Phuong2647",
+  "license_text": "Free under CC-BY. Please credit Phuong2647 when you use it.",
+  "public_distribution_url": "https://github.com/castle-engine/bad-chess/releases/download/chess-models/chess-models.zip",
+  "asset_identity": "phuong_chess_20260907/chess_pieces.json",
+  "asset_sha256": "452c1bfde52cdb54db850353fda91b60b3f9f29c06610a9b142d2c77e960fc91",
+  "source_archive_sha256": "1b7c9f03e0bfc9836e9c775bb04dda390cd1d860d5aeb31e7cef935cfcd2a9c4",
+  "geometry_jitter": false,
+  "holdout_only": false,
+  "normalization": "original six white glTF meshes and node transforms; native normals; shared max-width .82 scale; no silhouette jitter"
+}

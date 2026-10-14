@@ -1,0 +1,89 @@
+{
+  "accepted": true,
+  "artifacts_sha256": {
+    "lora_both_n2000_s304.summary.json": "ea2106c467b1f7ce4f2b098c4b01b257a483cae4494c3ff2837d15fe412a822f",
+    "lora_both_n2000_s304.times.jsonl": "9163d666e7a6a9abaece1f63da0976e5d72ccf2f5f52ff0762fcefa24a6eb6ab"
+  },
+  "batch_size": 1,
+  "completed_at": "2026-09-10T17:42:11.955723+00:00",
+  "decode_excluded": true,
+  "dev_inventory_sha256": "[redacted: withheld digest]",
+  "environment": {
+    "cuda": "12.8",
+    "cv2": "5.0.0",
+    "float32_matmul_precision": "highest",
+    "gpu": "NVIDIA GeForce RTX 3090",
+    "host": "render-host",
+    "numpy": "2.5.2",
+    "python": "3.12.13",
+    "torch": "2.11.0+cu128",
+    "torchvision": "0.26.0+cu128"
+  },
+  "final_test_images_read": false,
+  "hardware": {
+    "after": {
+      "driver_version": "595.71.05",
+      "memory.total": "24576",
+      "name": "NVIDIA GeForce RTX 3090",
+      "power.limit": "270.00",
+      "utilization.gpu": "50",
+      "utilization.memory": "21"
+    },
+    "before": {
+      "driver_version": "595.71.05",
+      "memory.total": "24576",
+      "name": "NVIDIA GeForce RTX 3090",
+      "power.limit": "270.00",
+      "utilization.gpu": "0",
+      "utilization.memory": "0"
+    }
+  },
+  "model_alias": "lora_both_n2000_s304",
+  "model_inputs_sha256": {
+    "$HOME/bench_experiments/codex_lora_curve_20260910/matrix.complete.json": "[redacted: withheld digest]",
+    "$HOME/bench_experiments/codex_lora_curve_20260910/matrix_exit.txt": "[redacted: withheld digest]",
+    "$HOME/bench_experiments/codex_lora_curve_20260910/results/b2000_both_s304.adapter.safetensors": "472f9d1610db4e10c2ed81c8ebb723b36a38772da2d026459650d8838fc55749",
+    "$HOME/bench_experiments/codex_lora_curve_20260910/results/b2000_both_s304.complete.json": "[redacted: withheld digest]",
+    "$HOME/bench_experiments/codex_lora_curve_20260910/results/release.complete.json": "[redacted: withheld digest]",
+    "$HOME/bench_experiments/codex_lora_curve_20260910/upstream/chessqueries/models/lora.py": "[redacted: withheld digest]",
+    "$HOME/bench_experiments/codex_lora_curve_20260910/upstream/minimal_reproduction/data.py": "[redacted: withheld digest]",
+    "$HOME/bench_experiments/codex_lora_curve_20260910/upstream/minimal_reproduction/eval.py": "[redacted: withheld digest]",
+    "$HOME/bench_experiments/codex_lora_curve_20260910/upstream/minimal_reproduction/leakage_audit.py": "[redacted: withheld digest]",
+    "$HOME/bench_experiments/codex_lora_curve_20260910/upstream/minimal_reproduction/model.py": "[redacted: withheld digest]",
+    "$HOME/bench_experiments/codex_lora_curve_20260910/upstream/minimal_reproduction/test_eval.py": "[redacted: withheld digest]",
+    "$HOME/bench_experiments/codex_lora_curve_20260910/upstream/minimal_reproduction/train.py": "[redacted: withheld digest]",
+    "$HOME/bench_experiments/codex_parity_20260909/upstream/checkpoint.safetensors": "6151bdd98fbe25f32080c097eba7ae75808b5615160e4867240931085fc762e5",
+    "$HOME/bench_experiments/codex_post_matrix_20260910/lora_report.complete.json": "[redacted: withheld digest]",
+    "$HOME/bench_experiments/codex_post_matrix_20260910/source/docs/TIMING_PROTOCOL_2026-09-10.md": "[redacted: withheld digest]",
+    "$HOME/bench_experiments/codex_post_matrix_20260910/source/tools/paper/lora_curve.py": "[redacted: withheld digest]",
+    "$HOME/bench_experiments/codex_post_matrix_20260910/source/tools/paper/member_eval.py": "[redacted: withheld digest]",
+    "$HOME/bench_experiments/codex_post_matrix_20260910/source/tools/paper/timing_harness.py": "[redacted: withheld digest]",
+    "$HOME/bench_experiments/codex_timing_20260910/private_ensemble.complete.json": "[redacted: private artefact]",
+    "$HOME/bench_experiments/codex_timing_20260910/selection.complete.json": "[redacted: withheld digest]",
+    "$HOME/bench_experiments/codex_timing_20260910/selection.jsonl": "[redacted: withheld digest]"
+  },
+  "precision": "fp16",
+  "release_ready": false,
+  "scored_partition": "dev",
+  "selection": {
+    "images": 500,
+    "scenes": 250,
+    "selection_seed": 20260914
+  },
+  "selection_receipt_sha256": "[redacted: withheld digest]",
+  "software": {
+    "cuda": "12.8",
+    "python": "3.12.13",
+    "timestamp_utc": "2026-09-10T17:42:11Z",
+    "torch": "2.11.0+cu128"
+  },
+  "status": "c4_timing_complete",
+  "summary": {
+    "images": 500,
+    "median_ms": 72.79547152575105,
+    "p90_ms": 73.67501197149977
+  },
+  "timed_images": 500,
+  "timer_scope": "decoded_RGB_to_piece_placement_including_native_preprocess_router_TTA_argmax_host_transfer_and_FEN_construction",
+  "warmup_images": 30
+}

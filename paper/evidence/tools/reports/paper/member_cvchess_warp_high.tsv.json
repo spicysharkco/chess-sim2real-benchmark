@@ -1,0 +1,11 @@
+{
+  "exact": 0.008522727272727272,
+  "images": "$DATA_ROOT/ext/cvchess_conv/images",
+  "members": [
+    "cq_vitl"
+  ],
+  "ms_per_img": 278.85788204995066,
+  "n": 352,
+  "per_square": 0.4535245028409091,
+  "variant": "warp_high"
+}
