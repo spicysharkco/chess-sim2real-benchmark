@@ -1,5 +1,11 @@
 # Chess sim-to-real benchmark
 
+![Preview grid of eight development renders](docs/images/samples.jpg)
+
+Eight development images of one position group, each cropped around the board. Left to right: elevation bands `08_15`, `15_25`,
+`25_45`, `45_60`. Top row `a1_dark`, bottom row `a1_light`. The first three columns use the polyhaven
+pieces. The last column uses omie (top) and lyricsz (bottom).
+
 A controlled render generator and a 20,000-image benchmark for chess-position recognition, built
 to answer one question: when a perception model is trained on renders and used on a camera, what
 does synthetic data buy, and what does it cost?
@@ -50,6 +56,11 @@ Recognition* (Leo King, 2026; arXiv link to follow). Rendered images: the Huggin
    selected on a private leaderboard scored below its own single member on 16 of 18 controlled
    splits. Two sets named as holdouts (1,635 and 1,263 images) shared 1,446 and 1,128 image identifiers with the training mixes: 2,398 distinct identifiers, 2,574 counting both sets. An
    identifier-level leak check found it.
+
+![Heatmap of exact-board accuracy by development cell, a1 dark and a1 light, for the released weights and the largest both-convention adaptation run](docs/images/heatmap.png)
+
+Exact-board accuracy (%) by development cell and convention. Left: released weights. Right: the largest
+both-convention adaptation run (8,000 groups).
 
 ## Licences
 
