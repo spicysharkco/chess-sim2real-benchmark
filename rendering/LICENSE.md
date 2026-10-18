@@ -3,7 +3,7 @@
 The project code in this directory is licensed under the PolyForm Noncommercial License 1.0.0.
 The full text is in `../LICENSES/PolyForm-Noncommercial-1.0.0.md`.
 
-Required Notice: Copyright 2026 Leo King
+Required Notice: Copyright 2026 Spicy Shark
 
 Commercial use requires a separate licence from the copyright holder.
 

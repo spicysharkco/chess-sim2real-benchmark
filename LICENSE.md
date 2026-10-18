@@ -3,7 +3,7 @@
 This package contains several classes of material under different licences. The table below
 says which licence applies to which path. Full licence texts are in `LICENSES/`.
 
-Copyright 2026 Leo King, except where a third-party notice below says otherwise.
+Copyright 2026 Spicy Shark, except where a third-party notice below says otherwise.
 
 | material | paths | licence | text |
 |---|---|---|---|
@@ -34,7 +34,7 @@ Anything in this package not covered by a row above is all rights reserved.
 ## Attribution
 
 For the benchmark data, cite the paper and credit:
-"Chess-position recognition benchmark v2 by Leo King, licensed under CC BY-NC 4.0."
+"Chess-position recognition benchmark v2 by Spicy Shark, licensed under CC BY-NC 4.0."
 Images of the phuong piece family must also credit the asset's creator as listed in
 `docs/records/BENCHMARK_ATTRIBUTIONS_2026-09-10.md`: "Chess set by Phuong2647
 (https://blendswap.com/blend/29244), CC-BY". The source page declares CC-BY without a version;
