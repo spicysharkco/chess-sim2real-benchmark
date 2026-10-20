@@ -11,7 +11,7 @@ to answer one question: when a perception model is trained on renders and used o
 does synthetic data buy, and what does it cost?
 
 Paper: *What Synthetic Data Buys and Costs: A Sim-to-Real Evaluation Case Study in Chess-Position
-Recognition* (Leo King, 2026; arXiv link to follow). Rendered images: the Hugging Face dataset
+Recognition* (Leo King, 2026; PDF: [paper/main.pdf](https://github.com/spicysharkco/chess-sim2real-benchmark/blob/main/paper/main.pdf)). Rendered images: the Hugging Face dataset
 `spicysharkco/chess-sim2real-benchmark`.
 
 ## What is here
