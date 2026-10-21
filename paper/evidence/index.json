@@ -150,13 +150,13 @@
     "docs/records/PHUONG_RELEASE_STATUS_2026-09-15.complete.json": {
       "derived_export_view": true,
       "embedded_hashes_rebound": false,
-      "sha256": "731989dd0bc68ded9f92639990e4b30dddb98ca0f27c0ea7ca8f01e433a95b32",
+      "sha256": "bc2631d3689d62b02ebcffb9336d8e3d5937d9107c72e00c2e4bb1ac83c3661d",
       "source_kind": "historical_operator_decision"
     },
     "docs/records/PHUONG_RELEASE_STATUS_2026-10-12.complete.json": {
       "derived_export_view": true,
       "embedded_hashes_rebound": false,
-      "sha256": "14992c4c8ca062f7e7570a2e46c70901dbcbdbc060dfc6e3b9427c51e82fffe8",
+      "sha256": "4ebcdc857ecb87b11e3ff215a0d5cad2d9b0cb35d30eab761a1d09cde0e81a93",
       "source_kind": "current_operator_decision"
     },
     "docs/records/RELEASE_LICENCE_REVIEW.complete.json": {
