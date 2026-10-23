@@ -19,8 +19,8 @@ Recognition* (Spicy Shark, 2026; PDF: [paper/main.pdf](https://github.com/spicys
   symmetries, from 67 inventoried sources including a 6.1-million-puzzle Lichess snapshot. "Sealed"
   names the author's no-scoring rule, not an access control. The final-test manifest rows
   (positions, seeds, cameras and image hashes) are in `benchmark_v2/`. The author did not score
-  any model on that split. Its images follow later, and anyone can rebuild the pixels from the
-  manifest and the generator.
+  any model on that split. Its 4,000 images are on Hugging Face as the configuration `final_test`
+  (split `test`), and anyone can rebuild the pixels from the manifest and the generator.
 - **Tools** (`tools/paper/`): scoring, crop diagnostics, freeze and exclusion checks.
 - **Paper** (`paper/`): the LaTeX source, the compiled PDF, and the table and figure pipeline
   that built every generated table and figure in the paper from receipts. From the package root,
